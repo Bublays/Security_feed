@@ -467,7 +467,7 @@ def generate(advisories: list[dict], threat_intel: list[dict], hours: int) -> st
   <!-- Threat Intel panel -->
   <div class="panel">
     <div class="panel-header">
-      <span class="panel-title">Threat Intelligence</span>
+      <span class="panel-title">Analýza hrozeb</span>
       <span class="panel-subtitle">CrowdStrike · Sophos · Malwarebytes</span>
       <span class="record-pill pill-purple" id="intel-count">{total_intel} záznamů</span>
     </div>
@@ -508,7 +508,7 @@ def generate(advisories: list[dict], threat_intel: list[dict], hours: int) -> st
 
   <footer>
     <span>CVE zdroje: MSRC · CISA KEV · NVD · Cisco · Red Hat · VMware · Ubuntu · Debian · Mozilla · Chrome · Fortinet · Palo Alto</span>
-    <a href="data.json">data.json</a>
+    <!-- <a href="data.json">data.json</a> -->
     <a href="https://github.com/Bublays/Security_feed">GitHub</a>
   </footer>
 

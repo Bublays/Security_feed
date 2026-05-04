@@ -28,7 +28,7 @@ jobs:
       - name: Fetch advisories
         env:
           NVD_API_KEY: ${{ secrets.NVD_API_KEY }}
-        run: python scripts/fetch_advisories.py --hours 72
+        run: python scripts/fetch_advisories.py --hours 48
 
       - name: Generate HTML
         run: python scripts/generate_html.py

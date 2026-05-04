@@ -2,40 +2,53 @@
 import json
 from datetime import datetime, timezone
 from pathlib import Path
- 
+
 SEVERITY_ORDER = {"CRITICAL": 0, "HIGH": 1, "MEDIUM": 2, "LOW": 3, "UNKNOWN": 4}
- 
+
 SOURCE_LABEL = {
-    "msrc":     "Microsoft MSRC",
-    "cisa_kev": "CISA KEV",
-    "nvd":      "NVD",
-    "cisco":    "Cisco",
-    "redhat":   "Red Hat",
-    "vmware":   "VMware",
+    "msrc":         "Microsoft MSRC",
+    "cisa_kev":     "CISA KEV",
+    "nvd":          "NVD",
+    "cisco":        "Cisco",
+    "redhat":       "Red Hat",
+    "vmware":       "VMware",
+    "ubuntu":       "Ubuntu",
+    "debian":       "Debian",
+    "mozilla":      "Mozilla",
+    "google":       "Google Chrome",
+    "fortinet":     "Fortinet",
+    "paloalto":     "Palo Alto",
+    "crowdstrike":  "CrowdStrike",
+    "sophos":       "Sophos",
+    "malwarebytes": "Malwarebytes",
 }
- 
+
+
 def badge(severity: str) -> str:
     return f'<span class="badge sev-{severity.lower()}">{severity}</span>'
- 
+
+
 def source_badge(source: str) -> str:
     label = SOURCE_LABEL.get(source, source)
     return f'<span class="src-badge">{label}</span>'
- 
+
+
 def format_dt(iso: str) -> str:
     try:
         dt = datetime.fromisoformat(iso.replace("Z", "+00:00"))
         return dt.strftime("%Y-%m-%d %H:%M")
     except Exception:
         return iso
- 
-def render_row(item: dict) -> str:
-    sev   = item.get("severity", "UNKNOWN")
+
+
+def render_advisory_row(item: dict) -> str:
+    sev  = item.get("severity", "UNKNOWN")
     title = item.get("title", "")[:120]
     link  = item.get("link", "#")
     pub   = format_dt(item.get("published", ""))
     src   = item.get("source", "")
     summ  = item.get("summary", "")[:300]
- 
+
     return f"""      <tr class="advisory-row" data-severity="{sev.lower()}" data-source="{src}">
         <td><div class="sev-bar sev-{sev.lower()}"></div></td>
         <td>
@@ -46,7 +59,25 @@ def render_row(item: dict) -> str:
         <td>{source_badge(src)}</td>
         <td class="dt">{pub}</td>
       </tr>"""
- 
+
+
+def render_intel_row(item: dict) -> str:
+    title = item.get("title", "")[:120]
+    link  = item.get("link", "#")
+    pub   = format_dt(item.get("published", ""))
+    src   = item.get("source", "")
+    summ  = item.get("summary", "")[:300]
+
+    return f"""      <tr class="intel-row" data-source="{src}">
+        <td>
+          <a href="{link}" target="_blank" rel="noopener" class="advisory-link">{title}</a>
+          <div class="summary">{summ}</div>
+        </td>
+        <td>{source_badge(src)}</td>
+        <td class="dt">{pub}</td>
+      </tr>"""
+
+
 def render_stat_cards(items: list[dict]) -> str:
     counts = {"CRITICAL": 0, "HIGH": 0, "MEDIUM": 0, "LOW": 0}
     for item in items:
@@ -55,28 +86,43 @@ def render_stat_cards(items: list[dict]) -> str:
             counts[s] += 1
     cards = ""
     for sev, count in counts.items():
-        cards += f'<div class="sc sc-{sev.lower()}"><div class="sc-n">{count}</div><div class="sc-l">{sev}</div></div>'
+        cards += (
+            f'<div class="sc sc-{sev.lower()}">'
+            f'<div class="sc-n">{count}</div>'
+            f'<div class="sc-l">{sev}</div>'
+            f'</div>'
+        )
     return cards
- 
-def generate(advisories: list[dict]) -> str:
+
+
+def generate(advisories: list[dict], threat_intel: list[dict], hours: int) -> str:
     advisories.sort(
         key=lambda x: (
             SEVERITY_ORDER.get(x.get("severity", "UNKNOWN"), 4),
             x.get("published", "")
         )
     )
- 
-    rows  = "".join(render_row(i) for i in advisories)
-    cards = render_stat_cards(advisories)
-    now   = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
-    total = len(advisories)
- 
+    threat_intel.sort(key=lambda x: x.get("published", ""), reverse=True)
+
+    adv_rows   = "".join(render_advisory_row(i) for i in advisories)
+    intel_rows = "".join(render_intel_row(i) for i in threat_intel)
+    cards      = render_stat_cards(advisories)
+    now        = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    total_adv  = len(advisories)
+    total_intel = len(threat_intel)
+
     sources  = sorted({i.get("source", "") for i in advisories})
     src_opts = "\n".join(
         f'<option value="{s}">{SOURCE_LABEL.get(s, s)}</option>'
         for s in sources
     )
- 
+
+    intel_sources  = sorted({i.get("source", "") for i in threat_intel})
+    intel_src_opts = "\n".join(
+        f'<option value="{s}">{SOURCE_LABEL.get(s, s)}</option>'
+        for s in intel_sources
+    )
+
     return f"""<!DOCTYPE html>
 <html lang="cs">
 <head>
@@ -87,7 +133,7 @@ def generate(advisories: list[dict]) -> str:
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after {{ box-sizing: border-box; margin: 0; padding: 0; }}
- 
+
     :root {{
       --bg:      #f0f4f8;
       --surface: #ffffff;
@@ -98,12 +144,12 @@ def generate(advisories: list[dict]) -> str:
       --accent:  #2563eb;
       --radius:  8px;
     }}
- 
+
     html, body {{
       width: 100%;
       overflow-x: hidden;
     }}
- 
+
     body {{
       background: var(--bg);
       color: var(--text);
@@ -112,7 +158,7 @@ def generate(advisories: list[dict]) -> str:
       line-height: 1.5;
       min-height: 100vh;
     }}
- 
+
     .topbar {{
       background: var(--surface);
       border-bottom: 1px solid var(--border);
@@ -152,18 +198,14 @@ def generate(advisories: list[dict]) -> str:
       animation: pulse 2s ease-in-out infinite;
     }}
     @keyframes pulse {{ 0%,100% {{ opacity:1; }} 50% {{ opacity:.35; }} }}
- 
-    .page {{
-      padding: 20px 28px;
-      width: 100%;
-    }}
- 
+
+    .page {{ padding: 20px 28px; width: 100%; }}
+
     .stat-row {{
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: 10px;
       margin-bottom: 16px;
-      width: 100%;
     }}
     .sc {{
       background: var(--surface);
@@ -180,26 +222,16 @@ def generate(advisories: list[dict]) -> str:
     .sc-high     {{ border-top-color: #ea580c; }}
     .sc-medium   {{ border-top-color: #ca8a04; }}
     .sc-low      {{ border-top-color: #16a34a; }}
-    .sc-n {{
-      font-size: 22px;
-      font-weight: 600;
-      color: var(--text);
-      line-height: 1;
-      flex-shrink: 0;
-    }}
-    .sc-l {{
-      font-size: 10px;
-      color: var(--muted);
-      text-transform: uppercase;
-      letter-spacing: .06em;
-    }}
- 
+    .sc-n {{ font-size: 22px; font-weight: 600; color: var(--text); line-height: 1; flex-shrink: 0; }}
+    .sc-l {{ font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }}
+
     .panel {{
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: var(--radius);
       overflow: hidden;
       width: 100%;
+      margin-bottom: 20px;
     }}
     .panel-header {{
       padding: 11px 16px;
@@ -208,22 +240,19 @@ def generate(advisories: list[dict]) -> str:
       align-items: center;
       gap: 10px;
     }}
-    .panel-title {{
-      font-size: 13px;
-      font-weight: 500;
-      color: var(--text);
-      flex: 1;
-    }}
+    .panel-title {{ font-size: 13px; font-weight: 500; color: var(--text); flex: 1; }}
+    .panel-subtitle {{ font-size: 11px; color: var(--muted); }}
+
     .record-pill {{
-      background: #eff6ff;
-      color: #2563eb;
       font-size: 11px;
       font-weight: 500;
       padding: 2px 9px;
       border-radius: 99px;
       white-space: nowrap;
     }}
- 
+    .pill-blue   {{ background: #eff6ff; color: #2563eb; }}
+    .pill-purple {{ background: #f5f3ff; color: #7c3aed; }}
+
     .filters {{
       padding: 8px 16px;
       border-bottom: 1px solid var(--border);
@@ -233,16 +262,8 @@ def generate(advisories: list[dict]) -> str:
       background: var(--surface2);
       flex-wrap: wrap;
     }}
-    .filter-group {{
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }}
-    .filter-group label {{
-      font-size: 11px;
-      font-weight: 500;
-      color: var(--muted);
-    }}
+    .filter-group {{ display: flex; align-items: center; gap: 6px; }}
+    .filter-group label {{ font-size: 11px; font-weight: 500; color: var(--muted); }}
     select, input[type=search] {{
       background: var(--surface);
       border: 1px solid var(--border);
@@ -253,24 +274,15 @@ def generate(advisories: list[dict]) -> str:
       font-family: inherit;
       outline: none;
     }}
-    select:focus, input[type=search]:focus {{
-      border-color: var(--accent);
-    }}
- 
-    .table-wrap {{
-      width: 100%;
-      overflow: hidden;
-    }}
-    table {{
-      width: 100%;
-      border-collapse: collapse;
-      table-layout: fixed;
-    }}
+    select:focus, input[type=search]:focus {{ border-color: var(--accent); }}
+
+    .table-wrap {{ width: 100%; overflow: hidden; }}
+    table {{ width: 100%; border-collapse: collapse; table-layout: fixed; }}
     col.col-bar  {{ width: 20px; }}
     col.col-sev  {{ width: 90px; }}
     col.col-src  {{ width: 130px; }}
     col.col-date {{ width: 130px; }}
- 
+
     thead th {{
       text-align: left;
       padding: 7px 12px;
@@ -288,17 +300,14 @@ def generate(advisories: list[dict]) -> str:
     tbody tr.hidden {{ display: none; }}
     td {{ padding: 9px 12px; vertical-align: top; overflow: hidden; }}
     td:first-child {{ padding: 0; padding-top: 11px; padding-left: 10px; }}
- 
-    .sev-bar {{
-      width: 3px; height: 30px;
-      border-radius: 99px;
-    }}
+
+    .sev-bar {{ width: 3px; height: 30px; border-radius: 99px; }}
     .sev-critical {{ background: #dc2626; }}
     .sev-high     {{ background: #ea580c; }}
     .sev-medium   {{ background: #ca8a04; }}
     .sev-low      {{ background: #16a34a; }}
     .sev-unknown  {{ background: #94a3b8; }}
- 
+
     .advisory-link {{
       color: var(--accent);
       text-decoration: none;
@@ -320,7 +329,7 @@ def generate(advisories: list[dict]) -> str:
       -webkit-box-orient: vertical;
       overflow: hidden;
     }}
- 
+
     .badge {{
       display: inline-block;
       padding: 2px 7px;
@@ -334,7 +343,7 @@ def generate(advisories: list[dict]) -> str:
     .badge.sev-medium   {{ background: #fefce8; color: #a16207; border: 1px solid #fde68a; }}
     .badge.sev-low      {{ background: #f0fdf4; color: #16a34a; border: 1px solid #bbf7d0; }}
     .badge.sev-unknown  {{ background: #f8fafc; color: #64748b; border: 1px solid #e2e8f0; }}
- 
+
     .src-badge {{
       display: inline-block;
       background: var(--surface2);
@@ -349,20 +358,16 @@ def generate(advisories: list[dict]) -> str:
       text-overflow: ellipsis;
       max-width: 100%;
     }}
- 
+
     .dt {{
       color: var(--muted);
       font-size: 11px;
       white-space: nowrap;
       font-variant-numeric: tabular-nums;
     }}
- 
-    .empty {{
-      text-align: center;
-      padding: 40px;
-      color: var(--muted);
-    }}
- 
+
+    .empty {{ text-align: center; padding: 40px; color: var(--muted); }}
+
     footer {{
       margin-top: 20px;
       color: var(--muted);
@@ -374,7 +379,7 @@ def generate(advisories: list[dict]) -> str:
     }}
     footer a {{ color: var(--accent); text-decoration: none; }}
     footer a:hover {{ text-decoration: underline; }}
- 
+
     @media (max-width: 640px) {{
       .topbar, .page {{ padding-left: 14px; padding-right: 14px; }}
       .stat-row {{ grid-template-columns: repeat(2, minmax(0, 1fr)); }}
@@ -382,7 +387,7 @@ def generate(advisories: list[dict]) -> str:
   </style>
 </head>
 <body>
- 
+
 <div class="topbar">
   <div class="logo">
     <svg width="24" height="24" viewBox="0 0 16 16" fill="none">
@@ -393,26 +398,27 @@ def generate(advisories: list[dict]) -> str:
   </div>
   <div class="topbar-meta">
     <span class="live-dot"></span>
-    {now} &nbsp;·&nbsp; okno 72 h
+    {now} &nbsp;·&nbsp; okno {hours} h
   </div>
 </div>
- 
+
 <div class="page">
- 
+
   <div class="stat-row">
     {cards}
   </div>
- 
+
+  <!-- CVE Advisories panel -->
   <div class="panel">
     <div class="panel-header">
       <span class="panel-title">Bezpečnostní advisories</span>
-      <span class="record-pill" id="record-count">{total} záznamů</span>
+      <span class="panel-subtitle">CVE · strukturované záznamy</span>
+      <span class="record-pill pill-blue" id="adv-count">{total_adv} záznamů</span>
     </div>
- 
     <div class="filters">
       <div class="filter-group">
         <label>Závažnost</label>
-        <select id="f-sev" onchange="applyFilters()">
+        <select id="f-sev" onchange="applyAdvisoryFilters()">
           <option value="">Vše</option>
           <option value="critical">CRITICAL</option>
           <option value="high">HIGH</option>
@@ -422,17 +428,16 @@ def generate(advisories: list[dict]) -> str:
       </div>
       <div class="filter-group">
         <label>Zdroj</label>
-        <select id="f-src" onchange="applyFilters()">
+        <select id="f-src" onchange="applyAdvisoryFilters()">
           <option value="">Vše</option>
           {src_opts}
         </select>
       </div>
       <div class="filter-group">
         <label>Hledat</label>
-        <input type="search" id="f-search" placeholder="CVE-…, klíčové slovo" oninput="applyFilters()">
+        <input type="search" id="f-search" placeholder="CVE-…, klíčové slovo" oninput="applyAdvisoryFilters()">
       </div>
     </div>
- 
     <div class="table-wrap">
       <table>
         <colgroup>
@@ -451,66 +456,131 @@ def generate(advisories: list[dict]) -> str:
             <th>Publikováno</th>
           </tr>
         </thead>
-        <tbody id="tbody">
-          {rows}
+        <tbody id="adv-tbody">
+          {adv_rows}
         </tbody>
       </table>
-      <div class="empty" id="empty-state" style="display:none">
-        Žádné záznamy neodpovídají filtru.
-      </div>
+      <div class="empty" id="adv-empty" style="display:none">Žádné záznamy neodpovídají filtru.</div>
     </div>
   </div>
- 
+
+  <!-- Threat Intel panel -->
+  <div class="panel">
+    <div class="panel-header">
+      <span class="panel-title">Threat Intelligence</span>
+      <span class="panel-subtitle">CrowdStrike · Sophos · Malwarebytes</span>
+      <span class="record-pill pill-purple" id="intel-count">{total_intel} záznamů</span>
+    </div>
+    <div class="filters">
+      <div class="filter-group">
+        <label>Zdroj</label>
+        <select id="f-intel-src" onchange="applyIntelFilters()">
+          <option value="">Vše</option>
+          {intel_src_opts}
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Hledat</label>
+        <input type="search" id="f-intel-search" placeholder="klíčové slovo…" oninput="applyIntelFilters()">
+      </div>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <colgroup>
+          <col>
+          <col class="col-src">
+          <col class="col-date">
+        </colgroup>
+        <thead>
+          <tr>
+            <th>Článek</th>
+            <th>Zdroj</th>
+            <th>Publikováno</th>
+          </tr>
+        </thead>
+        <tbody id="intel-tbody">
+          {intel_rows}
+        </tbody>
+      </table>
+      <div class="empty" id="intel-empty" style="display:none">Žádné záznamy neodpovídají filtru.</div>
+    </div>
+  </div>
+
   <footer>
-    <span>Zdroje: Microsoft MSRC · CISA KEV · NVD · Cisco · Red Hat · VMware</span>
+    <span>CVE zdroje: MSRC · CISA KEV · NVD · Cisco · Red Hat · VMware · Ubuntu · Debian · Mozilla · Chrome · Fortinet · Palo Alto</span>
     <a href="data.json">data.json</a>
     <a href="https://github.com/Bublays/Security_feed">GitHub</a>
   </footer>
- 
+
 </div>
- 
+
 <script>
-  function applyFilters() {{
+  function applyAdvisoryFilters() {{
     const sev    = document.getElementById('f-sev').value;
     const src    = document.getElementById('f-src').value;
     const search = document.getElementById('f-search').value.toLowerCase();
-    const rows   = document.querySelectorAll('#tbody .advisory-row');
+    const rows   = document.querySelectorAll('#adv-tbody .advisory-row');
     let visible  = 0;
- 
     rows.forEach(row => {{
-      const matchSev    = !sev    || row.dataset.severity === sev;
-      const matchSrc    = !src    || row.dataset.source   === src;
-      const matchSearch = !search || row.textContent.toLowerCase().includes(search);
-      const show        = matchSev && matchSrc && matchSearch;
+      const show = (!sev    || row.dataset.severity === sev)
+                && (!src    || row.dataset.source   === src)
+                && (!search || row.textContent.toLowerCase().includes(search));
       row.classList.toggle('hidden', !show);
       if (show) visible++;
     }});
- 
-    document.getElementById('record-count').textContent = visible + ' záznamů';
-    document.getElementById('empty-state').style.display = visible === 0 ? 'block' : 'none';
+    document.getElementById('adv-count').textContent = visible + ' záznamů';
+    document.getElementById('adv-empty').style.display = visible === 0 ? 'block' : 'none';
+  }}
+
+  function applyIntelFilters() {{
+    const src    = document.getElementById('f-intel-src').value;
+    const search = document.getElementById('f-intel-search').value.toLowerCase();
+    const rows   = document.querySelectorAll('#intel-tbody .intel-row');
+    let visible  = 0;
+    rows.forEach(row => {{
+      const show = (!src    || row.dataset.source === src)
+                && (!search || row.textContent.toLowerCase().includes(search));
+      row.classList.toggle('hidden', !show);
+      if (show) visible++;
+    }});
+    document.getElementById('intel-count').textContent = visible + ' záznamů';
+    document.getElementById('intel-empty').style.display = visible === 0 ? 'block' : 'none';
   }}
 </script>
- 
+
 </body>
 </html>"""
- 
+
+
 def main():
     src = Path("output/advisories.json")
     if not src.exists():
         print("output/advisories.json nenalezen")
         return
- 
-    advisories = json.loads(src.read_text())
+
+    all_items  = json.loads(src.read_text())
+    advisories = [i for i in all_items if i.get("category") == "advisory"]
+    threat_intel = [i for i in all_items if i.get("category") == "threat_intel"]
+
+    # Zpětná kompatibilita — záznamy bez category považujeme za advisory
+    no_cat = [i for i in all_items if "category" not in i]
+    advisories += no_cat
+
     docs = Path("docs")
     docs.mkdir(exist_ok=True)
- 
+
     (docs / "data.json").write_text(
-        json.dumps(advisories, ensure_ascii=False, indent=2)
+        json.dumps(all_items, ensure_ascii=False, indent=2)
     )
- 
-    html = generate(advisories)
+
+    # Zjistíme hours z dat (fallback 48)
+    hours = 48
+    html = generate(advisories, threat_intel, hours)
     (docs / "index.html").write_text(html, encoding="utf-8")
-    print(f"Vygenerováno docs/index.html ({len(advisories)} záznamů)")
- 
+    print(f"Vygenerováno docs/index.html")
+    print(f"  Advisories:   {len(advisories)}")
+    print(f"  Threat intel: {len(threat_intel)}")
+
+
 if __name__ == "__main__":
     main()

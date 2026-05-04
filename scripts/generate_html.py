@@ -2,9 +2,9 @@
 import json
 from datetime import datetime, timezone
 from pathlib import Path
-
+ 
 SEVERITY_ORDER = {"CRITICAL": 0, "HIGH": 1, "MEDIUM": 2, "LOW": 3, "UNKNOWN": 4}
-
+ 
 SOURCE_LABEL = {
     "msrc":     "Microsoft MSRC",
     "cisa_kev": "CISA KEV",
@@ -13,21 +13,21 @@ SOURCE_LABEL = {
     "redhat":   "Red Hat",
     "vmware":   "VMware",
 }
-
+ 
 def badge(severity: str) -> str:
     return f'<span class="badge sev-{severity.lower()}">{severity}</span>'
-
+ 
 def source_badge(source: str) -> str:
     label = SOURCE_LABEL.get(source, source)
     return f'<span class="src-badge src-{source}">{label}</span>'
-
+ 
 def format_dt(iso: str) -> str:
     try:
         dt = datetime.fromisoformat(iso.replace("Z", "+00:00"))
         return dt.strftime("%Y-%m-%d %H:%M")
     except Exception:
         return iso
-
+ 
 def render_row(item: dict) -> str:
     sev   = item.get("severity", "UNKNOWN")
     title = item.get("title", "")[:120]
@@ -35,7 +35,7 @@ def render_row(item: dict) -> str:
     pub   = format_dt(item.get("published", ""))
     src   = item.get("source", "")
     summ  = item.get("summary", "")[:300]
-
+ 
     return f"""      <tr class="advisory-row" data-severity="{sev.lower()}" data-source="{src}">
         <td><div class="sev-indicator sev-{sev.lower()}"></div></td>
         <td>
@@ -46,14 +46,14 @@ def render_row(item: dict) -> str:
         <td>{source_badge(src)}</td>
         <td class="dt">{pub}</td>
       </tr>"""
-
+ 
 def render_stat_cards(items: list[dict]) -> str:
     counts = {"CRITICAL": 0, "HIGH": 0, "MEDIUM": 0, "LOW": 0}
     for item in items:
         s = item.get("severity", "UNKNOWN")
         if s in counts:
             counts[s] += 1
-
+ 
     cards = ""
     icons = {
         "CRITICAL": "🔴",
@@ -69,7 +69,7 @@ def render_stat_cards(items: list[dict]) -> str:
       <div class="stat-label">{sev}</div>
     </div>"""
     return cards
-
+ 
 def generate(advisories: list[dict]) -> str:
     advisories.sort(
         key=lambda x: (
@@ -77,18 +77,18 @@ def generate(advisories: list[dict]) -> str:
             x.get("published", "")
         )
     )
-
+ 
     rows  = "".join(render_row(i) for i in advisories)
     cards = render_stat_cards(advisories)
     now   = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     total = len(advisories)
-
+ 
     sources  = sorted({i.get("source", "") for i in advisories})
     src_opts = "\n".join(
         f'<option value="{s}">{SOURCE_LABEL.get(s, s)}</option>'
         for s in sources
     )
-
+ 
     return f"""<!DOCTYPE html>
 <html lang="cs">
 <head>
@@ -99,7 +99,7 @@ def generate(advisories: list[dict]) -> str:
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after {{ box-sizing: border-box; margin: 0; padding: 0; }}
-
+ 
     :root {{
       --bg:        #f5f6fa;
       --surface:   #ffffff;
@@ -114,7 +114,7 @@ def generate(advisories: list[dict]) -> str:
       --shadow-md: 0 4px 12px rgba(0,0,0,.08);
       --font:      'Inter', system-ui, sans-serif;
     }}
-
+ 
     body {{
       background: var(--bg);
       color: var(--text);
@@ -123,7 +123,7 @@ def generate(advisories: list[dict]) -> str:
       line-height: 1.6;
       min-height: 100vh;
     }}
-
+ 
     /* ── Top bar ── */
     .topbar {{
       background: var(--surface);
@@ -164,10 +164,10 @@ def generate(advisories: list[dict]) -> str:
       0%,100% {{ opacity: 1; }}
       50%      {{ opacity: .4; }}
     }}
-
+ 
     /* ── Layout ── */
     .page {{ max-width: 1200px; margin: 0 auto; padding: 28px 32px; }}
-
+ 
     /* ── Stat cards ── */
     .stat-grid {{
       display: grid;
@@ -195,7 +195,7 @@ def generate(advisories: list[dict]) -> str:
     .stat-icon  {{ font-size: 20px; }}
     .stat-count {{ font-size: 32px; font-weight: 600; line-height: 1.1; color: var(--text); }}
     .stat-label {{ font-size: 12px; font-weight: 500; color: var(--muted); letter-spacing: .05em; text-transform: uppercase; }}
-
+ 
     /* ── Panel ── */
     .panel {{
       background: var(--surface);
@@ -227,7 +227,7 @@ def generate(advisories: list[dict]) -> str:
       padding: 2px 10px;
       border-radius: 99px;
     }}
-
+ 
     /* ── Filters ── */
     .filters {{
       padding: 12px 20px;
@@ -264,7 +264,7 @@ def generate(advisories: list[dict]) -> str:
       box-shadow: 0 0 0 3px rgba(37,99,235,.1);
     }}
     input[type=search] {{ min-width: 200px; }}
-
+ 
     /* ── Table ── */
     .table-wrap {{ overflow-x: auto; }}
     table {{ width: 100%; border-collapse: collapse; }}
@@ -288,7 +288,7 @@ def generate(advisories: list[dict]) -> str:
     tbody tr:hover {{ background: #f8f9ff; }}
     tbody tr.hidden {{ display: none; }}
     td {{ padding: 11px 16px; vertical-align: top; }}
-
+ 
     /* Severity indicator bar */
     .sev-indicator {{
       width: 4px;
@@ -301,9 +301,9 @@ def generate(advisories: list[dict]) -> str:
     .sev-indicator.sev-medium   {{ background: #ca8a04; }}
     .sev-indicator.sev-low      {{ background: #16a34a; }}
     .sev-indicator.sev-unknown  {{ background: #9ca3af; }}
-
+ 
     td:first-child {{ width: 20px; padding-right: 4px; }}
-
+ 
     .advisory-link {{
       color: var(--accent);
       text-decoration: none;
@@ -315,7 +315,7 @@ def generate(advisories: list[dict]) -> str:
     }}
     .advisory-link:hover {{ color: #1d4ed8; text-decoration: underline; }}
     .summary {{ color: var(--muted); font-size: 12px; line-height: 1.5; }}
-
+ 
     /* ── Badges ── */
     .badge {{
       display: inline-block;
@@ -331,7 +331,7 @@ def generate(advisories: list[dict]) -> str:
     .sev-medium   {{ background: #fefce8; color: #a16207; border: 1px solid #fde68a; }}
     .sev-low      {{ background: #f0fdf4; color: #16a34a; border: 1px solid #bbf7d0; }}
     .sev-unknown  {{ background: #f9fafb; color: #6b7280; border: 1px solid #e5e7eb; }}
-
+ 
     .src-badge {{
       display: inline-block;
       background: var(--surface2);
@@ -343,14 +343,14 @@ def generate(advisories: list[dict]) -> str:
       border-radius: 6px;
       white-space: nowrap;
     }}
-
+ 
     .dt {{
       color: var(--muted);
       font-size: 12px;
       white-space: nowrap;
       font-variant-numeric: tabular-nums;
     }}
-
+ 
     /* ── Empty state ── */
     .empty {{
       text-align: center;
@@ -358,7 +358,7 @@ def generate(advisories: list[dict]) -> str:
       color: var(--muted);
     }}
     .empty-icon {{ font-size: 32px; margin-bottom: 8px; }}
-
+ 
     /* ── Footer ── */
     footer {{
       margin-top: 24px;
@@ -372,7 +372,7 @@ def generate(advisories: list[dict]) -> str:
     }}
     footer a {{ color: var(--accent); text-decoration: none; }}
     footer a:hover {{ text-decoration: underline; }}
-
+ 
     @media (max-width: 768px) {{
       .page {{ padding: 16px; }}
       .stat-grid {{ grid-template-columns: repeat(2, 1fr); }}
@@ -381,7 +381,7 @@ def generate(advisories: list[dict]) -> str:
   </style>
 </head>
 <body>
-
+ 
 <div class="topbar">
   <div class="topbar-logo">
     🛡 <span>Security</span> Feed
@@ -391,22 +391,22 @@ def generate(advisories: list[dict]) -> str:
     Aktualizováno {now} &nbsp;·&nbsp; okno 72 h
   </div>
 </div>
-
+ 
 <div class="page">
-
+ 
   <!-- Stat cards -->
   <div class="stat-grid">
     {cards}
   </div>
-
+ 
   <!-- Main panel -->
   <div class="panel">
-
+ 
     <div class="panel-header">
       <div class="panel-title">Bezpečnostní advisories</div>
       <span class="record-count" id="record-count">{total} záznamů</span>
     </div>
-
+ 
     <div class="filters">
       <div class="filter-group">
         <label>Závažnost</label>
@@ -430,7 +430,7 @@ def generate(advisories: list[dict]) -> str:
         <input type="search" id="f-search" placeholder="CVE-…, klíčové slovo" oninput="applyFilters()">
       </div>
     </div>
-
+ 
     <div class="table-wrap">
       <table>
         <thead>
@@ -451,17 +451,17 @@ def generate(advisories: list[dict]) -> str:
         Žádné záznamy neodpovídají filtru.
       </div>
     </div>
-
+ 
   </div>
-
+ 
   <footer>
     <span>Zdroje: Microsoft MSRC · CISA KEV · NVD · Cisco · Red Hat · VMware</span>
     <a href="data.json">📥 data.json</a>
     <a href="https://github.com/Bublays/Security_feed">GitHub</a>
   </footer>
-
+ 
 </div>
-
+ 
 <script>
   function applyFilters() {{
     const sev    = document.getElementById('f-sev').value;
@@ -469,7 +469,7 @@ def generate(advisories: list[dict]) -> str:
     const search = document.getElementById('f-search').value.toLowerCase();
     const rows   = document.querySelectorAll('#tbody .advisory-row');
     let visible  = 0;
-
+ 
     rows.forEach(row => {{
       const matchSev    = !sev    || row.dataset.severity === sev;
       const matchSrc    = !src    || row.dataset.source   === src;
@@ -478,32 +478,32 @@ def generate(advisories: list[dict]) -> str:
       row.classList.toggle('hidden', !show);
       if (show) visible++;
     }});
-
+ 
     document.getElementById('record-count').textContent = visible + ' záznamů';
     document.getElementById('empty-state').style.display = visible === 0 ? 'block' : 'none';
   }}
 </script>
-
+ 
 </body>
 </html>"""
-
+ 
 def main():
     src = Path("output/advisories.json")
     if not src.exists():
         print("output/advisories.json nenalezen")
         return
-
+ 
     advisories = json.loads(src.read_text())
     docs = Path("docs")
     docs.mkdir(exist_ok=True)
-
+ 
     (docs / "data.json").write_text(
         json.dumps(advisories, ensure_ascii=False, indent=2)
     )
-
+ 
     html = generate(advisories)
     (docs / "index.html").write_text(html, encoding="utf-8")
     print(f"Vygenerováno docs/index.html ({len(advisories)} záznamů)")
-
+ 
 if __name__ == "__main__":
     main()

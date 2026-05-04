@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
+ 
     :root {
       --bg:        #f5f6fa;
       --surface:   #ffffff;
@@ -23,7 +23,7 @@
       --shadow-md: 0 4px 12px rgba(0,0,0,.08);
       --font:      'Inter', system-ui, sans-serif;
     }
-
+ 
     body {
       background: var(--bg);
       color: var(--text);
@@ -32,7 +32,7 @@
       line-height: 1.6;
       min-height: 100vh;
     }
-
+ 
     /* ── Top bar ── */
     .topbar {
       background: var(--surface);
@@ -73,10 +73,10 @@
       0%,100% { opacity: 1; }
       50%      { opacity: .4; }
     }
-
+ 
     /* ── Layout ── */
     .page { max-width: 1200px; margin: 0 auto; padding: 28px 32px; }
-
+ 
     /* ── Stat cards ── */
     .stat-grid {
       display: grid;
@@ -104,7 +104,7 @@
     .stat-icon  { font-size: 20px; }
     .stat-count { font-size: 32px; font-weight: 600; line-height: 1.1; color: var(--text); }
     .stat-label { font-size: 12px; font-weight: 500; color: var(--muted); letter-spacing: .05em; text-transform: uppercase; }
-
+ 
     /* ── Panel ── */
     .panel {
       background: var(--surface);
@@ -136,7 +136,7 @@
       padding: 2px 10px;
       border-radius: 99px;
     }
-
+ 
     /* ── Filters ── */
     .filters {
       padding: 12px 20px;
@@ -173,7 +173,7 @@
       box-shadow: 0 0 0 3px rgba(37,99,235,.1);
     }
     input[type=search] { min-width: 200px; }
-
+ 
     /* ── Table ── */
     .table-wrap { overflow-x: auto; }
     table { width: 100%; border-collapse: collapse; }
@@ -197,7 +197,7 @@
     tbody tr:hover { background: #f8f9ff; }
     tbody tr.hidden { display: none; }
     td { padding: 11px 16px; vertical-align: top; }
-
+ 
     /* Severity indicator bar */
     .sev-indicator {
       width: 4px;
@@ -210,9 +210,9 @@
     .sev-indicator.sev-medium   { background: #ca8a04; }
     .sev-indicator.sev-low      { background: #16a34a; }
     .sev-indicator.sev-unknown  { background: #9ca3af; }
-
+ 
     td:first-child { width: 20px; padding-right: 4px; }
-
+ 
     .advisory-link {
       color: var(--accent);
       text-decoration: none;
@@ -224,7 +224,7 @@
     }
     .advisory-link:hover { color: #1d4ed8; text-decoration: underline; }
     .summary { color: var(--muted); font-size: 12px; line-height: 1.5; }
-
+ 
     /* ── Badges ── */
     .badge {
       display: inline-block;
@@ -240,7 +240,7 @@
     .sev-medium   { background: #fefce8; color: #a16207; border: 1px solid #fde68a; }
     .sev-low      { background: #f0fdf4; color: #16a34a; border: 1px solid #bbf7d0; }
     .sev-unknown  { background: #f9fafb; color: #6b7280; border: 1px solid #e5e7eb; }
-
+ 
     .src-badge {
       display: inline-block;
       background: var(--surface2);
@@ -252,14 +252,14 @@
       border-radius: 6px;
       white-space: nowrap;
     }
-
+ 
     .dt {
       color: var(--muted);
       font-size: 12px;
       white-space: nowrap;
       font-variant-numeric: tabular-nums;
     }
-
+ 
     /* ── Empty state ── */
     .empty {
       text-align: center;
@@ -267,7 +267,7 @@
       color: var(--muted);
     }
     .empty-icon { font-size: 32px; margin-bottom: 8px; }
-
+ 
     /* ── Footer ── */
     footer {
       margin-top: 24px;
@@ -281,7 +281,7 @@
     }
     footer a { color: var(--accent); text-decoration: none; }
     footer a:hover { text-decoration: underline; }
-
+ 
     @media (max-width: 768px) {
       .page { padding: 16px; }
       .stat-grid { grid-template-columns: repeat(2, 1fr); }
@@ -290,19 +290,19 @@
   </style>
 </head>
 <body>
-
+ 
 <div class="topbar">
   <div class="topbar-logo">
     🛡 <span>Security</span> Feed
   </div>
   <div class="topbar-meta">
     <span class="live-dot"></span>
-    Aktualizováno 2026-05-04 16:08 UTC &nbsp;·&nbsp; okno 72 h
+    Aktualizováno 2026-05-04 16:11 UTC &nbsp;·&nbsp; okno 72 h
   </div>
 </div>
-
+ 
 <div class="page">
-
+ 
   <!-- Stat cards -->
   <div class="stat-grid">
     
@@ -327,15 +327,15 @@
       <div class="stat-label">LOW</div>
     </div>
   </div>
-
+ 
   <!-- Main panel -->
   <div class="panel">
-
+ 
     <div class="panel-header">
       <div class="panel-title">Bezpečnostní advisories</div>
       <span class="record-count" id="record-count">119 záznamů</span>
     </div>
-
+ 
     <div class="filters">
       <div class="filter-group">
         <label>Závažnost</label>
@@ -360,7 +360,7 @@
         <input type="search" id="f-search" placeholder="CVE-…, klíčové slovo" oninput="applyFilters()">
       </div>
     </div>
-
+ 
     <div class="table-wrap">
       <table>
         <thead>
@@ -1466,17 +1466,17 @@ The fragment reassembly path in 'Elixir.Bandit.WebSocket.Connection':handle_fram
         Žádné záznamy neodpovídají filtru.
       </div>
     </div>
-
+ 
   </div>
-
+ 
   <footer>
     <span>Zdroje: Microsoft MSRC · CISA KEV · NVD · Cisco · Red Hat · VMware</span>
     <a href="data.json">📥 data.json</a>
     <a href="https://github.com/Bublays/Security_feed">GitHub</a>
   </footer>
-
+ 
 </div>
-
+ 
 <script>
   function applyFilters() {
     const sev    = document.getElementById('f-sev').value;
@@ -1484,7 +1484,7 @@ The fragment reassembly path in 'Elixir.Bandit.WebSocket.Connection':handle_fram
     const search = document.getElementById('f-search').value.toLowerCase();
     const rows   = document.querySelectorAll('#tbody .advisory-row');
     let visible  = 0;
-
+ 
     rows.forEach(row => {
       const matchSev    = !sev    || row.dataset.severity === sev;
       const matchSrc    = !src    || row.dataset.source   === src;
@@ -1493,11 +1493,11 @@ The fragment reassembly path in 'Elixir.Bandit.WebSocket.Connection':handle_fram
       row.classList.toggle('hidden', !show);
       if (show) visible++;
     });
-
+ 
     document.getElementById('record-count').textContent = visible + ' záznamů';
     document.getElementById('empty-state').style.display = visible === 0 ? 'block' : 'none';
   }
 </script>
-
+ 
 </body>
 </html>

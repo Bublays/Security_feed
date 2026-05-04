@@ -398,7 +398,7 @@ def generate(advisories: list[dict], threat_intel: list[dict], hours: int) -> st
   </div>
   <div class="topbar-meta">
     <span class="live-dot"></span>
-    {now} &nbsp;·&nbsp; okno {hours} h
+    {now} &nbsp;·&nbsp; interval {hours} h
   </div>
 </div>
 

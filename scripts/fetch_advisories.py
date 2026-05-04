@@ -20,11 +20,23 @@ CVE_SOURCES = {
     "paloalto": "https://security.paloaltonetworks.com/rss.xml",
 }
 
-# ── Threat intelligence zdroje (blog / výzkum) ────────────────────────────────
+# ── Threat intelligence zdroje ────────────────────────────────────────────────
 THREAT_INTEL_SOURCES = {
     "crowdstrike":  "https://www.crowdstrike.com/blog/feed/",
-    "sophos":       "https://news.sophos.com/en-us/feed/",
+    "securelist":   "https://securelist.com/feed/",
     "malwarebytes": "https://www.malwarebytes.com/blog/feed",
+}
+
+# Klíčová slova pro filtrování zdrojů s vysokým objemem článků
+THREAT_INTEL_KEYWORDS = {
+    "crowdstrike": [
+        "vulnerability", "cve", "exploit", "ransomware", "malware",
+        "attack", "threat", "breach", "zero-day", "zero day",
+        "campaign", "advisory", "patch", "backdoor", "trojan",
+        "phishing", "intrusion", "incident",
+    ],
+    "securelist":   [],  # Securelist je čistě security — bez filtru
+    "malwarebytes": [],  # Malwarebytes také — bez filtru
 }
 
 SOURCE_LABEL = {
@@ -41,9 +53,8 @@ SOURCE_LABEL = {
     "fortinet":     "Fortinet",
     "paloalto":     "Palo Alto",
     "crowdstrike":  "CrowdStrike",
-    "sophos":       "Sophos",
+    "securelist":   "Kaspersky Securelist",
     "malwarebytes": "Malwarebytes",
-    "nvd":          "NVD",
 }
 
 
@@ -54,7 +65,6 @@ def parse_args():
 
 
 def parse_date(entry) -> datetime:
-    """Pokus o parsování datumu z různých polí RSS záznamu."""
     for field in ("published_parsed", "updated_parsed", "created_parsed"):
         val = getattr(entry, field, None)
         if val:
@@ -66,15 +76,21 @@ def parse_date(entry) -> datetime:
 
 
 def extract_severity(entry, source: str) -> str:
-    """Extrakce závažnosti z názvu nebo obsahu záznamu."""
     text = (entry.get("title", "") + " " + entry.get("summary", "")).upper()
     for s in ("CRITICAL", "HIGH", "MEDIUM", "LOW"):
         if s in text:
             return s
-    # CISA KEV a Fortinet jsou zpravidla HIGH/CRITICAL
     if source in ("cisa_kev", "fortinet", "paloalto"):
         return "HIGH"
     return "UNKNOWN"
+
+
+def is_relevant_intel(entry: dict, source: str) -> bool:
+    keywords = THREAT_INTEL_KEYWORDS.get(source, [])
+    if not keywords:
+        return True
+    text = (entry.get("title", "") + " " + entry.get("summary", "")).lower()
+    return any(kw in text for kw in keywords)
 
 
 def fetch_rss(name: str, url: str, since: datetime,
@@ -87,9 +103,15 @@ def fetch_rss(name: str, url: str, since: datetime,
 
     print(f"  {name}: celkem {len(feed.entries)} entries v RSS")
     items = []
+    skipped = 0
     for entry in feed.entries:
         pub = parse_date(entry)
         if pub < since:
+            continue
+
+        # Filtr relevance pro threat intel zdroje
+        if category == "threat_intel" and not is_relevant_intel(entry, name):
+            skipped += 1
             continue
 
         items.append({
@@ -103,12 +125,14 @@ def fetch_rss(name: str, url: str, since: datetime,
             "severity":  extract_severity(entry, name),
         })
 
-    print(f"  {name}: {len(items)} položek v okně")
+    if skipped:
+        print(f"  {name}: {len(items)} položek v okně ({skipped} filtrováno jako nerelevantní)")
+    else:
+        print(f"  {name}: {len(items)} položek v okně")
     return items
 
 
 def fetch_cisa_kev(since: datetime) -> list[dict]:
-    """CISA KEV — JSON formát, ne RSS."""
     url = "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
     try:
         r = requests.get(url, timeout=30)
@@ -146,7 +170,6 @@ def fetch_cisa_kev(since: datetime) -> list[dict]:
 
 
 def fetch_nvd(since: datetime) -> list[dict]:
-    """NVD REST API v2."""
     api_key = os.getenv("NVD_API_KEY", "")
     headers = {"apiKey": api_key} if api_key else {}
     pub_start = since.strftime("%Y-%m-%dT%H:%M:%S.000")
@@ -219,28 +242,23 @@ def main():
 
     all_items: list[dict] = []
 
-    # CVE advisory zdroje
     print("── CVE advisory zdroje ──")
     for name, url in CVE_SOURCES.items():
         items = fetch_rss(name, url, since, category="advisory")
         all_items.extend(items)
 
-    # CISA KEV (JSON)
     items = fetch_cisa_kev(since)
     all_items.extend(items)
 
-    # NVD (volitelné — může být pomalé bez API klíče)
     print("\n── NVD ──")
     items = fetch_nvd(since)
     all_items.extend(items)
 
-    # Threat intelligence zdroje
     print("\n── Threat intelligence zdroje ──")
     for name, url in THREAT_INTEL_SOURCES.items():
         items = fetch_rss(name, url, since, category="threat_intel")
         all_items.extend(items)
 
-    # Deduplikace a seřazení
     all_items = deduplicate(all_items)
     all_items.sort(key=lambda x: x.get("published", ""), reverse=True)
 
@@ -251,8 +269,8 @@ def main():
     advisories   = [i for i in all_items if i["category"] == "advisory"]
     threat_intel = [i for i in all_items if i["category"] == "threat_intel"]
     print(f"\nCelkem: {len(all_items)} unikátních záznamů → {out_path}")
-    print(f"  Advisories:    {len(advisories)}")
-    print(f"  Threat intel:  {len(threat_intel)}")
+    print(f"  Advisories:   {len(advisories)}")
+    print(f"  Threat intel: {len(threat_intel)}")
 
 
 if __name__ == "__main__":

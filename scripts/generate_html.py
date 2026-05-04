@@ -19,7 +19,7 @@ SOURCE_LABEL = {
     "fortinet":     "Fortinet",
     "paloalto":     "Palo Alto",
     "crowdstrike":  "CrowdStrike",
-    "sophos":       "Sophos",
+    "securelists":  "Kaspersky Securelist",
     "malwarebytes": "Malwarebytes",
 }
 

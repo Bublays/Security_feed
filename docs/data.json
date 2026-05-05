@@ -2,20 +2,20 @@
   {
     "source": "crowdstrike",
     "category": "threat_intel",
-    "id": "https://www.crowdstrike.com/?p=667179",
+    "id": "https://www.crowdstrike.com/?p=275850",
     "title": "Frontier AI Is Collapsing the Exploit Window. Here&rsquo;s How Defenders Must Respond.",
     "link": "https://www.crowdstrike.com/en-us/blog/frontier-ai-collapses-exploit-window-how-defenders-must-respond/",
-    "published": "2026-05-04T18:40:43.968197+00:00",
+    "published": "2026-05-05T02:40:28.577132+00:00",
     "summary": "",
     "severity": "UNKNOWN"
   },
   {
     "source": "crowdstrike",
     "category": "threat_intel",
-    "id": "https://www.crowdstrike.com/?p=353765",
+    "id": "https://www.crowdstrike.com/?p=812404",
     "title": "Tune In: The Future of AI-Powered Vulnerability Discovery",
     "link": "https://www.crowdstrike.com/en-us/blog/tune-in-future-of-ai-powered-vulnerability-discovery/",
-    "published": "2026-05-04T18:40:43.968098+00:00",
+    "published": "2026-05-05T02:40:28.577033+00:00",
     "summary": "",
     "severity": "UNKNOWN"
   },
@@ -80,6 +80,16 @@
     "severity": "UNKNOWN"
   },
   {
+    "source": "nvd",
+    "category": "advisory",
+    "id": "CVE-2026-33846",
+    "title": "CVE-2026-33846 (CVSS 7.5)",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-33846",
+    "published": "2026-05-04T10:15:59.690",
+    "summary": "A heap buffer overflow vulnerability exists in the DTLS handshake fragment reassembly logic of GnuTLS. The issue arises in merge_handshake_packet() where incoming handshake fragments are matched and merged based solely on handshake type, without validating that the message_length field remains consistent across all fragments of the same logical message. An attacker can exploit this by sending crafted DTLS fragments with conflicting message_length values, causing the implementation to allocate a ",
+    "severity": "HIGH"
+  },
+  {
     "source": "securelist",
     "category": "threat_intel",
     "id": "https://kasperskycontenthub.com/securelist/?p=119623",
@@ -88,6 +98,86 @@
     "published": "2026-05-04T10:00:23+00:00",
     "summary": "Kaspersky expert breaks down a new phishing scheme that uses the Amazon SES cloud email service. Let's look at some examples to see how you can tell a phishing email from a real one.",
     "severity": "UNKNOWN"
+  },
+  {
+    "source": "nvd",
+    "category": "advisory",
+    "id": "CVE-2026-7747",
+    "title": "CVE-2026-7747 (CVSS 9.8)",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-7747",
+    "published": "2026-05-04T09:16:01.117",
+    "summary": "A security flaw has been discovered in Totolink N300RH 3.2.4-B20220812. Affected by this vulnerability is the function loginauth of the file /cgi-bin/cstecgi.cgi of the component Parameter Handler. Performing a manipulation of the argument Password results in buffer overflow. The attack can be initiated remotely. The exploit has been released to the public and may be used for attacks.",
+    "severity": "CRITICAL"
+  },
+  {
+    "source": "nvd",
+    "category": "advisory",
+    "id": "CVE-2026-7746",
+    "title": "CVE-2026-7746 (CVSS 6.3)",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-7746",
+    "published": "2026-05-04T09:16:00.953",
+    "summary": "A vulnerability was identified in SourceCodester Web-based Pharmacy Product Management System 1.0. Affected is an unknown function of the file /product_expiry/edit-admin.php. Such manipulation of the argument ID leads to sql injection. It is possible to launch the attack remotely. The exploit is publicly available and might be used.",
+    "severity": "MEDIUM"
+  },
+  {
+    "source": "nvd",
+    "category": "advisory",
+    "id": "CVE-2026-7745",
+    "title": "CVE-2026-7745 (CVSS 6.3)",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-7745",
+    "published": "2026-05-04T09:16:00.793",
+    "summary": "A vulnerability was determined in CodeAstro Online Classroom 1.0. This impacts an unknown function of the file /OnlineClassroom/facultydetails. This manipulation of the argument deleteid causes sql injection. It is possible to initiate the attack remotely. The exploit has been publicly disclosed and may be utilized.",
+    "severity": "MEDIUM"
+  },
+  {
+    "source": "nvd",
+    "category": "advisory",
+    "id": "CVE-2025-14320",
+    "title": "CVE-2025-14320 (CVSS 9.8)",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-14320",
+    "published": "2026-05-04T09:15:59.643",
+    "summary": "Improper neutralization of input during web page generation ('cross-site scripting') vulnerability in Tegsoft Management and Information Services Trade Limited Company Online Support Application allows Reflected XSS.\n\nThis issue affects Online Support Application: from V3 through 31122025.",
+    "severity": "CRITICAL"
+  },
+  {
+    "source": "nvd",
+    "category": "advisory",
+    "id": "CVE-2026-7744",
+    "title": "CVE-2026-7744 (CVSS 6.3)",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-7744",
+    "published": "2026-05-04T08:16:03.010",
+    "summary": "A vulnerability was found in CodeAstro Online Classroom 1.0. This affects an unknown function of the file /OnlineClassroom/addnewstudent. The manipulation of the argument fname results in sql injection. The attack may be performed from remote. The exploit has been made public and could be used.",
+    "severity": "MEDIUM"
+  },
+  {
+    "source": "nvd",
+    "category": "advisory",
+    "id": "CVE-2026-7743",
+    "title": "CVE-2026-7743 (CVSS 6.3)",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-7743",
+    "published": "2026-05-04T08:16:02.847",
+    "summary": "A vulnerability has been found in CodeAstro Online Classroom 1.0. The impacted element is an unknown function of the file /OnlineClassroom/studentdetails. The manipulation of the argument deleteid leads to sql injection. The attack is possible to be carried out remotely. The exploit has been disclosed to the public and may be used.",
+    "severity": "MEDIUM"
+  },
+  {
+    "source": "nvd",
+    "category": "advisory",
+    "id": "CVE-2026-7742",
+    "title": "CVE-2026-7742 (CVSS 6.3)",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-7742",
+    "published": "2026-05-04T08:16:02.683",
+    "summary": "A flaw has been found in CodeAstro Online Classroom 1.0. The affected element is an unknown function of the file /OnlineClassroom/facultylogin. Executing a manipulation of the argument fid can lead to sql injection. The attack can be executed remotely. The exploit has been published and may be used.",
+    "severity": "MEDIUM"
+  },
+  {
+    "source": "nvd",
+    "category": "advisory",
+    "id": "CVE-2026-7741",
+    "title": "CVE-2026-7741 (CVSS 6.3)",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-7741",
+    "published": "2026-05-04T08:16:02.007",
+    "summary": "A vulnerability was detected in CodeAstro Online Classroom 1.0. Impacted is an unknown function of the file /OnlineClassroom/studentlogin. Performing a manipulation of the argument sid results in sql injection. Remote exploitation of the attack is possible. The exploit is now public and may be used.",
+    "severity": "MEDIUM"
   },
   {
     "source": "nvd",
@@ -223,11 +313,11 @@
     "source": "nvd",
     "category": "advisory",
     "id": "CVE-2026-29199",
-    "title": "CVE-2026-29199 (CVSS N/A)",
+    "title": "CVE-2026-29199 (CVSS 8.1)",
     "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-29199",
     "published": "2026-05-04T07:15:59.960",
     "summary": "phpBB before 3.3.16 is vulnerable to Host Header Injection that can lead to password rest link poisoning. When force_server_vars is disabled, the servers hostname may be extracted from the HTTP Host header which is used to generate the password reset link URL. An attacker who can manipulate the Host header (e.g. through misconfigured host setup or missing header validation by the webserver) can cause password reset emails to contain a link pointing to an attacker-controlled domain, potentially l",
-    "severity": "UNKNOWN"
+    "severity": "HIGH"
   },
   {
     "source": "nvd",
@@ -406,7 +496,7 @@
     "title": "CVE-2026-7723 (CVSS 7.3)",
     "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-7723",
     "published": "2026-05-04T03:16:13.143",
-    "summary": "A flaw has been found in PrefectHQ prefect up to 3.6.13. Affected is an unknown function of the file /api/events/in of the component WebSocket Endpoint. Executing a manipulation can lead to missing authentication. The attack may be performed from remote. The exploit has been published and may be used. Upgrading to version 3.6.14 is able to address this issue. This patch is called 0d3ab3c2d3f9f98abfafdf7b9f6d4f8ed3925e40. It is recommended to upgrade the affected component.",
+    "summary": "A flaw has been found in PrefectHQ prefect up to 3.6.13. Affected is an unknown function of the file /api/events/in of the component WebSocket Endpoint. Executing a manipulation can lead to missing authentication. The attack may be performed from remote. The exploit has been published and may be used. Upgrading to version 3.6.14 is able to address this issue. This patch is called f8afecadf88ea5f73694dafa3a365b9d8fae1ad6. It is recommended to upgrade the affected component. The vendor was contact",
     "severity": "HIGH"
   },
   {
@@ -416,7 +506,7 @@
     "title": "CVE-2026-7722 (CVSS 5.3)",
     "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-7722",
     "published": "2026-05-04T03:16:12.967",
-    "summary": "A vulnerability was detected in PrefectHQ prefect up to 3.6.21. This impacts the function endswith of the file /api/health of the component Health Check API. Performing a manipulation results in improper authentication. The attack is possible to be carried out remotely. The exploit is now public and may be used. Upgrading to version 3.6.22 will fix this issue. Upgrading the affected component is recommended.",
+    "summary": "A vulnerability was detected in PrefectHQ prefect up to 3.6.21. This impacts the function endswith of the file /api/health of the component Health Check API. Performing a manipulation results in improper authentication. The attack is possible to be carried out remotely. The exploit is now public and may be used. Upgrading to version 3.6.22 will fix this issue. The patch is named e21617125335025b4b27e7d6f0ca028e8e8f3b79. Upgrading the affected component is recommended. The vendor was contacted ea",
     "severity": "MEDIUM"
   },
   {
@@ -1167,96 +1257,6 @@
     "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-7675",
     "published": "2026-05-03T03:16:15.613",
     "summary": "A vulnerability has been found in Shenzhen Libituo Technology LBT-T300-HW1 up to 1.2.8. Impacted is the function start_lan of the file /apply.cgi. The manipulation of the argument Channel/ApCliSsid leads to buffer overflow. The attack is possible to be carried out remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-    "severity": "HIGH"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-7674",
-    "title": "CVE-2026-7674 (CVSS 8.8)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-7674",
-    "published": "2026-05-03T02:17:12.993",
-    "summary": "A flaw has been found in Shenzhen Libituo Technology LBT-T300-HW1 up to 1.2.8. This issue affects the function start_single_service of the component Web Management Interface. Executing a manipulation of the argument vpn_pptp_server/vpn_l2tp_server can lead to buffer overflow. The attack can be executed remotely. The vendor was contacted early about this disclosure but did not respond in any way.",
-    "severity": "HIGH"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-7673",
-    "title": "CVE-2026-7673 (CVSS 4.7)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-7673",
-    "published": "2026-05-03T02:17:12.537",
-    "summary": "A vulnerability was detected in crmeb_java up to 1.3.4. This vulnerability affects unknown code of the file crmeb/crmeb-service/src/main/java/com/zbkj/service/service/impl/UploadServiceImpl.java of the component Admin Upload. Performing a manipulation of the argument model results in unrestricted upload. Remote exploitation of the attack is possible. The exploit is now public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-    "severity": "MEDIUM"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-40561",
-    "title": "CVE-2026-40561 (CVSS 5.3)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-40561",
-    "published": "2026-05-03T01:15:58.390",
-    "summary": "Starlet versions through 0.31 for Perl allows HTTP Request Smuggling via Improper Header Precedence.\n\nStarlet incorrectly prioritizes \"Content-Length\" over \"Transfer-Encoding: chunked\" when both headers are present in an HTTP request. Per RFC 7230 3.3.3, Transfer-Encoding must take precedence.\n\nAn attacker could exploit this to smuggle malicious HTTP requests via a front-end reverse proxy.",
-    "severity": "MEDIUM"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-7672",
-    "title": "CVE-2026-7672 (CVSS 6.3)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-7672",
-    "published": "2026-05-03T00:16:16.317",
-    "summary": "A security vulnerability has been detected in youlaitech youlai-boot up to 2.21.1. This affects the function getUserList of the file src/main/java/com/youlai/boot/system/controller/UserController.java of the component Users Endpoint. Such manipulation of the argument order leads to sql injection. The attack may be launched remotely. The exploit has been disclosed publicly and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-    "severity": "MEDIUM"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-7671",
-    "title": "CVE-2026-7671 (CVSS 3.7)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-7671",
-    "published": "2026-05-03T00:16:16.157",
-    "summary": "A vulnerability has been found in CodeWise Tornet Scooter Mobile App 4.75 on iOS/Android. The impacted element is an unknown function of the file /TwoFactor. Such manipulation leads to improper restriction of excessive authentication attempts. The attack may be performed from remote. Attacks of this nature are highly complex. The exploitability is regarded as difficult. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not ",
-    "severity": "LOW"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-7670",
-    "title": "CVE-2026-7670 (CVSS 7.3)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-7670",
-    "published": "2026-05-02T23:16:16.860",
-    "summary": "A flaw has been found in Jinher OA 1.0. The affected element is an unknown function of the file /C6/JHSoft.Web.PlanSummarize/UserSel.aspx. This manipulation of the argument DeptIDList causes sql injection. The attack is possible to be carried out remotely. The exploit has been published and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-    "severity": "HIGH"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-6481",
-    "title": "CVE-2026-6481 (CVSS N/A)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-6481",
-    "published": "2026-05-02T23:16:16.783",
-    "summary": "Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.",
-    "severity": "UNKNOWN"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-7669",
-    "title": "CVE-2026-7669 (CVSS 5.6)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-7669",
-    "published": "2026-05-02T22:16:24.080",
-    "summary": "A vulnerability was detected in sgl-project SGLang up to 0.5.9. Impacted is the function get_tokenizer of the file python/sglang/srt/utils/hf_transformers_utils.py of the component HuggingFace Transformer Handler. The manipulation of the argument trust_remote_code with the input False as part of Boolean results in code injection. The attack can be executed remotely. A high complexity level is associated with this attack. The exploitability is considered difficult. In get_tokenizer(), when the ca",
-    "severity": "MEDIUM"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-7668",
-    "title": "CVE-2026-7668 (CVSS 7.3)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-7668",
-    "published": "2026-05-02T21:16:07.677",
-    "summary": "A vulnerability was identified in MikroTik RouterOS 6.49.8. This vulnerability affects the function ASN1_STRING_data in the library nova/lib/www/scep.p of the component SCEP Endpoint. The manipulation of the argument transactionID/messageType leads to out-of-bounds read. The attack may be initiated remotely. The exploit is publicly available and might be used. The vendor was contacted early about this disclosure but did not respond in any way.",
     "severity": "HIGH"
   }
 ]

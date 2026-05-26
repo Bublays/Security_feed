@@ -273,14 +273,14 @@
   </div>
   <div class="topbar-meta">
     <span class="live-dot"></span>
-    2026-05-25 06:40 UTC &nbsp;·&nbsp; interval 48 h
+    2026-05-26 06:40 UTC &nbsp;·&nbsp; interval 48 h
   </div>
 </div>
 
 <div class="page">
 
   <div class="stat-row">
-    <div class="sc sc-critical"><div class="sc-n">0</div><div class="sc-l">CRITICAL</div></div><div class="sc sc-high"><div class="sc-n">0</div><div class="sc-l">HIGH</div></div><div class="sc sc-medium"><div class="sc-n">0</div><div class="sc-l">MEDIUM</div></div><div class="sc sc-low"><div class="sc-n">6</div><div class="sc-l">LOW</div></div>
+    <div class="sc sc-critical"><div class="sc-n">0</div><div class="sc-l">CRITICAL</div></div><div class="sc sc-high"><div class="sc-n">0</div><div class="sc-l">HIGH</div></div><div class="sc sc-medium"><div class="sc-n">0</div><div class="sc-l">MEDIUM</div></div><div class="sc sc-low"><div class="sc-n">5</div><div class="sc-l">LOW</div></div>
   </div>
 
   <!-- CVE Advisories panel -->
@@ -288,7 +288,7 @@
     <div class="panel-header">
       <span class="panel-title">Bezpečnostní advisories</span>
       <span class="panel-subtitle">CVE · strukturované záznamy</span>
-      <span class="record-pill pill-blue" id="adv-count">35 záznamů</span>
+      <span class="record-pill pill-blue" id="adv-count">13 záznamů</span>
     </div>
     <div class="filters">
       <div class="filter-group">
@@ -306,6 +306,7 @@
         <select id="f-src" onchange="applyAdvisoryFilters()">
           <option value="">Vše</option>
           <option value="msrc">Microsoft MSRC</option>
+<option value="ubuntu">Ubuntu</option>
         </select>
       </div>
       <div class="filter-group">
@@ -332,312 +333,79 @@
           </tr>
         </thead>
         <tbody id="adv-tbody">
-                <tr class="advisory-row" data-severity="low" data-source="msrc">
+                <tr class="advisory-row" data-severity="low" data-source="ubuntu">
         <td><div class="sev-bar sev-low"></div></td>
         <td>
-          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-14575" target="_blank" rel="noopener" class="advisory-link">CVE-2025-14575 Uncontrolled Search Path Element in Qt Network OpenSSL TLS backend allows rogue CA certificate loading</a>
-          <div class="summary">Information published.</div>
+          <a href="https://ubuntu.com/security/notices/USN-8296-2" target="_blank" rel="noopener" class="advisory-link">USN-8296-2: Linux kernel (NVIDIA Tegra) vulnerabilities</a>
+          <div class="summary">Several security issues were discovered in the Linux kernel.
+An attacker could possibly use these to compromise the system.
+This update corrects flaws in the following subsystems:
+  - ARM64 architecture;
+  - x86 architecture;
+  - Compute Acceleration Framework;
+  - Drivers core;
+  - Null block devic</div>
         </td>
         <td><span class="badge sev-low">LOW</span></td>
-        <td><span class="src-badge">Microsoft MSRC</span></td>
-        <td class="dt">2026-05-23 08:02</td>
-      </tr>      <tr class="advisory-row" data-severity="low" data-source="msrc">
+        <td><span class="src-badge">Ubuntu</span></td>
+        <td class="dt">2026-05-25 16:46</td>
+      </tr>      <tr class="advisory-row" data-severity="low" data-source="ubuntu">
         <td><div class="sev-bar sev-low"></div></td>
         <td>
-          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-43618" target="_blank" rel="noopener" class="advisory-link">CVE-2026-43618 Rsync < 3.4.3 Integer Overflow Information Disclosure</a>
-          <div class="summary">Information published.</div>
+          <a href="https://ubuntu.com/security/notices/USN-8291-3" target="_blank" rel="noopener" class="advisory-link">USN-8291-3: Linux kernel (Low Latency) vulnerabilities</a>
+          <div class="summary">Several security issues were discovered in the Linux kernel.
+An attacker could possibly use these to compromise the system.
+This update corrects flaws in the following subsystems:
+  - SMB network file system;
+  - Netfilter;
+  - io_uring subsystem;
+(CVE-2024-35862, CVE-2024-50060, CVE-2026-23274, CVE</div>
         </td>
         <td><span class="badge sev-low">LOW</span></td>
-        <td><span class="src-badge">Microsoft MSRC</span></td>
-        <td class="dt">2026-05-23 08:38</td>
-      </tr>      <tr class="advisory-row" data-severity="low" data-source="msrc">
+        <td><span class="src-badge">Ubuntu</span></td>
+        <td class="dt">2026-05-25 16:52</td>
+      </tr>      <tr class="advisory-row" data-severity="low" data-source="ubuntu">
         <td><div class="sev-bar sev-low"></div></td>
         <td>
-          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-29518" target="_blank" rel="noopener" class="advisory-link">CVE-2026-29518 Rsync < 3.4.3 TOCTOU Race Condition Allows Symlink-Based Arbitrary File Write</a>
-          <div class="summary">Information published.</div>
+          <a href="https://ubuntu.com/security/notices/USN-8289-2" target="_blank" rel="noopener" class="advisory-link">USN-8289-2: Linux kernel (NVIDIA) vulnerabilities</a>
+          <div class="summary">It was discovered that the Linux kernel algif_aead module did not properly
+handle in-place cryptographic operations. This flaw is known as Copy Fail.
+A local attacker could use this to escalate privileges, or possibly escape
+a container. (CVE-2026-31431)
+
+Several security issues were discovered in t</div>
         </td>
         <td><span class="badge sev-low">LOW</span></td>
-        <td><span class="src-badge">Microsoft MSRC</span></td>
-        <td class="dt">2026-05-23 08:38</td>
-      </tr>      <tr class="advisory-row" data-severity="low" data-source="msrc">
+        <td><span class="src-badge">Ubuntu</span></td>
+        <td class="dt">2026-05-25 17:48</td>
+      </tr>      <tr class="advisory-row" data-severity="low" data-source="ubuntu">
         <td><div class="sev-bar sev-low"></div></td>
         <td>
-          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42944" target="_blank" rel="noopener" class="advisory-link">CVE-2026-42944 Heap overflow with multiple NSID, COOKIE, PADDING EDNS options</a>
-          <div class="summary">Information published.</div>
+          <a href="https://ubuntu.com/security/notices/USN-8279-3" target="_blank" rel="noopener" class="advisory-link">USN-8279-3: Linux kernel (NVIDIA Tegra IGX) vulnerabilities</a>
+          <div class="summary">It was discovered that the Linux kernel algif_aead module did not properly
+handle in-place cryptographic operations. This flaw is known as Copy Fail.
+A local attacker could use this to escalate privileges, or possibly escape
+a container. (CVE-2026-31431)
+
+Several security issues were discovered in t</div>
         </td>
         <td><span class="badge sev-low">LOW</span></td>
-        <td><span class="src-badge">Microsoft MSRC</span></td>
-        <td class="dt">2026-05-23 08:40</td>
-      </tr>      <tr class="advisory-row" data-severity="low" data-source="msrc">
+        <td><span class="src-badge">Ubuntu</span></td>
+        <td class="dt">2026-05-25 22:51</td>
+      </tr>      <tr class="advisory-row" data-severity="low" data-source="ubuntu">
         <td><div class="sev-bar sev-low"></div></td>
         <td>
-          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-51480" target="_blank" rel="noopener" class="advisory-link">CVE-2025-51480 Path Traversal vulnerability in onnx.external_data_helper.save_external_data in ONNX 1.17.0 allows attack</a>
-          <div class="summary">Information published.</div>
+          <a href="https://ubuntu.com/security/notices/USN-8305-1" target="_blank" rel="noopener" class="advisory-link">USN-8305-1: Linux kernel (Intel IoTG Real-time) vulnerabilities</a>
+          <div class="summary">It was discovered that the Linux kernel algif_aead module did not properly
+handle in-place cryptographic operations. This flaw is known as Copy Fail.
+A local attacker could use this to escalate privileges, or possibly escape
+a container. (CVE-2026-31431)
+
+Several security issues were discovered in t</div>
         </td>
         <td><span class="badge sev-low">LOW</span></td>
-        <td><span class="src-badge">Microsoft MSRC</span></td>
-        <td class="dt">2026-05-23 08:40</td>
-      </tr>      <tr class="advisory-row" data-severity="low" data-source="msrc">
-        <td><div class="sev-bar sev-low"></div></td>
-        <td>
-          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-44673" target="_blank" rel="noopener" class="advisory-link">CVE-2026-44673 libyang: lyb_read_string() integer overflow → heap buffer overflow</a>
-          <div class="summary">Information published.</div>
-        </td>
-        <td><span class="badge sev-low">LOW</span></td>
-        <td><span class="src-badge">Microsoft MSRC</span></td>
-        <td class="dt">2026-05-23 08:44</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3039" target="_blank" rel="noopener" class="advisory-link">CVE-2026-3039 BIND 9 server memory exhaustion during GSS-API TKEY negotiation</a>
-          <div class="summary">Information published.</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">Microsoft MSRC</span></td>
-        <td class="dt">2026-05-23 08:01</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3592" target="_blank" rel="noopener" class="advisory-link">CVE-2026-3592 Amplification vulnerabilities via self-pointed glue records</a>
-          <div class="summary">Information published.</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">Microsoft MSRC</span></td>
-        <td class="dt">2026-05-23 08:01</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3593" target="_blank" rel="noopener" class="advisory-link">CVE-2026-3593 Heap use-after-free vulnerability in BIND 9 DNS-over-HTTPS implementation</a>
-          <div class="summary">Information published.</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">Microsoft MSRC</span></td>
-        <td class="dt">2026-05-23 08:01</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-5946" target="_blank" rel="noopener" class="advisory-link">CVE-2026-5946 Invalid handling of CLASS != IN</a>
-          <div class="summary">Information published.</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">Microsoft MSRC</span></td>
-        <td class="dt">2026-05-23 08:01</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-5947" target="_blank" rel="noopener" class="advisory-link">CVE-2026-5947 SIG(0) validation during query flood may lead to undefined behavior</a>
-          <div class="summary">Information published.</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">Microsoft MSRC</span></td>
-        <td class="dt">2026-05-23 08:01</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-5950" target="_blank" rel="noopener" class="advisory-link">CVE-2026-5950 Unbounded resend loop in BIND 9 resolver</a>
-          <div class="summary">Information published.</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">Microsoft MSRC</span></td>
-        <td class="dt">2026-05-23 08:01</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42009" target="_blank" rel="noopener" class="advisory-link">CVE-2026-42009 Gnutls: gnutls: denial of service via dtls packet reordering vulnerability</a>
-          <div class="summary">Information published.</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">Microsoft MSRC</span></td>
-        <td class="dt">2026-05-23 08:01</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-8711" target="_blank" rel="noopener" class="advisory-link">CVE-2026-8711 NGINX JavaScript vulnerability</a>
-          <div class="summary">Information published.</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">Microsoft MSRC</span></td>
-        <td class="dt">2026-05-23 08:02</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-8723" target="_blank" rel="noopener" class="advisory-link">CVE-2026-8723 qs.stringify crashes on null/undefined entries in comma-format arrays under encodeValuesOnly</a>
-          <div class="summary">Information published.</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">Microsoft MSRC</span></td>
-        <td class="dt">2026-05-23 08:02</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-43620" target="_blank" rel="noopener" class="advisory-link">CVE-2026-43620 Rsync < 3.4.3 Out-of-Bounds Array Read via recv_files()</a>
-          <div class="summary">Information published.</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">Microsoft MSRC</span></td>
-        <td class="dt">2026-05-23 08:38</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-43617" target="_blank" rel="noopener" class="advisory-link">CVE-2026-43617 Rsync < 3.4.3 Authorization Bypass via Hostname Resolution</a>
-          <div class="summary">Information published.</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">Microsoft MSRC</span></td>
-        <td class="dt">2026-05-23 08:38</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45232" target="_blank" rel="noopener" class="advisory-link">CVE-2026-45232 Rsync < 3.4.3 Off-by-One Stack Write via HTTP Proxy</a>
-          <div class="summary">Information published.</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">Microsoft MSRC</span></td>
-        <td class="dt">2026-05-23 08:38</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32792" target="_blank" rel="noopener" class="advisory-link">CVE-2026-32792 Packet of death with DNSCrypt</a>
-          <div class="summary">Information published.</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">Microsoft MSRC</span></td>
-        <td class="dt">2026-05-23 08:39</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42960" target="_blank" rel="noopener" class="advisory-link">CVE-2026-42960 Possible cache poisoning via promiscuous records for the authority section</a>
-          <div class="summary">Information published.</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">Microsoft MSRC</span></td>
-        <td class="dt">2026-05-23 08:39</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42959" target="_blank" rel="noopener" class="advisory-link">CVE-2026-42959 Crash during DNSSEC validation of malicious content</a>
-          <div class="summary">Information published.</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">Microsoft MSRC</span></td>
-        <td class="dt">2026-05-23 08:39</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-44608" target="_blank" rel="noopener" class="advisory-link">CVE-2026-44608 Use after free and crash under special conditions in RPZ code</a>
-          <div class="summary">Information published.</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">Microsoft MSRC</span></td>
-        <td class="dt">2026-05-23 08:39</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41035" target="_blank" rel="noopener" class="advisory-link">CVE-2026-41035 In rsync 3.0.1 through 3.4.1, receive_xattr relies on an untrusted length value during a qsort call, lead</a>
-          <div class="summary">Information published.</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">Microsoft MSRC</span></td>
-        <td class="dt">2026-05-23 08:39</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33278" target="_blank" rel="noopener" class="advisory-link">CVE-2026-33278 Possible arbitrary code execution during DNSSEC validation</a>
-          <div class="summary">Information published.</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">Microsoft MSRC</span></td>
-        <td class="dt">2026-05-23 08:39</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41292" target="_blank" rel="noopener" class="advisory-link">CVE-2026-41292 Long list of incoming EDNS options degrades performance</a>
-          <div class="summary">Information published.</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">Microsoft MSRC</span></td>
-        <td class="dt">2026-05-23 08:39</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42534" target="_blank" rel="noopener" class="advisory-link">CVE-2026-42534 Jostle logic bypass degrades resolution performance</a>
-          <div class="summary">Information published.</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">Microsoft MSRC</span></td>
-        <td class="dt">2026-05-23 08:40</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38140" target="_blank" rel="noopener" class="advisory-link">CVE-2025-38140 dm: limit swapping tables for devices with zone write plugs</a>
-          <div class="summary">Information published.</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">Microsoft MSRC</span></td>
-        <td class="dt">2026-05-23 08:40</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40622" target="_blank" rel="noopener" class="advisory-link">CVE-2026-40622 Another 'ghost domain names' attack variant</a>
-          <div class="summary">Information published.</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">Microsoft MSRC</span></td>
-        <td class="dt">2026-05-23 08:40</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38096" target="_blank" rel="noopener" class="advisory-link">CVE-2025-38096 wifi: iwlwifi: don't warn when if there is a FW error</a>
-          <div class="summary">Information published.</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">Microsoft MSRC</span></td>
-        <td class="dt">2026-05-23 08:40</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42923" target="_blank" rel="noopener" class="advisory-link">CVE-2026-42923 Degradation of service with unbounded NSEC3 hash calculations</a>
-          <div class="summary">Information published.</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">Microsoft MSRC</span></td>
-        <td class="dt">2026-05-23 08:40</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-44390" target="_blank" rel="noopener" class="advisory-link">CVE-2026-44390 Unbounded name compression in certain cases causes degradation of service</a>
-          <div class="summary">Information published.</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">Microsoft MSRC</span></td>
-        <td class="dt">2026-05-23 08:40</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68768" target="_blank" rel="noopener" class="advisory-link">CVE-2025-68768 inet: frags: flush pending skbs in fqdir_pre_exit()</a>
-          <div class="summary">Information published.</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">Microsoft MSRC</span></td>
-        <td class="dt">2026-05-23 08:42</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-7246" target="_blank" rel="noopener" class="advisory-link">CVE-2026-7246 Pallets Click contains a command injection via Unsanitized Filename "click.edit()"</a>
-          <div class="summary">Information published.</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">Microsoft MSRC</span></td>
-        <td class="dt">2026-05-23 08:44</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-43619" target="_blank" rel="noopener" class="advisory-link">CVE-2026-43619 Rsync < 3.4.3 Symlink Race Condition via Path-Based Syscalls</a>
-          <div class="summary">Information published.</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">Microsoft MSRC</span></td>
-        <td class="dt">2026-05-23 08:44</td>
+        <td><span class="src-badge">Ubuntu</span></td>
+        <td class="dt">2026-05-25 23:21</td>
       </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
         <td><div class="sev-bar sev-unknown"></div></td>
         <td>
@@ -647,6 +415,89 @@
         <td><span class="badge sev-unknown">UNKNOWN</span></td>
         <td><span class="src-badge">Microsoft MSRC</span></td>
         <td class="dt">2026-05-24 08:42</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-43414" target="_blank" rel="noopener" class="advisory-link">CVE-2026-43414 scsi: qla2xxx: Completely fix fcport double free</a>
+          <div class="summary">Information published.</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">Microsoft MSRC</span></td>
+        <td class="dt">2026-05-25 08:01</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-43029" target="_blank" rel="noopener" class="advisory-link">CVE-2026-43029 mptcp: fix soft lockup in mptcp_recvmsg()</a>
+          <div class="summary">Information published.</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">Microsoft MSRC</span></td>
+        <td class="dt">2026-05-25 08:01</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="ubuntu">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://ubuntu.com/security/notices/USN-8299-1" target="_blank" rel="noopener" class="advisory-link">USN-8299-1: Rclone vulnerabilities</a>
+          <div class="summary">It was discovered that Rclone incorrectly handled authorization in the remote
+control API. An attacker could possibly use this issue to obtain sensitive
+information. (CVE-2026-41176)
+
+It was discovered that Rclone incorrectly handled backend instantiation via the
+remote control API. An attacker coul</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">Ubuntu</span></td>
+        <td class="dt">2026-05-25 08:24</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="ubuntu">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://ubuntu.com/security/notices/USN-8300-1" target="_blank" rel="noopener" class="advisory-link">USN-8300-1: ngtcp2 vulnerability</a>
+          <div class="summary">Zou Dikai discovered that ngtcp2 serialized peer transport parameters into
+a fixed 1024-byte stack buffer without bounds checking. When qlog was
+enabled, a remote attacker could possibly use this issue to execute
+arbitrary code.</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">Ubuntu</span></td>
+        <td class="dt">2026-05-25 10:58</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="ubuntu">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://ubuntu.com/security/notices/USN-8301-1" target="_blank" rel="noopener" class="advisory-link">USN-8301-1: SimpleEval vulnerability</a>
+          <div class="summary">Byambadalai Sumiya discovered that SimpleEval did not properly restrict
+attribute access and callback handling inside a sandbox. An attacker could
+possibly use this issue to execute arbitrary code.</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">Ubuntu</span></td>
+        <td class="dt">2026-05-25 15:09</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="ubuntu">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://ubuntu.com/security/notices/USN-8302-1" target="_blank" rel="noopener" class="advisory-link">USN-8302-1: NLTK vulnerabilities</a>
+          <div class="summary">It was discovered that NLTK incorrectly validated file paths when
+opening files using the nltk.util module. An attacker could possibly
+use this issue to obtain sensitive information. (CVE-2026-0846)
+
+It was discovered that NLTK incorrectly validated file paths in
+multiple CorpusReader classes. An at</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">Ubuntu</span></td>
+        <td class="dt">2026-05-25 15:53</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="ubuntu">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://ubuntu.com/security/notices/USN-8304-1" target="_blank" rel="noopener" class="advisory-link">USN-8304-1: Vim vulnerabilities</a>
+          <div class="summary">Joshua Rogers discovered that Vim incorrectly handled certain URL schemes
+in the netrw plugin. An attacker could possibly use this issue to execute
+arbitrary commands. (CVE-2026-42307)
+
+It was discovered that Vim incorrectly handled command-line completion for
+the :find command. An attacker could po</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">Ubuntu</span></td>
+        <td class="dt">2026-05-25 18:02</td>
       </tr>
         </tbody>
       </table>
@@ -659,7 +510,7 @@
     <div class="panel-header">
       <span class="panel-title">Analýza hrozeb</span>
       <span class="panel-subtitle">CrowdStrike · Sophos · Malwarebytes</span>
-      <span class="record-pill pill-purple" id="intel-count">5 záznamů</span>
+      <span class="record-pill pill-purple" id="intel-count">6 záznamů</span>
     </div>
     <div class="filters">
       <div class="filter-group">
@@ -667,6 +518,7 @@
         <select id="f-intel-src" onchange="applyIntelFilters()">
           <option value="">Vše</option>
           <option value="crowdstrike">CrowdStrike</option>
+<option value="malwarebytes">Malwarebytes</option>
         </select>
       </div>
       <div class="filter-group">
@@ -695,35 +547,42 @@
           <div class="summary"></div>
         </td>
         <td><span class="src-badge">CrowdStrike</span></td>
-        <td class="dt">2026-05-25 06:40</td>
+        <td class="dt">2026-05-26 06:40</td>
       </tr>      <tr class="intel-row" data-source="crowdstrike">
         <td>
           <a href="https://www.crowdstrike.com/en-us/blog/ai-threat-detection-with-automated-leads/" target="_blank" rel="noopener" class="advisory-link">Inside CrowdStrike Automated Leads: A Transformative Approach to Threat Detections</a>
           <div class="summary"></div>
         </td>
         <td><span class="src-badge">CrowdStrike</span></td>
-        <td class="dt">2026-05-25 06:40</td>
+        <td class="dt">2026-05-26 06:40</td>
       </tr>      <tr class="intel-row" data-source="crowdstrike">
         <td>
           <a href="https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-may-2026/" target="_blank" rel="noopener" class="advisory-link">May 2026 Patch Tuesday: 30 Critical Vulnerabilities Among 130 CVEs</a>
           <div class="summary"></div>
         </td>
         <td><span class="src-badge">CrowdStrike</span></td>
-        <td class="dt">2026-05-25 06:40</td>
+        <td class="dt">2026-05-26 06:40</td>
       </tr>      <tr class="intel-row" data-source="crowdstrike">
         <td>
           <a href="https://www.crowdstrike.com/en-us/blog/falcon-aidr-detects-threats-at-prompt-layer-in-kubernetes-ai-apps/" target="_blank" rel="noopener" class="advisory-link">Falcon AIDR Detects Threats at the Prompt Layer in Kubernetes AI Applications</a>
           <div class="summary"></div>
         </td>
         <td><span class="src-badge">CrowdStrike</span></td>
-        <td class="dt">2026-05-25 06:40</td>
+        <td class="dt">2026-05-26 06:40</td>
       </tr>      <tr class="intel-row" data-source="crowdstrike">
         <td>
           <a href="https://www.crowdstrike.com/en-us/blog/crowdstrike-2026-financial-services-threat-landscape-report/" target="_blank" rel="noopener" class="advisory-link">Now Live: The CrowdStrike 2026 Financial Services Threat Landscape Report</a>
           <div class="summary"></div>
         </td>
         <td><span class="src-badge">CrowdStrike</span></td>
-        <td class="dt">2026-05-25 06:40</td>
+        <td class="dt">2026-05-26 06:40</td>
+      </tr>      <tr class="intel-row" data-source="malwarebytes">
+        <td>
+          <a href="https://www.malwarebytes.com/blog/news/2026/05/a-week-in-security-may-18-may-24" target="_blank" rel="noopener" class="advisory-link">A week in security (May 18 &#8211; May 24)</a>
+          <div class="summary">A list of topics we covered in the week of May 18 to May 24 of 2026</div>
+        </td>
+        <td><span class="src-badge">Malwarebytes</span></td>
+        <td class="dt">2026-05-25 07:02</td>
       </tr>
         </tbody>
       </table>

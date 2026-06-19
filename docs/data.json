@@ -2,22 +2,472 @@
   {
     "source": "crowdstrike",
     "category": "threat_intel",
-    "id": "https://www.crowdstrike.com/?p=162852",
+    "id": "https://www.crowdstrike.com/?p=147982",
     "title": "June 2026 Patch Tuesday: Microsoft Patches 206 Vulnerabilities Including Three Publicly Disclosed Zero-Days",
     "link": "https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-june-2026/",
-    "published": "2026-06-18T06:40:39.088581+00:00",
+    "published": "2026-06-19T06:41:37.330231+00:00",
     "summary": "",
     "severity": "UNKNOWN"
   },
   {
     "source": "crowdstrike",
     "category": "threat_intel",
-    "id": "https://www.crowdstrike.com/?p=695372",
+    "id": "https://www.crowdstrike.com/?p=291821",
     "title": "CrowdStrike 2026 Technology Threat Landscape Report: China&rsquo;s Ambitions Fuel Attacks",
     "link": "https://www.crowdstrike.com/en-us/blog/crowdstrike-2026-technology-threat-landscape-report/",
-    "published": "2026-06-18T06:40:39.088554+00:00",
+    "published": "2026-06-19T06:41:37.330212+00:00",
     "summary": "",
     "severity": "UNKNOWN"
+  },
+  {
+    "source": "crowdstrike",
+    "category": "threat_intel",
+    "id": "https://www.crowdstrike.com/?p=518930",
+    "title": "New Abuse of the ClickOnce Technology, Part 2: Stop Threat Actors from Clicking Once and Staying Forever",
+    "link": "https://www.crowdstrike.com/en-us/blog/new-abuse-of-the-clickonce-technology-part-two/",
+    "published": "2026-06-19T06:41:37.330095+00:00",
+    "summary": "",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "ubuntu",
+    "category": "advisory",
+    "id": "https://ubuntu.com/security/notices/USN-8447-2",
+    "title": "USN-8447-2: LXD vulnerabilities",
+    "link": "https://ubuntu.com/security/notices/USN-8447-2",
+    "published": "2026-06-18T20:05:09+00:00",
+    "summary": "USN-8447-1 fixed vulnerabilities in Go Cryptography. This update provides\nthe corresponding updates for Go Cryptography code embedded in LXD for\nCVE-2026-39830, CVE-2026-39833, CVE-2026-39834, and CVE-2026-42508.\n\nOriginal advisory details:\n\n It was discovered that Go Cryptography did not properly handle SSH global\n request responses. A remote attacker could possibly use this issue to cause\n a denial of service. (CVE-2026-39830)\n\n It was discovered that Go Cryptography did not properly verify us",
+    "severity": "CRITICAL"
+  },
+  {
+    "source": "google",
+    "category": "advisory",
+    "id": "tag:blogger.com,1999:blog-8982037438137564684.post-4062491250183708757",
+    "title": "Beta Channel Update for ChromeOS / ChromeOS Flex",
+    "link": "http://chromereleases.googleblog.com/2026/06/beta-channel-update-for-chromeos_0409608557.html",
+    "published": "2026-06-18T18:21:43+00:00",
+    "summary": "<p><span>The Beta channel is being updated to OS version 16700.20.0 (Browser version 150.0.7871.32) for most ChromeOS devices.</span></p><span id=\"docs-internal-guid-c1ba22c3-7fff-ee9a-d166-2f57ca700f9e\"><p dir=\"ltr\" style=\"line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;\"><span style=\"font-family: Arial, sans-serif; font-variant: normal; vertical-align: baseline; white-space: pre-wrap;\">If you find new issues, please let us know one of the following ways:</span></p><br /><ol style=\"margi",
+    "severity": "LOW"
+  },
+  {
+    "source": "google",
+    "category": "advisory",
+    "id": "tag:blogger.com,1999:blog-8982037438137564684.post-1886926933171303116",
+    "title": "Chrome Dev for Android Update",
+    "link": "http://chromereleases.googleblog.com/2026/06/chrome-dev-for-android-update_01200124948.html",
+    "published": "2026-06-18T17:28:32+00:00",
+    "summary": "<p>Hi everyone! We've just released Chrome Dev 151 (151.0.7896.3) for Android. It's now available on <a href=\"https://play.google.com/store/apps/details?id=com.chrome.dev\">Google Play</a>.</p><p>You can see a partial list of the changes in the <a href=\"https://chromium.googlesource.com/chromium/src/+log/151.0.7885.0..151.0.7896.3?pretty=fuller&amp;n=10000\">Git log</a>. For details on new features, check out the <a href=\"https://blog.chromium.org\">Chromium blog</a>, and for details on web platfor",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "ubuntu",
+    "category": "advisory",
+    "id": "https://ubuntu.com/security/notices/USN-8454-1",
+    "title": "USN-8454-1: libheif vulnerabilities",
+    "link": "https://ubuntu.com/security/notices/USN-8454-1",
+    "published": "2026-06-18T16:41:59+00:00",
+    "summary": "Elhanan Haenel discovered that libheif incorrectly handled certain\nmalformed HEIF sequence files. An attacker could possibly use this\nissue to cause a denial of service. This issue only affected Ubuntu 25.10\nand Ubuntu 26.04 LTS. (CVE-2026-32738)\n\nElhanan Haenel discovered that libheif incorrectly handled certain\nmalformed HEIF sequence files, leading to an infinite loop. An attacker\ncould possibly use this issue to cause libheif to use excessive\nresources, resulting in a denial of service. This",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "ubuntu",
+    "category": "advisory",
+    "id": "https://ubuntu.com/security/notices/USN-8452-1",
+    "title": "USN-8452-1: pbkdf2 vulnerability",
+    "link": "https://ubuntu.com/security/notices/USN-8452-1",
+    "published": "2026-06-18T16:30:44+00:00",
+    "summary": "Nikita Skovoroda discovered that pbkdf2 did not properly validate\ncertain algorithm names. An attacker could possibly use this issue to\ngenerate predictable cryptographic keys, resulting in signature spoofing.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "ubuntu",
+    "category": "advisory",
+    "id": "https://ubuntu.com/security/notices/USN-8453-1",
+    "title": "USN-8453-1: Net::CIDR::Lite vulnerabilities",
+    "link": "https://ubuntu.com/security/notices/USN-8453-1",
+    "published": "2026-06-18T16:15:55+00:00",
+    "summary": "It was discovered that Net::CIDR::Lite incorrectly validated IP address and\nCIDR mask inputs. An attacker could possibly use this issue to bypass IP\naccess control lists. (CVE-2026-45190)\n\nIt was discovered that Net::CIDR::Lite incorrectly handled extraneous zero\ncharacters in CIDR mask values. An attacker could possibly use this issue\nto bypass IP access control lists. (CVE-2026-45191)",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "ubuntu",
+    "category": "advisory",
+    "id": "https://ubuntu.com/security/notices/USN-8451-1",
+    "title": "USN-8451-1: Vim vulnerabilities",
+    "link": "https://ubuntu.com/security/notices/USN-8451-1",
+    "published": "2026-06-18T16:05:59+00:00",
+    "summary": "Srinivas Piskala Ganesh Babu discovered that Vim incorrectly handled\ndirectory names when serializing browsed paths to the netrw history file.\nAn attacker could possibly use this issue to execute arbitrary code.\n(CVE-2026-47162)\n\nIt was discovered that Vim incorrectly handled step-definition patterns in\nthe cucumber filetype plugin. An attacker could possibly use this issue to\nexecute arbitrary code. (CVE-2026-47167)\n\nIt was discovered that Vim incorrectly handled import statements during\nPython",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "ubuntu",
+    "category": "advisory",
+    "id": "https://ubuntu.com/security/notices/USN-8450-1",
+    "title": "USN-8450-1: Tomcat vulnerabilities",
+    "link": "https://ubuntu.com/security/notices/USN-8450-1",
+    "published": "2026-06-18T15:56:22+00:00",
+    "summary": "It was discovered that Tomcat did not properly limit the size of\nWebDAV LOCK and PROPFIND request bodies. A remote attacker could\npossibly use this issue to cause Tomcat to consume excessive memory,\nresulting in a denial of service. (CVE-2026-41284)\n\nIt was discovered that Tomcat incorrectly validated HTTP/2 header\nfields. A remote attacker could use this issue to cause Tomcat to\ncrash or possibly execute arbitrary code. (CVE-2026-41293)\n\nIt was discovered that Tomcat did not properly clear HTTP",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "google",
+    "category": "advisory",
+    "id": "tag:blogger.com,1999:blog-8982037438137564684.post-7534438460540375539",
+    "title": "Chrome Dev for Desktop Update",
+    "link": "http://chromereleases.googleblog.com/2026/06/chrome-dev-for-desktop-update_01724281417.html",
+    "published": "2026-06-18T14:13:33+00:00",
+    "summary": "<p>The Dev channel has been updated to 151.0.7896.2 for Windows, Mac and Linux.</p><p>A partial list of changes is available in the <a href=\"https://chromium.googlesource.com/chromium/src/+log/151.0.7886.2..151.0.7896.2?pretty=fuller&amp;n=10000\">Git log</a>. Interested in <a href=\"https://www.chromium.org/getting-involved/dev-channel/\">switching</a> release channels? Find out <a href=\"https://www.chromium.org/getting-involved/dev-channel/\">how</a>. If you find a new issue, please let us know by",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-47633",
+    "title": "CVE-2026-47633 Microsoft Cost Management Information Disclosure Vulnerability",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47633",
+    "published": "2026-06-18T14:00:00+00:00",
+    "summary": "Exposure of sensitive information to an unauthorized actor in Cost Management Interactive Experiences allows an unauthorized attacker to disclose information over a network.",
+    "severity": "LOW"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-32208",
+    "title": "CVE-2026-32208 Microsoft Edge (Chromium-based) Spoofing Vulnerability",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32208",
+    "published": "2026-06-18T14:00:00+00:00",
+    "summary": "Improper neutralization of input during web page generation ('cross-site scripting') in Microsoft Edge (Chromium-based) allows an authorized attacker to perform spoofing over a network.",
+    "severity": "LOW"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-32174",
+    "title": "CVE-2026-32174 Azure Bot Service Elevation of Privilege Vulnerability",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32174",
+    "published": "2026-06-18T14:00:00+00:00",
+    "summary": "Improper authentication in Azure Bot Service allows an authorized attacker to elevate privileges over a network.",
+    "severity": "LOW"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-45480",
+    "title": "CVE-2026-45480 Azure Active Directory Elevation of Privilege Vulnerability",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45480",
+    "published": "2026-06-18T14:00:00+00:00",
+    "summary": "Improper authentication in Azure Active Directory allows an unauthorized attacker to elevate privileges over a network.",
+    "severity": "LOW"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-42895",
+    "title": "CVE-2026-42895 Microsoft Copilot Tampering Vulnerability",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42895",
+    "published": "2026-06-18T14:00:00+00:00",
+    "summary": "Improper neutralization of special elements used in a command ('command injection') in Microsoft Copilot allows an unauthorized attacker to perform tampering over a network.",
+    "severity": "LOW"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-54130",
+    "title": "CVE-2026-54130 M365 Copilot Information Disclosure Vulnerability",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-54130",
+    "published": "2026-06-18T14:00:00+00:00",
+    "summary": "Missing authentication for critical function in M365 Copilot allows an unauthorized attacker to disclose information over a network.",
+    "severity": "CRITICAL"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-47647",
+    "title": "CVE-2026-47647 Dynamics 365 Elevation of Privilege Vulnerability",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47647",
+    "published": "2026-06-18T14:00:00+00:00",
+    "summary": "Improper access control in Microsoft Dynamics 365 allows an authorized attacker to elevate privileges over a network.",
+    "severity": "LOW"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-48584",
+    "title": "CVE-2026-48584 Microsoft Azure Synapse Elevation of Privilege Vulnerability",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-48584",
+    "published": "2026-06-18T14:00:00+00:00",
+    "summary": "Execution with unnecessary privileges in Azure Synapse allows an authorized attacker to elevate privileges over a network.",
+    "severity": "LOW"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-48582",
+    "title": "CVE-2026-48582 Microsoft Exchange Online Elevation of Privilege Vulnerability",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-48582",
+    "published": "2026-06-18T14:00:00+00:00",
+    "summary": "Missing authorization in Microsoft Exchange Online allows an authorized attacker to elevate privileges over a network.",
+    "severity": "LOW"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-47645",
+    "title": "CVE-2026-47645 Microsoft 365 Copilot's Business Chat Elevation of Privilege Vulnerability",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47645",
+    "published": "2026-06-18T14:00:00+00:00",
+    "summary": "Url redirection to untrusted site ('open redirect') in Microsoft 365 Copilot's Business Chat allows an unauthorized attacker to elevate privileges over a network.",
+    "severity": "LOW"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-47646",
+    "title": "CVE-2026-47646 Dynamics 365 Customer Voice Spoofing Vulnerability",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47646",
+    "published": "2026-06-18T14:00:00+00:00",
+    "summary": "Improper neutralization of input during web page generation ('cross-site scripting') in Dynamics 365 Customer Voice allows an unauthorized attacker to perform spoofing over a network.",
+    "severity": "LOW"
+  },
+  {
+    "source": "ubuntu",
+    "category": "advisory",
+    "id": "https://ubuntu.com/security/notices/USN-8449-1",
+    "title": "USN-8449-1: ldns vulnerability",
+    "link": "https://ubuntu.com/security/notices/USN-8449-1",
+    "published": "2026-06-18T13:33:51+00:00",
+    "summary": "Pablo Ruiz discovered that ldns did not properly validate DNS\nresponses when used as a stub resolver over UDP. A remote\nattacker could possibly use this issue to inject arbitrary DNS\nresponses.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "malwarebytes",
+    "category": "threat_intel",
+    "id": "https://www.malwarebytes.com/blog/news/2026/06/microsoft-working-on-a-fix-for-rogueplanet-a-flaw-that-grants-full-pc-control",
+    "title": "Microsoft working on a fix for RoguePlanet, a flaw that grants full PC control",
+    "link": "https://www.malwarebytes.com/blog/news/2026/06/microsoft-working-on-a-fix-for-rogueplanet-a-flaw-that-grants-full-pc-control",
+    "published": "2026-06-18T12:58:30+00:00",
+    "summary": "Microsoft says it's working on a fix for an unpatched Defender vulnerability that can give attackers the highest level of access on Windows.",
+    "severity": "HIGH"
+  },
+  {
+    "source": "malwarebytes",
+    "category": "threat_intel",
+    "id": "https://www.malwarebytes.com/blog/threat-intel/2026/06/retro-gaming-fans-are-the-new-target-for-fake-github-malware",
+    "title": "Retro gaming fans are the new target for fake GitHub malware",
+    "link": "https://www.malwarebytes.com/blog/threat-intel/2026/06/retro-gaming-fans-are-the-new-target-for-fake-github-malware",
+    "published": "2026-06-18T11:27:42+00:00",
+    "summary": "Retro gaming fans should be careful with GitHub projects that claim to be tools or plugins for their consoles. We looked at one example aimed at PlayStation Vita owners.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "malwarebytes",
+    "category": "threat_intel",
+    "id": "https://www.malwarebytes.com/blog/news/2026/06/kodak-confirms-breach-as-shinyhunters-leak-threat-reaches-deadline",
+    "title": "Kodak confirms breach as ShinyHunters&#8217; leak threat reaches deadline",
+    "link": "https://www.malwarebytes.com/blog/news/2026/06/kodak-confirms-breach-as-shinyhunters-leak-threat-reaches-deadline",
+    "published": "2026-06-18T09:52:08+00:00",
+    "summary": "The photography giant confirmed a data breach after ShinyHunters claimed it stole 2.2 million records and threatened to leak them.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-46293",
+    "title": "CVE-2026-46293 clk: microchip: mpfs-ccc: fix out of bounds access during output registration",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46293",
+    "published": "2026-06-18T08:50:27+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-46291",
+    "title": "CVE-2026-46291 crypto: caam - guard HMAC key hex dumps in hash_digest_key",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46291",
+    "published": "2026-06-18T08:50:14+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-46274",
+    "title": "CVE-2026-46274 io-wq: check that the predecessor is hashed in io_wq_remove_pending()",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46274",
+    "published": "2026-06-18T08:50:04+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-28387",
+    "title": "CVE-2026-28387 Potential Use-after-free in DANE Client Code",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-28387",
+    "published": "2026-06-18T08:50:00+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-46292",
+    "title": "CVE-2026-46292 pmdomain: core: Fix detach procedure for virtual devices in genpd",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46292",
+    "published": "2026-06-18T08:49:51+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-43308",
+    "title": "CVE-2026-43308 btrfs: don't BUG() on unexpected delayed ref type in run_one_delayed_ref()",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-43308",
+    "published": "2026-06-18T08:48:34+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2025-71072",
+    "title": "CVE-2025-71072 shmem: fix recovery on rename failures",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-71072",
+    "published": "2026-06-18T08:48:17+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2025-71073",
+    "title": "CVE-2025-71073 Input: lkkbd - disable pending work before freeing device",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-71073",
+    "published": "2026-06-18T08:48:00+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-45445",
+    "title": "CVE-2026-45445 AES-OCB IV Ignored on EVP_Cipher() Path",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45445",
+    "published": "2026-06-18T08:46:59+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-9076",
+    "title": "CVE-2026-9076 Out-of-Bounds Read in CMS Password-Based Decryption",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-9076",
+    "published": "2026-06-18T08:46:38+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-34180",
+    "title": "CVE-2026-34180 Heap Buffer Over-read in ASN.1 Content Parsing",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-34180",
+    "published": "2026-06-18T08:45:56+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-42767",
+    "title": "CVE-2026-42767 NULL Pointer Dereference in CRMF EncryptedValue Decryption",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42767",
+    "published": "2026-06-18T08:45:04+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-42766",
+    "title": "CVE-2026-42766 Possible NULL Dereference in Password-Based CMS Decryption",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42766",
+    "published": "2026-06-18T08:44:21+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-7383",
+    "title": "CVE-2026-7383 Possible Heap Buffer Overflow in ASN.1 Multibyte String Conversion",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-7383",
+    "published": "2026-06-18T08:42:51+00:00",
+    "summary": "Information published.",
+    "severity": "LOW"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-34182",
+    "title": "CVE-2026-34182 CMS AuthEnvelopedData Processing May Accept Forged Messages",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-34182",
+    "published": "2026-06-18T08:41:57+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-45447",
+    "title": "CVE-2026-45447 Heap Use-After-Free in the PKCS7_verify() Function",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45447",
+    "published": "2026-06-18T08:41:13+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-25681",
+    "title": "CVE-2026-25681 Invoking  incorrect handling of character references in DOCTYPE nodes in golang.org/x/net/html",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-25681",
+    "published": "2026-06-18T08:40:41+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-25680",
+    "title": "CVE-2026-25680 Invoking denial of service when parsing arbitrary HTML in golang.org/x/net/html",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-25680",
+    "published": "2026-06-18T08:40:25+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-48854",
+    "title": "CVE-2026-48854 Unbounded request body accumulation causes memory exhaustion in elixir-grpc/grpc",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-48854",
+    "published": "2026-06-18T08:01:50+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "cisa_kev",
+    "category": "advisory",
+    "id": "CVE-2026-20253",
+    "title": "CVE-2026-20253 – Splunk Enterprise Missing Authentication for Critical Function Vulnerability",
+    "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "published": "2026-06-18T00:00:00+00:00",
+    "summary": "Splunk Enterprise contains a missing authentication for critical function vulnerability which could allow an unauthenticated user to create or truncate arbitrary files through a PostgreSQL sidecar service endpoint.",
+    "severity": "CRITICAL"
   },
   {
     "source": "google",
@@ -190,16 +640,6 @@
     "severity": "LOW"
   },
   {
-    "source": "ubuntu",
-    "category": "advisory",
-    "id": "https://ubuntu.com/security/notices/USN-8361-3",
-    "title": "USN-8361-3: Linux kernel vulnerability",
-    "link": "https://ubuntu.com/security/notices/USN-8361-3",
-    "published": "2026-06-17T09:53:16+00:00",
-    "summary": "A security issue was discovered in the Linux kernel.\nAn attacker could possibly use this to compromise the system.\nThis update corrects flaws in the following subsystem:\n  - Packet sockets;\n(CVE-2026-31504)",
-    "severity": "LOW"
-  },
-  {
     "source": "malwarebytes",
     "category": "threat_intel",
     "id": "https://www.malwarebytes.com/blog/product/2026/06/malwarebytes-earns-av-test-top-product-award-aces-other-third-party-tests",
@@ -208,195 +648,5 @@
     "published": "2026-06-17T09:41:46+00:00",
     "summary": "Malwarebytes got top marks in independent tests against malware, phishing, and other online threats.",
     "severity": "UNKNOWN"
-  },
-  {
-    "source": "google",
-    "category": "advisory",
-    "id": "tag:blogger.com,1999:blog-8982037438137564684.post-3633229446653367016",
-    "title": "Chrome for Android Update",
-    "link": "http://chromereleases.googleblog.com/2026/06/chrome-for-android-update_01355673137.html",
-    "published": "2026-06-17T00:30:00+00:00",
-    "summary": "<p>Hi, everyone! We've just released&nbsp;<b>Chrome 149 (149.0.7827.159)</b>&nbsp;for Android. It'll become&nbsp;<a href=\"https://play.google.com/store/apps/details?id=com.android.chrome\">available on Google Play</a>&nbsp;over the next few days.&nbsp;</p><p>This release includes stability and performance improvements. You can see a full list of the changes in the&nbsp;<a href=\"https://chromium.googlesource.com/chromium/src/+log/149.0.7827.114..149.0.7827.159?pretty=fuller&amp;n=10000\">Git log</a",
-    "severity": "UNKNOWN"
-  },
-  {
-    "source": "ubuntu",
-    "category": "advisory",
-    "id": "https://ubuntu.com/security/notices/USN-8440-1",
-    "title": "USN-8440-1: Linux kernel (Azure) vulnerabilities",
-    "link": "https://ubuntu.com/security/notices/USN-8440-1",
-    "published": "2026-06-16T22:30:05+00:00",
-    "summary": "Josh Eads, Kristoffer Janke, Eduardo Vela Nava, Tavis Ormandy, and Matteo\nRizzo discovered that some AMD Zen processors did not properly verify the\nsignature of CPU microcode. This flaw is known as EntrySign. A privileged\nattacker could possibly use this issue to cause load malicious CPU\nmicrocode causing loss of integrity and confidentiality. (CVE-2024-36347)\n\nIt was discovered that the Linux kernel algif_aead module did not properly\nhandle in-place cryptographic operations. This flaw is known ",
-    "severity": "LOW"
-  },
-  {
-    "source": "ubuntu",
-    "category": "advisory",
-    "id": "https://ubuntu.com/security/notices/USN-8426-2",
-    "title": "USN-8426-2: Linux kernel (Azure) vulnerabilities",
-    "link": "https://ubuntu.com/security/notices/USN-8426-2",
-    "published": "2026-06-16T22:14:06+00:00",
-    "summary": "It was discovered that the Linux kernel algif_aead module did not properly\nhandle in-place cryptographic operations. This flaw is known as Copy Fail.\nA local attacker could use this to escalate privileges, or possibly escape\na container. (CVE-2026-31431)\n\nIt was discovered that the Linux kernel did not properly handle shared page\nfragments during socket buffer operations, collectively known as Dirty\nFrag. A logic flaw existed in the XFRM ESP-in-TCP subsystem and in the\nRxRPC networking subsystem",
-    "severity": "LOW"
-  },
-  {
-    "source": "google",
-    "category": "advisory",
-    "id": "tag:blogger.com,1999:blog-8982037438137564684.post-1047251504119477823",
-    "title": "Stable Channel Update for Desktop",
-    "link": "http://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_01750511403.html",
-    "published": "2026-06-16T21:58:52+00:00",
-    "summary": "<p><span face=\"Roboto, sans-serif\" style=\"color: #666666;\"><span color=\"rgba(0, 0, 0, 0.87)\" style=\"font-family: arial; font-size: large;\">The Stable channel has been updated to 149.0.7827.155/.156 for Windows and</span><span color=\"rgba(0, 0, 0, 0.87)\" style=\"font-family: arial; font-size: large;\"> </span><span color=\"rgba(0, 0, 0, 0.87)\" style=\"font-family: arial; font-size: large;\">Mac and </span></span><span color=\"rgba(0, 0, 0, 0.87)\" style=\"font-family: arial; font-size: large;\"><span styl",
-    "severity": "CRITICAL"
-  },
-  {
-    "source": "google",
-    "category": "advisory",
-    "id": "tag:blogger.com,1999:blog-8982037438137564684.post-7632054555852491631",
-    "title": "Extended Stable Update for Desktop",
-    "link": "http://chromereleases.googleblog.com/2026/06/extended-stable-update-for-desktop.html",
-    "published": "2026-06-16T21:30:40+00:00",
-    "summary": "<p><span style=\"color: #666666; font-family: arial; font-size: large; vertical-align: baseline;\">The Extended Stable channel has been updated to 148.0.7778.271</span><span color=\"rgba(0, 0, 0, 0.87)\" style=\"font-family: arial; font-size: large; vertical-align: baseline;\"> </span><span style=\"color: #666666; font-family: arial; font-size: large; vertical-align: baseline;\">for Windows and Mac </span><span style=\"color: #666666; font-family: arial; font-size: large;\">which will roll out over the co",
-    "severity": "UNKNOWN"
-  },
-  {
-    "source": "ubuntu",
-    "category": "advisory",
-    "id": "https://ubuntu.com/security/notices/USN-8438-1",
-    "title": "USN-8438-1: OpenImageIO vulnerabilities",
-    "link": "https://ubuntu.com/security/notices/USN-8438-1",
-    "published": "2026-06-16T21:02:47+00:00",
-    "summary": "It was discovered that OpenImageIO incorrectly performed bounds\nchecking when processing SGI files. An attacker could possibly\nuse this issue to cause a denial of service or execute arbitrary\ncode. (CVE-2026-43903)\n\nIt was discovered that OpenImageIO incorrectly handled run-length\nencoding when processing Softimage PIC files. An attacker\ncould possibly use this issue to cause a denial of service or\nexecute arbitrary code. (CVE-2026-43904)\n\nIt was discovered that OpenImageIO incorrectly validated",
-    "severity": "LOW"
-  },
-  {
-    "source": "ubuntu",
-    "category": "advisory",
-    "id": "https://ubuntu.com/security/notices/USN-8439-1",
-    "title": "USN-8439-1: Linux kernel (Oracle) vulnerabilities",
-    "link": "https://ubuntu.com/security/notices/USN-8439-1",
-    "published": "2026-06-16T19:54:11+00:00",
-    "summary": "Stonejiajia, Shir Tamari and Sagi Tzadik discovered that the OverlayFS\nimplementation in the Ubuntu Linux kernel did not properly perform\npermission checks in certain situations. A local attacker could possibly\nuse this to gain elevated privileges. (CVE-2023-2640)\n\nShir Tamari and Sagi Tzadik discovered that the OverlayFS implementation in\nthe Ubuntu Linux kernel did not properly perform permission checks in\ncertain situations. A local attacker could possibly use this to gain\nelevated privileges",
-    "severity": "LOW"
-  },
-  {
-    "source": "ubuntu",
-    "category": "advisory",
-    "id": "https://ubuntu.com/security/notices/USN-8437-1",
-    "title": "USN-8437-1: rabbitmq-c vulnerabilities",
-    "link": "https://ubuntu.com/security/notices/USN-8437-1",
-    "published": "2026-06-16T14:48:17+00:00",
-    "summary": "It was discovered that rabbitmq-c exposed credentials in command-line\narguments under certain circumstances. A local attacker could possibly use\nthis issue to obtain sensitive information. This issue only affected Ubuntu\n22.04 LTS and Ubuntu 24.04 LTS. (CVE-2023-35789)\n\nIt was discovered that rabbitmq-c incorrectly handled AMQP frame lengths\nunder certain circumstances, which could lead to an out-of-bounds read. A\nremote attacker could possibly use this issue to cause rabbitmq-c to crash,\nresult",
-    "severity": "LOW"
-  },
-  {
-    "source": "msrc",
-    "category": "advisory",
-    "id": "CVE-2026-40371",
-    "title": "CVE-2026-40371 Microsoft Dynamics 365 (on-premises) Elevation of Privilege Vulnerability",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40371",
-    "published": "2026-06-16T14:00:00+00:00",
-    "summary": "Updated the fixed version information and download link. The fix was previously believed to be included in Dynamics 365 Server (on-premises) version 6.2; however, it has been confirmed that the fix is included in Dynamics 365 Server v9.1 (on-premises) Update 1.45 (version 9.1.0045.0011). The download link, release notes, and build number has been updated accordingly in the Updates Table.",
-    "severity": "UNKNOWN"
-  },
-  {
-    "source": "msrc",
-    "category": "advisory",
-    "id": "CVE-2026-45602",
-    "title": "CVE-2026-45602 Windows Dynamic Host Configuration Protocol (DHCP) Tampering Vulnerability",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45602",
-    "published": "2026-06-16T14:00:00+00:00",
-    "summary": "Updated CWE value.  This is an informational change only.",
-    "severity": "UNKNOWN"
-  },
-  {
-    "source": "msrc",
-    "category": "advisory",
-    "id": "CVE-2026-50656",
-    "title": "CVE-2026-50656 Microsoft Defender Elevation of Privilege Vulnerability",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50656",
-    "published": "2026-06-16T14:00:00+00:00",
-    "summary": "Microsoft is aware of an elevation of privilege in the Microsoft Malware Protection Engine in Microsoft Defender publicly referred to as \"RoguePlanet \". We are working to provide a high quality security update that addresses this vulnerability. We will provide information in this CVE when the update is available.",
-    "severity": "HIGH"
-  },
-  {
-    "source": "msrc",
-    "category": "advisory",
-    "id": "CVE-2026-42915",
-    "title": "CVE-2026-42915 Microsoft Windows VMSwitch Denial of Service Vulnerability",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42915",
-    "published": "2026-06-16T14:00:00+00:00",
-    "summary": "Corrected the CVE description and title. This is an informational change only.",
-    "severity": "UNKNOWN"
-  },
-  {
-    "source": "ubuntu",
-    "category": "advisory",
-    "id": "https://ubuntu.com/security/notices/USN-8433-1",
-    "title": "USN-8433-1: OpenStack Keystone vulnerabilities",
-    "link": "https://ubuntu.com/security/notices/USN-8433-1",
-    "published": "2026-06-16T13:45:21+00:00",
-    "summary": "It was discovered that OpenStack Keystone allowed restricted application\ncredentials to create EC2 credentials. An authenticated attacker with only\na reader role could possibly use this issue to bypass the role restrictions\nimposed on the application credential. (CVE-2026-33551)\n\nIt was discovered that the OpenStack Keystone LDAP identity backend did\nnot correctly convert the user enabled attribute to a boolean value.\nAn attacker could possibly use this issue to authenticate as a user disabled\ni",
-    "severity": "LOW"
-  },
-  {
-    "source": "malwarebytes",
-    "category": "threat_intel",
-    "id": "https://www.malwarebytes.com/blog/threat-intel/2026/06/free-world-cup-stream-sites-are-serving-scams-not-football",
-    "title": "&#8220;Free World Cup stream&#8221; sites are serving scams, not football",
-    "link": "https://www.malwarebytes.com/blog/threat-intel/2026/06/free-world-cup-stream-sites-are-serving-scams-not-football",
-    "published": "2026-06-16T13:00:00+00:00",
-    "summary": "We found dozens of fake World Cup streaming sites using football as bait to funnel visitors through a malicious advertising network.",
-    "severity": "UNKNOWN"
-  },
-  {
-    "source": "malwarebytes",
-    "category": "threat_intel",
-    "id": "https://www.malwarebytes.com/blog/news/2026/06/cardiac-patients-medical-data-stolen-and-held-to-ransom",
-    "title": "Cardiac patients&#8217; medical data stolen and held to ransom",
-    "link": "https://www.malwarebytes.com/blog/news/2026/06/cardiac-patients-medical-data-stolen-and-held-to-ransom",
-    "published": "2026-06-16T12:49:01+00:00",
-    "summary": "Cardiac monitoring provider iRhythm has been hit by a data theft followed by an extortion attempt.",
-    "severity": "LOW"
-  },
-  {
-    "source": "malwarebytes",
-    "category": "threat_intel",
-    "id": "https://www.malwarebytes.com/blog/ai/2026/06/deepfake-posting-sites-depicting-famous-women-taken-down-by-feds",
-    "title": "Deepfake posting sites depicting famous women taken down by feds",
-    "link": "https://www.malwarebytes.com/blog/ai/2026/06/deepfake-posting-sites-depicting-famous-women-taken-down-by-feds",
-    "published": "2026-06-16T10:31:16+00:00",
-    "summary": "Thanks to Uncle Sam, anyone trying to find nonconsensual intimate deepfakes on CFake.com and SOCFake.com will be disappointed.",
-    "severity": "UNKNOWN"
-  },
-  {
-    "source": "msrc",
-    "category": "advisory",
-    "id": "CVE-2026-34182",
-    "title": "CVE-2026-34182 CMS AuthEnvelopedData Processing May Accept Forged Messages",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-34182",
-    "published": "2026-06-16T09:14:59+00:00",
-    "summary": "Information published.",
-    "severity": "UNKNOWN"
-  },
-  {
-    "source": "securelist",
-    "category": "threat_intel",
-    "id": "https://kasperskycontenthub.com/securelist/?p=120186",
-    "title": "Dozens of malicious wallpapers found on Steam Workshop: gamers’ accounts at risk",
-    "link": "https://securelist.com/dozens-of-malicious-wallpapers-found-on-steam-workshop/120186/",
-    "published": "2026-06-16T09:00:11+00:00",
-    "summary": "Since late 2025, malware has been spreading rapidly through the Steam Workshop, the gaming platform's built-in service for players to create and share custom content. The attackers are primarily targeting gamers in China and Russia.",
-    "severity": "UNKNOWN"
-  },
-  {
-    "source": "msrc",
-    "category": "advisory",
-    "id": "CVE-2026-54411",
-    "title": "CVE-2026-54411 Linux-PAM through 1.7.2 contains an observable timing discrepancy (CWE-208) in the pam_userdb module's plaintext-password comparison path in modules/pam_userdb/pam_userdb.c that allows a local or network-adjacent attacker able to repeatedly",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-54411",
-    "published": "2026-06-16T08:01:29+00:00",
-    "summary": "Information published.",
-    "severity": "LOW"
   }
 ]

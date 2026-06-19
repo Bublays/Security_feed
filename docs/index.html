@@ -273,14 +273,14 @@
   </div>
   <div class="topbar-meta">
     <span class="live-dot"></span>
-    2026-06-18 06:40 UTC &nbsp;·&nbsp; interval 48 h
+    2026-06-19 06:41 UTC &nbsp;·&nbsp; interval 48 h
   </div>
 </div>
 
 <div class="page">
 
   <div class="stat-row">
-    <div class="sc sc-critical"><div class="sc-n">1</div><div class="sc-l">CRITICAL</div></div><div class="sc sc-high"><div class="sc-n">1</div><div class="sc-l">HIGH</div></div><div class="sc sc-medium"><div class="sc-n">0</div><div class="sc-l">MEDIUM</div></div><div class="sc sc-low"><div class="sc-n">10</div><div class="sc-l">LOW</div></div>
+    <div class="sc sc-critical"><div class="sc-n">3</div><div class="sc-l">CRITICAL</div></div><div class="sc sc-high"><div class="sc-n">0</div><div class="sc-l">HIGH</div></div><div class="sc sc-medium"><div class="sc-n">0</div><div class="sc-l">MEDIUM</div></div><div class="sc sc-low"><div class="sc-n">14</div><div class="sc-l">LOW</div></div>
   </div>
 
   <!-- CVE Advisories panel -->
@@ -288,7 +288,7 @@
     <div class="panel-header">
       <span class="panel-title">Bezpečnostní advisories</span>
       <span class="panel-subtitle">CVE · strukturované záznamy</span>
-      <span class="record-pill pill-blue" id="adv-count">30 záznamů</span>
+      <span class="record-pill pill-blue" id="adv-count">55 záznamů</span>
     </div>
     <div class="filters">
       <div class="filter-group">
@@ -305,7 +305,8 @@
         <label>Zdroj</label>
         <select id="f-src" onchange="applyAdvisoryFilters()">
           <option value="">Vše</option>
-          <option value="google">Google Chrome</option>
+          <option value="cisa_kev">CISA KEV</option>
+<option value="google">Google Chrome</option>
 <option value="msrc">Microsoft MSRC</option>
 <option value="ubuntu">Ubuntu</option>
         </select>
@@ -334,130 +335,39 @@
           </tr>
         </thead>
         <tbody id="adv-tbody">
-                <tr class="advisory-row" data-severity="critical" data-source="google">
+                <tr class="advisory-row" data-severity="critical" data-source="cisa_kev">
         <td><div class="sev-bar sev-critical"></div></td>
         <td>
-          <a href="http://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_01750511403.html" target="_blank" rel="noopener" class="advisory-link">Stable Channel Update for Desktop</a>
-          <div class="summary"><p><span face="Roboto, sans-serif" style="color: #666666;"><span color="rgba(0, 0, 0, 0.87)" style="font-family: arial; font-size: large;">The Stable channel has been updated to 149.0.7827.155/.156 for Windows and</span><span color="rgba(0, 0, 0, 0.87)" style="font-family: arial; font-size: large;"></div>
+          <a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener" class="advisory-link">CVE-2026-20253 – Splunk Enterprise Missing Authentication for Critical Function Vulnerability</a>
+          <div class="summary">Splunk Enterprise contains a missing authentication for critical function vulnerability which could allow an unauthenticated user to create or truncate arbitrary files through a PostgreSQL sidecar service endpoint.</div>
         </td>
         <td><span class="badge sev-critical">CRITICAL</span></td>
-        <td><span class="src-badge">Google Chrome</span></td>
-        <td class="dt">2026-06-16 21:58</td>
-      </tr>      <tr class="advisory-row" data-severity="high" data-source="msrc">
-        <td><div class="sev-bar sev-high"></div></td>
+        <td><span class="src-badge">CISA KEV</span></td>
+        <td class="dt">2026-06-18 00:00</td>
+      </tr>      <tr class="advisory-row" data-severity="critical" data-source="msrc">
+        <td><div class="sev-bar sev-critical"></div></td>
         <td>
-          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50656" target="_blank" rel="noopener" class="advisory-link">CVE-2026-50656 Microsoft Defender Elevation of Privilege Vulnerability</a>
-          <div class="summary">Microsoft is aware of an elevation of privilege in the Microsoft Malware Protection Engine in Microsoft Defender publicly referred to as "RoguePlanet ". We are working to provide a high quality security update that addresses this vulnerability. We will provide information in this CVE when the update</div>
+          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-54130" target="_blank" rel="noopener" class="advisory-link">CVE-2026-54130 M365 Copilot Information Disclosure Vulnerability</a>
+          <div class="summary">Missing authentication for critical function in M365 Copilot allows an unauthorized attacker to disclose information over a network.</div>
         </td>
-        <td><span class="badge sev-high">HIGH</span></td>
+        <td><span class="badge sev-critical">CRITICAL</span></td>
         <td><span class="src-badge">Microsoft MSRC</span></td>
-        <td class="dt">2026-06-16 14:00</td>
-      </tr>      <tr class="advisory-row" data-severity="low" data-source="msrc">
-        <td><div class="sev-bar sev-low"></div></td>
+        <td class="dt">2026-06-18 14:00</td>
+      </tr>      <tr class="advisory-row" data-severity="critical" data-source="ubuntu">
+        <td><div class="sev-bar sev-critical"></div></td>
         <td>
-          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-54411" target="_blank" rel="noopener" class="advisory-link">CVE-2026-54411 Linux-PAM through 1.7.2 contains an observable timing discrepancy (CWE-208) in the pam_userdb module's pl</a>
-          <div class="summary">Information published.</div>
-        </td>
-        <td><span class="badge sev-low">LOW</span></td>
-        <td><span class="src-badge">Microsoft MSRC</span></td>
-        <td class="dt">2026-06-16 08:01</td>
-      </tr>      <tr class="advisory-row" data-severity="low" data-source="ubuntu">
-        <td><div class="sev-bar sev-low"></div></td>
-        <td>
-          <a href="https://ubuntu.com/security/notices/USN-8433-1" target="_blank" rel="noopener" class="advisory-link">USN-8433-1: OpenStack Keystone vulnerabilities</a>
-          <div class="summary">It was discovered that OpenStack Keystone allowed restricted application
-credentials to create EC2 credentials. An authenticated attacker with only
-a reader role could possibly use this issue to bypass the role restrictions
-imposed on the application credential. (CVE-2026-33551)
+          <a href="https://ubuntu.com/security/notices/USN-8447-2" target="_blank" rel="noopener" class="advisory-link">USN-8447-2: LXD vulnerabilities</a>
+          <div class="summary">USN-8447-1 fixed vulnerabilities in Go Cryptography. This update provides
+the corresponding updates for Go Cryptography code embedded in LXD for
+CVE-2026-39830, CVE-2026-39833, CVE-2026-39834, and CVE-2026-42508.
 
-It was discovered t</div>
-        </td>
-        <td><span class="badge sev-low">LOW</span></td>
-        <td><span class="src-badge">Ubuntu</span></td>
-        <td class="dt">2026-06-16 13:45</td>
-      </tr>      <tr class="advisory-row" data-severity="low" data-source="ubuntu">
-        <td><div class="sev-bar sev-low"></div></td>
-        <td>
-          <a href="https://ubuntu.com/security/notices/USN-8437-1" target="_blank" rel="noopener" class="advisory-link">USN-8437-1: rabbitmq-c vulnerabilities</a>
-          <div class="summary">It was discovered that rabbitmq-c exposed credentials in command-line
-arguments under certain circumstances. A local attacker could possibly use
-this issue to obtain sensitive information. This issue only affected Ubuntu
-22.04 LTS and Ubuntu 24.04 LTS. (CVE-2023-35789)
+Original advisory details:
 
-It was discovered that rabbit</div>
+ It was discovered that Go Cryptography did not properly h</div>
         </td>
-        <td><span class="badge sev-low">LOW</span></td>
+        <td><span class="badge sev-critical">CRITICAL</span></td>
         <td><span class="src-badge">Ubuntu</span></td>
-        <td class="dt">2026-06-16 14:48</td>
-      </tr>      <tr class="advisory-row" data-severity="low" data-source="ubuntu">
-        <td><div class="sev-bar sev-low"></div></td>
-        <td>
-          <a href="https://ubuntu.com/security/notices/USN-8439-1" target="_blank" rel="noopener" class="advisory-link">USN-8439-1: Linux kernel (Oracle) vulnerabilities</a>
-          <div class="summary">Stonejiajia, Shir Tamari and Sagi Tzadik discovered that the OverlayFS
-implementation in the Ubuntu Linux kernel did not properly perform
-permission checks in certain situations. A local attacker could possibly
-use this to gain elevated privileges. (CVE-2023-2640)
-
-Shir Tamari and Sagi Tzadik discov</div>
-        </td>
-        <td><span class="badge sev-low">LOW</span></td>
-        <td><span class="src-badge">Ubuntu</span></td>
-        <td class="dt">2026-06-16 19:54</td>
-      </tr>      <tr class="advisory-row" data-severity="low" data-source="ubuntu">
-        <td><div class="sev-bar sev-low"></div></td>
-        <td>
-          <a href="https://ubuntu.com/security/notices/USN-8438-1" target="_blank" rel="noopener" class="advisory-link">USN-8438-1: OpenImageIO vulnerabilities</a>
-          <div class="summary">It was discovered that OpenImageIO incorrectly performed bounds
-checking when processing SGI files. An attacker could possibly
-use this issue to cause a denial of service or execute arbitrary
-code. (CVE-2026-43903)
-
-It was discovered that OpenImageIO incorrectly handled run-length
-encoding when proc</div>
-        </td>
-        <td><span class="badge sev-low">LOW</span></td>
-        <td><span class="src-badge">Ubuntu</span></td>
-        <td class="dt">2026-06-16 21:02</td>
-      </tr>      <tr class="advisory-row" data-severity="low" data-source="ubuntu">
-        <td><div class="sev-bar sev-low"></div></td>
-        <td>
-          <a href="https://ubuntu.com/security/notices/USN-8426-2" target="_blank" rel="noopener" class="advisory-link">USN-8426-2: Linux kernel (Azure) vulnerabilities</a>
-          <div class="summary">It was discovered that the Linux kernel algif_aead module did not properly
-handle in-place cryptographic operations. This flaw is known as Copy Fail.
-A local attacker could use this to escalate privileges, or possibly escape
-a container. (CVE-2026-31431)
-
-It was discovered that the Linux kernel did </div>
-        </td>
-        <td><span class="badge sev-low">LOW</span></td>
-        <td><span class="src-badge">Ubuntu</span></td>
-        <td class="dt">2026-06-16 22:14</td>
-      </tr>      <tr class="advisory-row" data-severity="low" data-source="ubuntu">
-        <td><div class="sev-bar sev-low"></div></td>
-        <td>
-          <a href="https://ubuntu.com/security/notices/USN-8440-1" target="_blank" rel="noopener" class="advisory-link">USN-8440-1: Linux kernel (Azure) vulnerabilities</a>
-          <div class="summary">Josh Eads, Kristoffer Janke, Eduardo Vela Nava, Tavis Ormandy, and Matteo
-Rizzo discovered that some AMD Zen processors did not properly verify the
-signature of CPU microcode. This flaw is known as EntrySign. A privileged
-attacker could possibly use this issue to cause load malicious CPU
-microcode c</div>
-        </td>
-        <td><span class="badge sev-low">LOW</span></td>
-        <td><span class="src-badge">Ubuntu</span></td>
-        <td class="dt">2026-06-16 22:30</td>
-      </tr>      <tr class="advisory-row" data-severity="low" data-source="ubuntu">
-        <td><div class="sev-bar sev-low"></div></td>
-        <td>
-          <a href="https://ubuntu.com/security/notices/USN-8361-3" target="_blank" rel="noopener" class="advisory-link">USN-8361-3: Linux kernel vulnerability</a>
-          <div class="summary">A security issue was discovered in the Linux kernel.
-An attacker could possibly use this to compromise the system.
-This update corrects flaws in the following subsystem:
-  - Packet sockets;
-(CVE-2026-31504)</div>
-        </td>
-        <td><span class="badge sev-low">LOW</span></td>
-        <td><span class="src-badge">Ubuntu</span></td>
-        <td class="dt">2026-06-17 09:53</td>
+        <td class="dt">2026-06-18 20:05</td>
       </tr>      <tr class="advisory-row" data-severity="low" data-source="ubuntu">
         <td><div class="sev-bar sev-low"></div></td>
         <td>
@@ -482,60 +392,114 @@ Several security issues were discovered in </div>
         <td><span class="badge sev-low">LOW</span></td>
         <td><span class="src-badge">Google Chrome</span></td>
         <td class="dt">2026-06-17 20:48</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
-        <td><div class="sev-bar sev-unknown"></div></td>
+      </tr>      <tr class="advisory-row" data-severity="low" data-source="msrc">
+        <td><div class="sev-bar sev-low"></div></td>
         <td>
-          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-34182" target="_blank" rel="noopener" class="advisory-link">CVE-2026-34182 CMS AuthEnvelopedData Processing May Accept Forged Messages</a>
+          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-7383" target="_blank" rel="noopener" class="advisory-link">CVE-2026-7383 Possible Heap Buffer Overflow in ASN.1 Multibyte String Conversion</a>
           <div class="summary">Information published.</div>
         </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="badge sev-low">LOW</span></td>
         <td><span class="src-badge">Microsoft MSRC</span></td>
-        <td class="dt">2026-06-16 09:14</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
-        <td><div class="sev-bar sev-unknown"></div></td>
+        <td class="dt">2026-06-18 08:42</td>
+      </tr>      <tr class="advisory-row" data-severity="low" data-source="msrc">
+        <td><div class="sev-bar sev-low"></div></td>
         <td>
-          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40371" target="_blank" rel="noopener" class="advisory-link">CVE-2026-40371 Microsoft Dynamics 365 (on-premises) Elevation of Privilege Vulnerability</a>
-          <div class="summary">Updated the fixed version information and download link. The fix was previously believed to be included in Dynamics 365 Server (on-premises) version 6.2; however, it has been confirmed that the fix is included in Dynamics 365 Server v9.1 (on-premises) Update 1.45 (version 9.1.0045.0011). The downloa</div>
+          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47633" target="_blank" rel="noopener" class="advisory-link">CVE-2026-47633 Microsoft Cost Management Information Disclosure Vulnerability</a>
+          <div class="summary">Exposure of sensitive information to an unauthorized actor in Cost Management Interactive Experiences allows an unauthorized attacker to disclose information over a network.</div>
         </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="badge sev-low">LOW</span></td>
         <td><span class="src-badge">Microsoft MSRC</span></td>
-        <td class="dt">2026-06-16 14:00</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
-        <td><div class="sev-bar sev-unknown"></div></td>
+        <td class="dt">2026-06-18 14:00</td>
+      </tr>      <tr class="advisory-row" data-severity="low" data-source="msrc">
+        <td><div class="sev-bar sev-low"></div></td>
         <td>
-          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45602" target="_blank" rel="noopener" class="advisory-link">CVE-2026-45602 Windows Dynamic Host Configuration Protocol (DHCP) Tampering Vulnerability</a>
-          <div class="summary">Updated CWE value.  This is an informational change only.</div>
+          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32208" target="_blank" rel="noopener" class="advisory-link">CVE-2026-32208 Microsoft Edge (Chromium-based) Spoofing Vulnerability</a>
+          <div class="summary">Improper neutralization of input during web page generation ('cross-site scripting') in Microsoft Edge (Chromium-based) allows an authorized attacker to perform spoofing over a network.</div>
         </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="badge sev-low">LOW</span></td>
         <td><span class="src-badge">Microsoft MSRC</span></td>
-        <td class="dt">2026-06-16 14:00</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
-        <td><div class="sev-bar sev-unknown"></div></td>
+        <td class="dt">2026-06-18 14:00</td>
+      </tr>      <tr class="advisory-row" data-severity="low" data-source="msrc">
+        <td><div class="sev-bar sev-low"></div></td>
         <td>
-          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42915" target="_blank" rel="noopener" class="advisory-link">CVE-2026-42915 Microsoft Windows VMSwitch Denial of Service Vulnerability</a>
-          <div class="summary">Corrected the CVE description and title. This is an informational change only.</div>
+          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32174" target="_blank" rel="noopener" class="advisory-link">CVE-2026-32174 Azure Bot Service Elevation of Privilege Vulnerability</a>
+          <div class="summary">Improper authentication in Azure Bot Service allows an authorized attacker to elevate privileges over a network.</div>
         </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="badge sev-low">LOW</span></td>
         <td><span class="src-badge">Microsoft MSRC</span></td>
-        <td class="dt">2026-06-16 14:00</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="google">
-        <td><div class="sev-bar sev-unknown"></div></td>
+        <td class="dt">2026-06-18 14:00</td>
+      </tr>      <tr class="advisory-row" data-severity="low" data-source="msrc">
+        <td><div class="sev-bar sev-low"></div></td>
         <td>
-          <a href="http://chromereleases.googleblog.com/2026/06/extended-stable-update-for-desktop.html" target="_blank" rel="noopener" class="advisory-link">Extended Stable Update for Desktop</a>
-          <div class="summary"><p><span style="color: #666666; font-family: arial; font-size: large; vertical-align: baseline;">The Extended Stable channel has been updated to 148.0.7778.271</span><span color="rgba(0, 0, 0, 0.87)" style="font-family: arial; font-size: large; vertical-align: baseline;"> </span><span style="color: </div>
+          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45480" target="_blank" rel="noopener" class="advisory-link">CVE-2026-45480 Azure Active Directory Elevation of Privilege Vulnerability</a>
+          <div class="summary">Improper authentication in Azure Active Directory allows an unauthorized attacker to elevate privileges over a network.</div>
         </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="badge sev-low">LOW</span></td>
+        <td><span class="src-badge">Microsoft MSRC</span></td>
+        <td class="dt">2026-06-18 14:00</td>
+      </tr>      <tr class="advisory-row" data-severity="low" data-source="msrc">
+        <td><div class="sev-bar sev-low"></div></td>
+        <td>
+          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42895" target="_blank" rel="noopener" class="advisory-link">CVE-2026-42895 Microsoft Copilot Tampering Vulnerability</a>
+          <div class="summary">Improper neutralization of special elements used in a command ('command injection') in Microsoft Copilot allows an unauthorized attacker to perform tampering over a network.</div>
+        </td>
+        <td><span class="badge sev-low">LOW</span></td>
+        <td><span class="src-badge">Microsoft MSRC</span></td>
+        <td class="dt">2026-06-18 14:00</td>
+      </tr>      <tr class="advisory-row" data-severity="low" data-source="msrc">
+        <td><div class="sev-bar sev-low"></div></td>
+        <td>
+          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47647" target="_blank" rel="noopener" class="advisory-link">CVE-2026-47647 Dynamics 365 Elevation of Privilege Vulnerability</a>
+          <div class="summary">Improper access control in Microsoft Dynamics 365 allows an authorized attacker to elevate privileges over a network.</div>
+        </td>
+        <td><span class="badge sev-low">LOW</span></td>
+        <td><span class="src-badge">Microsoft MSRC</span></td>
+        <td class="dt">2026-06-18 14:00</td>
+      </tr>      <tr class="advisory-row" data-severity="low" data-source="msrc">
+        <td><div class="sev-bar sev-low"></div></td>
+        <td>
+          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-48584" target="_blank" rel="noopener" class="advisory-link">CVE-2026-48584 Microsoft Azure Synapse Elevation of Privilege Vulnerability</a>
+          <div class="summary">Execution with unnecessary privileges in Azure Synapse allows an authorized attacker to elevate privileges over a network.</div>
+        </td>
+        <td><span class="badge sev-low">LOW</span></td>
+        <td><span class="src-badge">Microsoft MSRC</span></td>
+        <td class="dt">2026-06-18 14:00</td>
+      </tr>      <tr class="advisory-row" data-severity="low" data-source="msrc">
+        <td><div class="sev-bar sev-low"></div></td>
+        <td>
+          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-48582" target="_blank" rel="noopener" class="advisory-link">CVE-2026-48582 Microsoft Exchange Online Elevation of Privilege Vulnerability</a>
+          <div class="summary">Missing authorization in Microsoft Exchange Online allows an authorized attacker to elevate privileges over a network.</div>
+        </td>
+        <td><span class="badge sev-low">LOW</span></td>
+        <td><span class="src-badge">Microsoft MSRC</span></td>
+        <td class="dt">2026-06-18 14:00</td>
+      </tr>      <tr class="advisory-row" data-severity="low" data-source="msrc">
+        <td><div class="sev-bar sev-low"></div></td>
+        <td>
+          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47645" target="_blank" rel="noopener" class="advisory-link">CVE-2026-47645 Microsoft 365 Copilot's Business Chat Elevation of Privilege Vulnerability</a>
+          <div class="summary">Url redirection to untrusted site ('open redirect') in Microsoft 365 Copilot's Business Chat allows an unauthorized attacker to elevate privileges over a network.</div>
+        </td>
+        <td><span class="badge sev-low">LOW</span></td>
+        <td><span class="src-badge">Microsoft MSRC</span></td>
+        <td class="dt">2026-06-18 14:00</td>
+      </tr>      <tr class="advisory-row" data-severity="low" data-source="msrc">
+        <td><div class="sev-bar sev-low"></div></td>
+        <td>
+          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47646" target="_blank" rel="noopener" class="advisory-link">CVE-2026-47646 Dynamics 365 Customer Voice Spoofing Vulnerability</a>
+          <div class="summary">Improper neutralization of input during web page generation ('cross-site scripting') in Dynamics 365 Customer Voice allows an unauthorized attacker to perform spoofing over a network.</div>
+        </td>
+        <td><span class="badge sev-low">LOW</span></td>
+        <td><span class="src-badge">Microsoft MSRC</span></td>
+        <td class="dt">2026-06-18 14:00</td>
+      </tr>      <tr class="advisory-row" data-severity="low" data-source="google">
+        <td><div class="sev-bar sev-low"></div></td>
+        <td>
+          <a href="http://chromereleases.googleblog.com/2026/06/beta-channel-update-for-chromeos_0409608557.html" target="_blank" rel="noopener" class="advisory-link">Beta Channel Update for ChromeOS / ChromeOS Flex</a>
+          <div class="summary"><p><span>The Beta channel is being updated to OS version 16700.20.0 (Browser version 150.0.7871.32) for most ChromeOS devices.</span></p><span id="docs-internal-guid-c1ba22c3-7fff-ee9a-d166-2f57ca700f9e"><p dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"><span style="font-f</div>
+        </td>
+        <td><span class="badge sev-low">LOW</span></td>
         <td><span class="src-badge">Google Chrome</span></td>
-        <td class="dt">2026-06-16 21:30</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="google">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="http://chromereleases.googleblog.com/2026/06/chrome-for-android-update_01355673137.html" target="_blank" rel="noopener" class="advisory-link">Chrome for Android Update</a>
-          <div class="summary"><p>Hi, everyone! We've just released&nbsp;<b>Chrome 149 (149.0.7827.159)</b>&nbsp;for Android. It'll become&nbsp;<a href="https://play.google.com/store/apps/details?id=com.android.chrome">available on Google Play</a>&nbsp;over the next few days.&nbsp;</p><p>This release includes stability and perfor</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">Google Chrome</span></td>
-        <td class="dt">2026-06-17 00:30</td>
+        <td class="dt">2026-06-18 18:21</td>
       </tr>      <tr class="advisory-row" data-severity="unknown" data-source="ubuntu">
         <td><div class="sev-bar sev-unknown"></div></td>
         <td>
@@ -653,6 +617,265 @@ It was discovered that kitty incorrect</div>
         <td><span class="badge sev-unknown">UNKNOWN</span></td>
         <td><span class="src-badge">Google Chrome</span></td>
         <td class="dt">2026-06-17 21:13</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-48854" target="_blank" rel="noopener" class="advisory-link">CVE-2026-48854 Unbounded request body accumulation causes memory exhaustion in elixir-grpc/grpc</a>
+          <div class="summary">Information published.</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">Microsoft MSRC</span></td>
+        <td class="dt">2026-06-18 08:01</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-25680" target="_blank" rel="noopener" class="advisory-link">CVE-2026-25680 Invoking denial of service when parsing arbitrary HTML in golang.org/x/net/html</a>
+          <div class="summary">Information published.</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">Microsoft MSRC</span></td>
+        <td class="dt">2026-06-18 08:40</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-25681" target="_blank" rel="noopener" class="advisory-link">CVE-2026-25681 Invoking  incorrect handling of character references in DOCTYPE nodes in golang.org/x/net/html</a>
+          <div class="summary">Information published.</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">Microsoft MSRC</span></td>
+        <td class="dt">2026-06-18 08:40</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45447" target="_blank" rel="noopener" class="advisory-link">CVE-2026-45447 Heap Use-After-Free in the PKCS7_verify() Function</a>
+          <div class="summary">Information published.</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">Microsoft MSRC</span></td>
+        <td class="dt">2026-06-18 08:41</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-34182" target="_blank" rel="noopener" class="advisory-link">CVE-2026-34182 CMS AuthEnvelopedData Processing May Accept Forged Messages</a>
+          <div class="summary">Information published.</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">Microsoft MSRC</span></td>
+        <td class="dt">2026-06-18 08:41</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42766" target="_blank" rel="noopener" class="advisory-link">CVE-2026-42766 Possible NULL Dereference in Password-Based CMS Decryption</a>
+          <div class="summary">Information published.</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">Microsoft MSRC</span></td>
+        <td class="dt">2026-06-18 08:44</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42767" target="_blank" rel="noopener" class="advisory-link">CVE-2026-42767 NULL Pointer Dereference in CRMF EncryptedValue Decryption</a>
+          <div class="summary">Information published.</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">Microsoft MSRC</span></td>
+        <td class="dt">2026-06-18 08:45</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-34180" target="_blank" rel="noopener" class="advisory-link">CVE-2026-34180 Heap Buffer Over-read in ASN.1 Content Parsing</a>
+          <div class="summary">Information published.</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">Microsoft MSRC</span></td>
+        <td class="dt">2026-06-18 08:45</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-9076" target="_blank" rel="noopener" class="advisory-link">CVE-2026-9076 Out-of-Bounds Read in CMS Password-Based Decryption</a>
+          <div class="summary">Information published.</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">Microsoft MSRC</span></td>
+        <td class="dt">2026-06-18 08:46</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45445" target="_blank" rel="noopener" class="advisory-link">CVE-2026-45445 AES-OCB IV Ignored on EVP_Cipher() Path</a>
+          <div class="summary">Information published.</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">Microsoft MSRC</span></td>
+        <td class="dt">2026-06-18 08:46</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-71073" target="_blank" rel="noopener" class="advisory-link">CVE-2025-71073 Input: lkkbd - disable pending work before freeing device</a>
+          <div class="summary">Information published.</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">Microsoft MSRC</span></td>
+        <td class="dt">2026-06-18 08:48</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-71072" target="_blank" rel="noopener" class="advisory-link">CVE-2025-71072 shmem: fix recovery on rename failures</a>
+          <div class="summary">Information published.</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">Microsoft MSRC</span></td>
+        <td class="dt">2026-06-18 08:48</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-43308" target="_blank" rel="noopener" class="advisory-link">CVE-2026-43308 btrfs: don't BUG() on unexpected delayed ref type in run_one_delayed_ref()</a>
+          <div class="summary">Information published.</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">Microsoft MSRC</span></td>
+        <td class="dt">2026-06-18 08:48</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46292" target="_blank" rel="noopener" class="advisory-link">CVE-2026-46292 pmdomain: core: Fix detach procedure for virtual devices in genpd</a>
+          <div class="summary">Information published.</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">Microsoft MSRC</span></td>
+        <td class="dt">2026-06-18 08:49</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-28387" target="_blank" rel="noopener" class="advisory-link">CVE-2026-28387 Potential Use-after-free in DANE Client Code</a>
+          <div class="summary">Information published.</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">Microsoft MSRC</span></td>
+        <td class="dt">2026-06-18 08:50</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46274" target="_blank" rel="noopener" class="advisory-link">CVE-2026-46274 io-wq: check that the predecessor is hashed in io_wq_remove_pending()</a>
+          <div class="summary">Information published.</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">Microsoft MSRC</span></td>
+        <td class="dt">2026-06-18 08:50</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46291" target="_blank" rel="noopener" class="advisory-link">CVE-2026-46291 crypto: caam - guard HMAC key hex dumps in hash_digest_key</a>
+          <div class="summary">Information published.</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">Microsoft MSRC</span></td>
+        <td class="dt">2026-06-18 08:50</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46293" target="_blank" rel="noopener" class="advisory-link">CVE-2026-46293 clk: microchip: mpfs-ccc: fix out of bounds access during output registration</a>
+          <div class="summary">Information published.</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">Microsoft MSRC</span></td>
+        <td class="dt">2026-06-18 08:50</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="ubuntu">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://ubuntu.com/security/notices/USN-8449-1" target="_blank" rel="noopener" class="advisory-link">USN-8449-1: ldns vulnerability</a>
+          <div class="summary">Pablo Ruiz discovered that ldns did not properly validate DNS
+responses when used as a stub resolver over UDP. A remote
+attacker could possibly use this issue to inject arbitrary DNS
+responses.</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">Ubuntu</span></td>
+        <td class="dt">2026-06-18 13:33</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="google">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="http://chromereleases.googleblog.com/2026/06/chrome-dev-for-desktop-update_01724281417.html" target="_blank" rel="noopener" class="advisory-link">Chrome Dev for Desktop Update</a>
+          <div class="summary"><p>The Dev channel has been updated to 151.0.7896.2 for Windows, Mac and Linux.</p><p>A partial list of changes is available in the <a href="https://chromium.googlesource.com/chromium/src/+log/151.0.7886.2..151.0.7896.2?pretty=fuller&amp;n=10000">Git log</a>. Interested in <a href="https://www.chrom</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">Google Chrome</span></td>
+        <td class="dt">2026-06-18 14:13</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="ubuntu">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://ubuntu.com/security/notices/USN-8450-1" target="_blank" rel="noopener" class="advisory-link">USN-8450-1: Tomcat vulnerabilities</a>
+          <div class="summary">It was discovered that Tomcat did not properly limit the size of
+WebDAV LOCK and PROPFIND request bodies. A remote attacker could
+possibly use this issue to cause Tomcat to consume excessive memory,
+resulting in a denial of service. (CVE-2026-41284)
+
+It was discovered that Tomcat incorrectly validat</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">Ubuntu</span></td>
+        <td class="dt">2026-06-18 15:56</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="ubuntu">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://ubuntu.com/security/notices/USN-8451-1" target="_blank" rel="noopener" class="advisory-link">USN-8451-1: Vim vulnerabilities</a>
+          <div class="summary">Srinivas Piskala Ganesh Babu discovered that Vim incorrectly handled
+directory names when serializing browsed paths to the netrw history file.
+An attacker could possibly use this issue to execute arbitrary code.
+(CVE-2026-47162)
+
+It was discovered that Vim incorrectly handled step-definition pattern</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">Ubuntu</span></td>
+        <td class="dt">2026-06-18 16:05</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="ubuntu">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://ubuntu.com/security/notices/USN-8453-1" target="_blank" rel="noopener" class="advisory-link">USN-8453-1: Net::CIDR::Lite vulnerabilities</a>
+          <div class="summary">It was discovered that Net::CIDR::Lite incorrectly validated IP address and
+CIDR mask inputs. An attacker could possibly use this issue to bypass IP
+access control lists. (CVE-2026-45190)
+
+It was discovered that Net::CIDR::Lite incorrectly handled extraneous zero
+characters in CIDR mask values. An a</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">Ubuntu</span></td>
+        <td class="dt">2026-06-18 16:15</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="ubuntu">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://ubuntu.com/security/notices/USN-8452-1" target="_blank" rel="noopener" class="advisory-link">USN-8452-1: pbkdf2 vulnerability</a>
+          <div class="summary">Nikita Skovoroda discovered that pbkdf2 did not properly validate
+certain algorithm names. An attacker could possibly use this issue to
+generate predictable cryptographic keys, resulting in signature spoofing.</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">Ubuntu</span></td>
+        <td class="dt">2026-06-18 16:30</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="ubuntu">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://ubuntu.com/security/notices/USN-8454-1" target="_blank" rel="noopener" class="advisory-link">USN-8454-1: libheif vulnerabilities</a>
+          <div class="summary">Elhanan Haenel discovered that libheif incorrectly handled certain
+malformed HEIF sequence files. An attacker could possibly use this
+issue to cause a denial of service. This issue only affected Ubuntu 25.10
+and Ubuntu 26.04 LTS. (CVE-2026-32738)
+
+Elhanan Haenel discovered that libheif incorrectly h</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">Ubuntu</span></td>
+        <td class="dt">2026-06-18 16:41</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="google">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="http://chromereleases.googleblog.com/2026/06/chrome-dev-for-android-update_01200124948.html" target="_blank" rel="noopener" class="advisory-link">Chrome Dev for Android Update</a>
+          <div class="summary"><p>Hi everyone! We've just released Chrome Dev 151 (151.0.7896.3) for Android. It's now available on <a href="https://play.google.com/store/apps/details?id=com.chrome.dev">Google Play</a>.</p><p>You can see a partial list of the changes in the <a href="https://chromium.googlesource.com/chromium/src/</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">Google Chrome</span></td>
+        <td class="dt">2026-06-18 17:28</td>
       </tr>
         </tbody>
       </table>
@@ -674,7 +897,6 @@ It was discovered that kitty incorrect</div>
           <option value="">Vše</option>
           <option value="crowdstrike">CrowdStrike</option>
 <option value="malwarebytes">Malwarebytes</option>
-<option value="securelist">securelist</option>
         </select>
       </div>
       <div class="filter-group">
@@ -703,14 +925,42 @@ It was discovered that kitty incorrect</div>
           <div class="summary"></div>
         </td>
         <td><span class="src-badge">CrowdStrike</span></td>
-        <td class="dt">2026-06-18 06:40</td>
+        <td class="dt">2026-06-19 06:41</td>
       </tr>      <tr class="intel-row" data-source="crowdstrike">
         <td>
           <a href="https://www.crowdstrike.com/en-us/blog/crowdstrike-2026-technology-threat-landscape-report/" target="_blank" rel="noopener" class="advisory-link">CrowdStrike 2026 Technology Threat Landscape Report: China&rsquo;s Ambitions Fuel Attacks</a>
           <div class="summary"></div>
         </td>
         <td><span class="src-badge">CrowdStrike</span></td>
-        <td class="dt">2026-06-18 06:40</td>
+        <td class="dt">2026-06-19 06:41</td>
+      </tr>      <tr class="intel-row" data-source="crowdstrike">
+        <td>
+          <a href="https://www.crowdstrike.com/en-us/blog/new-abuse-of-the-clickonce-technology-part-two/" target="_blank" rel="noopener" class="advisory-link">New Abuse of the ClickOnce Technology, Part 2: Stop Threat Actors from Clicking Once and Staying Forever</a>
+          <div class="summary"></div>
+        </td>
+        <td><span class="src-badge">CrowdStrike</span></td>
+        <td class="dt">2026-06-19 06:41</td>
+      </tr>      <tr class="intel-row" data-source="malwarebytes">
+        <td>
+          <a href="https://www.malwarebytes.com/blog/news/2026/06/microsoft-working-on-a-fix-for-rogueplanet-a-flaw-that-grants-full-pc-control" target="_blank" rel="noopener" class="advisory-link">Microsoft working on a fix for RoguePlanet, a flaw that grants full PC control</a>
+          <div class="summary">Microsoft says it's working on a fix for an unpatched Defender vulnerability that can give attackers the highest level of access on Windows.</div>
+        </td>
+        <td><span class="src-badge">Malwarebytes</span></td>
+        <td class="dt">2026-06-18 12:58</td>
+      </tr>      <tr class="intel-row" data-source="malwarebytes">
+        <td>
+          <a href="https://www.malwarebytes.com/blog/threat-intel/2026/06/retro-gaming-fans-are-the-new-target-for-fake-github-malware" target="_blank" rel="noopener" class="advisory-link">Retro gaming fans are the new target for fake GitHub malware</a>
+          <div class="summary">Retro gaming fans should be careful with GitHub projects that claim to be tools or plugins for their consoles. We looked at one example aimed at PlayStation Vita owners.</div>
+        </td>
+        <td><span class="src-badge">Malwarebytes</span></td>
+        <td class="dt">2026-06-18 11:27</td>
+      </tr>      <tr class="intel-row" data-source="malwarebytes">
+        <td>
+          <a href="https://www.malwarebytes.com/blog/news/2026/06/kodak-confirms-breach-as-shinyhunters-leak-threat-reaches-deadline" target="_blank" rel="noopener" class="advisory-link">Kodak confirms breach as ShinyHunters&#8217; leak threat reaches deadline</a>
+          <div class="summary">The photography giant confirmed a data breach after ShinyHunters claimed it stole 2.2 million records and threatened to leak them.</div>
+        </td>
+        <td><span class="src-badge">Malwarebytes</span></td>
+        <td class="dt">2026-06-18 09:52</td>
       </tr>      <tr class="intel-row" data-source="malwarebytes">
         <td>
           <a href="https://www.malwarebytes.com/blog/scams/2026/06/roblox-developers-are-losing-entire-games-to-malware-attacks" target="_blank" rel="noopener" class="advisory-link">Roblox developers are losing entire games to malware attacks</a>
@@ -739,34 +989,6 @@ It was discovered that kitty incorrect</div>
         </td>
         <td><span class="src-badge">Malwarebytes</span></td>
         <td class="dt">2026-06-17 09:41</td>
-      </tr>      <tr class="intel-row" data-source="malwarebytes">
-        <td>
-          <a href="https://www.malwarebytes.com/blog/threat-intel/2026/06/free-world-cup-stream-sites-are-serving-scams-not-football" target="_blank" rel="noopener" class="advisory-link">&#8220;Free World Cup stream&#8221; sites are serving scams, not football</a>
-          <div class="summary">We found dozens of fake World Cup streaming sites using football as bait to funnel visitors through a malicious advertising network.</div>
-        </td>
-        <td><span class="src-badge">Malwarebytes</span></td>
-        <td class="dt">2026-06-16 13:00</td>
-      </tr>      <tr class="intel-row" data-source="malwarebytes">
-        <td>
-          <a href="https://www.malwarebytes.com/blog/news/2026/06/cardiac-patients-medical-data-stolen-and-held-to-ransom" target="_blank" rel="noopener" class="advisory-link">Cardiac patients&#8217; medical data stolen and held to ransom</a>
-          <div class="summary">Cardiac monitoring provider iRhythm has been hit by a data theft followed by an extortion attempt.</div>
-        </td>
-        <td><span class="src-badge">Malwarebytes</span></td>
-        <td class="dt">2026-06-16 12:49</td>
-      </tr>      <tr class="intel-row" data-source="malwarebytes">
-        <td>
-          <a href="https://www.malwarebytes.com/blog/ai/2026/06/deepfake-posting-sites-depicting-famous-women-taken-down-by-feds" target="_blank" rel="noopener" class="advisory-link">Deepfake posting sites depicting famous women taken down by feds</a>
-          <div class="summary">Thanks to Uncle Sam, anyone trying to find nonconsensual intimate deepfakes on CFake.com and SOCFake.com will be disappointed.</div>
-        </td>
-        <td><span class="src-badge">Malwarebytes</span></td>
-        <td class="dt">2026-06-16 10:31</td>
-      </tr>      <tr class="intel-row" data-source="securelist">
-        <td>
-          <a href="https://securelist.com/dozens-of-malicious-wallpapers-found-on-steam-workshop/120186/" target="_blank" rel="noopener" class="advisory-link">Dozens of malicious wallpapers found on Steam Workshop: gamers’ accounts at risk</a>
-          <div class="summary">Since late 2025, malware has been spreading rapidly through the Steam Workshop, the gaming platform's built-in service for players to create and share custom content. The attackers are primarily targeting gamers in China and Russia.</div>
-        </td>
-        <td><span class="src-badge">securelist</span></td>
-        <td class="dt">2026-06-16 09:00</td>
       </tr>
         </tbody>
       </table>

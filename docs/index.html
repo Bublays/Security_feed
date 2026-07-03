@@ -273,14 +273,14 @@
   </div>
   <div class="topbar-meta">
     <span class="live-dot"></span>
-    2026-07-02 06:43 UTC &nbsp;·&nbsp; interval 48 h
+    2026-07-03 06:40 UTC &nbsp;·&nbsp; interval 48 h
   </div>
 </div>
 
 <div class="page">
 
   <div class="stat-row">
-    <div class="sc sc-critical"><div class="sc-n">20</div><div class="sc-l">CRITICAL</div></div><div class="sc sc-high"><div class="sc-n">23</div><div class="sc-l">HIGH</div></div><div class="sc sc-medium"><div class="sc-n">23</div><div class="sc-l">MEDIUM</div></div><div class="sc sc-low"><div class="sc-n">14</div><div class="sc-l">LOW</div></div>
+    <div class="sc sc-critical"><div class="sc-n">6</div><div class="sc-l">CRITICAL</div></div><div class="sc sc-high"><div class="sc-n">19</div><div class="sc-l">HIGH</div></div><div class="sc sc-medium"><div class="sc-n">25</div><div class="sc-l">MEDIUM</div></div><div class="sc sc-low"><div class="sc-n">20</div><div class="sc-l">LOW</div></div>
   </div>
 
   <!-- CVE Advisories panel -->
@@ -288,7 +288,7 @@
     <div class="panel-header">
       <span class="panel-title">Bezpečnostní advisories</span>
       <span class="panel-subtitle">CVE · strukturované záznamy</span>
-      <span class="record-pill pill-blue" id="adv-count">167 záznamů</span>
+      <span class="record-pill pill-blue" id="adv-count">173 záznamů</span>
     </div>
     <div class="filters">
       <div class="filter-group">
@@ -305,8 +305,7 @@
         <label>Zdroj</label>
         <select id="f-src" onchange="applyAdvisoryFilters()">
           <option value="">Vše</option>
-          <option value="cisa_kev">CISA KEV</option>
-<option value="google">Google Chrome</option>
+          <option value="google">Google Chrome</option>
 <option value="msrc">Microsoft MSRC</option>
 <option value="nvd">NVD</option>
 <option value="ubuntu">Ubuntu</option>
@@ -336,183 +335,7 @@
           </tr>
         </thead>
         <tbody id="adv-tbody">
-                <tr class="advisory-row" data-severity="critical" data-source="nvd">
-        <td><div class="sev-bar sev-critical"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-9711" target="_blank" rel="noopener" class="advisory-link">CVE-2026-9711 (CVSS 9.8)</a>
-          <div class="summary">The EventON - WordPress Virtual Event Calendar Plugin plugin for WordPress (full) is vulnerable to SQL Injection via the WordPress 'search' parameter in versions up to, and including, 5.0.11 due to insufficient escaping on the user supplied parameter and lack of preparation on the existing SQL query</div>
-        </td>
-        <td><span class="badge sev-critical">CRITICAL</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 10:16</td>
-      </tr>      <tr class="advisory-row" data-severity="critical" data-source="nvd">
-        <td><div class="sev-bar sev-critical"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-13766" target="_blank" rel="noopener" class="advisory-link">CVE-2026-13766 (CVSS 9.8)</a>
-          <div class="summary">DBIx::QuickORM versions before 0.000026 for Perl allow SQL injection via unquoted SQL identifiers.
-
-The default SQL builder, a SQL::Abstract subclass, sets bindtype in its constructor but never quote_char, so SQL::Abstract emits identifiers verbatim. Caller-supplied identifiers (order_by, where-clau</div>
-        </td>
-        <td><span class="badge sev-critical">CRITICAL</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 12:16</td>
-      </tr>      <tr class="advisory-row" data-severity="critical" data-source="nvd">
-        <td><div class="sev-bar sev-critical"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-14162" target="_blank" rel="noopener" class="advisory-link">CVE-2026-14162 (CVSS 9.8)</a>
-          <div class="summary">Hospital Queuing Management developed by Advantech has a Sensitive Data Exposure vulnerability, allowing unauthenticated remote attackers to access a specific URL to obtain API documentation.</div>
-        </td>
-        <td><span class="badge sev-critical">CRITICAL</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 12:16</td>
-      </tr>      <tr class="advisory-row" data-severity="critical" data-source="nvd">
-        <td><div class="sev-bar sev-critical"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-8402" target="_blank" rel="noopener" class="advisory-link">CVE-2026-8402 (CVSS 9.8)</a>
-          <div class="summary">Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in Eksagate Electronic Engineering and Computer Industry Trade Inc. SYSGUARD 6001 allows Blind SQL Injection.
-
-This issue affects SYSGUARD 6001: from 2.0.2 before 6.1.16.0. 
-NOTE: The vendor was contac</div>
-        </td>
-        <td><span class="badge sev-critical">CRITICAL</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 12:16</td>
-      </tr>      <tr class="advisory-row" data-severity="critical" data-source="nvd">
-        <td><div class="sev-bar sev-critical"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-58116" target="_blank" rel="noopener" class="advisory-link">CVE-2026-58116 (CVSS 9.8)</a>
-          <div class="summary">LLaMA-Factory through 0.9.5 contains a remote code execution vulnerability that allows attackers with WebUI access to execute arbitrary Python code by supplying a malicious model path in the Chat or Training interfaces. The application passes user-supplied model path input unvalidated into AutoToken</div>
-        </td>
-        <td><span class="badge sev-critical">CRITICAL</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 13:19</td>
-      </tr>      <tr class="advisory-row" data-severity="critical" data-source="nvd">
-        <td><div class="sev-bar sev-critical"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6556" target="_blank" rel="noopener" class="advisory-link">CVE-2026-6556 (CVSS 9.1)</a>
-          <div class="summary">@fastify/express versions 4.0.6 and earlier only rewrite the plugin prefix for middleware mount paths when the path argument is a string. Non-string mount paths (arrays of paths and regular expressions) are left unprefixed inside prefixed plugin scopes, so middleware registered with those forms does</div>
-        </td>
-        <td><span class="badge sev-critical">CRITICAL</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 13:19</td>
-      </tr>      <tr class="advisory-row" data-severity="critical" data-source="nvd">
-        <td><div class="sev-bar sev-critical"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-8452" target="_blank" rel="noopener" class="advisory-link">CVE-2026-8452 (CVSS 9.8)</a>
-          <div class="summary">Memory overflow vulnerability NetScaler ADC and NetScaler Gateway leading to unpredictable or erroneous behavior and Denial of Service if the appliance is configured as a Gateway (SSL VPN, ICA Proxy, CVPN, RDP Proxy) or AAA virtual server</div>
-        </td>
-        <td><span class="badge sev-critical">CRITICAL</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 13:19</td>
-      </tr>      <tr class="advisory-row" data-severity="critical" data-source="nvd">
-        <td><div class="sev-bar sev-critical"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-8655" target="_blank" rel="noopener" class="advisory-link">CVE-2026-8655 (CVSS 9.8)</a>
-          <div class="summary">Multiple Memory overflow vulnerabilities in NetScaler ADC and NetScaler Gateway leading to unpredictable or erroneous behavior and Denial of Service if NetScaler ADC is configured as an LB of type Oracle OR NetScaler ADC is configured as a DNS Proxy OR NetScaler ADC is configured as a DNS recursive </div>
-        </td>
-        <td><span class="badge sev-critical">CRITICAL</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 13:19</td>
-      </tr>      <tr class="advisory-row" data-severity="critical" data-source="nvd">
-        <td><div class="sev-bar sev-critical"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-14241" target="_blank" rel="noopener" class="advisory-link">CVE-2026-14241 (CVSS 9.8)</a>
-          <div class="summary">Memory safety bugs present in Firefox 152.0.3. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability was fixed in Firefox 152.0.4.</div>
-        </td>
-        <td><span class="badge sev-critical">CRITICAL</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 14:16</td>
-      </tr>      <tr class="advisory-row" data-severity="critical" data-source="nvd">
-        <td><div class="sev-bar sev-critical"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-48276" target="_blank" rel="noopener" class="advisory-link">CVE-2026-48276 (CVSS 10.0)</a>
-          <div class="summary">ColdFusion versions 2025.9, 2023.20 and earlier are affected by an Unrestricted Upload of File with Dangerous Type vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue does not require user interaction. Scope is changed.</div>
-        </td>
-        <td><span class="badge sev-critical">CRITICAL</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 16:16</td>
-      </tr>      <tr class="advisory-row" data-severity="critical" data-source="nvd">
-        <td><div class="sev-bar sev-critical"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-48277" target="_blank" rel="noopener" class="advisory-link">CVE-2026-48277 (CVSS 10.0)</a>
-          <div class="summary">ColdFusion versions 2025.9, 2023.20 and earlier are affected by an Improper Input Validation vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue does not require user interaction. Scope is changed.</div>
-        </td>
-        <td><span class="badge sev-critical">CRITICAL</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 16:16</td>
-      </tr>      <tr class="advisory-row" data-severity="critical" data-source="nvd">
-        <td><div class="sev-bar sev-critical"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-48281" target="_blank" rel="noopener" class="advisory-link">CVE-2026-48281 (CVSS 10.0)</a>
-          <div class="summary">ColdFusion versions 2025.9, 2023.20 and earlier are affected by an Improper Input Validation vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue does not require user interaction. Scope is changed.</div>
-        </td>
-        <td><span class="badge sev-critical">CRITICAL</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 16:16</td>
-      </tr>      <tr class="advisory-row" data-severity="critical" data-source="nvd">
-        <td><div class="sev-bar sev-critical"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-48282" target="_blank" rel="noopener" class="advisory-link">CVE-2026-48282 (CVSS 10.0)</a>
-          <div class="summary">ColdFusion versions 2025.9, 2023.20 and earlier are affected by an Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability that could lead to arbitrary code execution in the context of the current user. Exploitation of this issue does not require user interaction</div>
-        </td>
-        <td><span class="badge sev-critical">CRITICAL</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 16:16</td>
-      </tr>      <tr class="advisory-row" data-severity="critical" data-source="nvd">
-        <td><div class="sev-bar sev-critical"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-48283" target="_blank" rel="noopener" class="advisory-link">CVE-2026-48283 (CVSS 10.0)</a>
-          <div class="summary">ColdFusion versions 2025.9, 2023.20 and earlier are affected by an Unrestricted Upload of File with Dangerous Type vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue does not require user interaction. Scope is changed.</div>
-        </td>
-        <td><span class="badge sev-critical">CRITICAL</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 16:16</td>
-      </tr>      <tr class="advisory-row" data-severity="critical" data-source="nvd">
-        <td><div class="sev-bar sev-critical"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-48286" target="_blank" rel="noopener" class="advisory-link">CVE-2026-48286 (CVSS 10.0)</a>
-          <div class="summary">Adobe Campaign Classic (ACC) versions 7.4.3 build 9396 and earlier are affected by an Incorrect Authorization vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue does not require user interaction. Scope is changed.</div>
-        </td>
-        <td><span class="badge sev-critical">CRITICAL</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 16:16</td>
-      </tr>      <tr class="advisory-row" data-severity="critical" data-source="nvd">
-        <td><div class="sev-bar sev-critical"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-48313" target="_blank" rel="noopener" class="advisory-link">CVE-2026-48313 (CVSS 9.3)</a>
-          <div class="summary">ColdFusion versions 2025.9, 2023.20 and earlier are affected by an Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability that could lead to arbitrary file system read and limited write access. An attacker could exploit this vulnerability to access sensitive fil</div>
-        </td>
-        <td><span class="badge sev-critical">CRITICAL</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 16:16</td>
-      </tr>      <tr class="advisory-row" data-severity="critical" data-source="nvd">
-        <td><div class="sev-bar sev-critical"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-48315" target="_blank" rel="noopener" class="advisory-link">CVE-2026-48315 (CVSS 9.3)</a>
-          <div class="summary">ColdFusion versions 2025.9, 2023.20 and earlier are affected by an Improper Input Validation vulnerability that could result in arbitrary code execution in the context of the current user. An attacker could exploit this vulnerability to inject malicious scripts into a web page, potentially gaining e</div>
-        </td>
-        <td><span class="badge sev-critical">CRITICAL</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 16:16</td>
-      </tr>      <tr class="advisory-row" data-severity="critical" data-source="google">
-        <td><div class="sev-bar sev-critical"></div></td>
-        <td>
-          <a href="http://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_0175352312.html" target="_blank" rel="noopener" class="advisory-link">Stable Channel Update for Desktop</a>
-          <div class="summary"><p><span style="color: #666666; font-family: arial; font-size: large;">The Chrome team is delighted to announce the promotion of Chrome 150 to the stable channel for Windows, Mac and Linux. This will roll out over the coming days/weeks.</span></p><p><span face="Roboto, sans-serif" style="color: #666</div>
-        </td>
-        <td><span class="badge sev-critical">CRITICAL</span></td>
-        <td><span class="src-badge">Google Chrome</span></td>
-        <td class="dt">2026-06-30 20:41</td>
-      </tr>      <tr class="advisory-row" data-severity="critical" data-source="cisa_kev">
-        <td><div class="sev-bar sev-critical"></div></td>
-        <td>
-          <a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener" class="advisory-link">CVE-2026-45659 – Microsoft SharePoint Server Deserialization of Untrusted Data Vulnerability</a>
-          <div class="summary">Microsoft SharePoint Server contains a deserialization of untrusted data vulnerability which allows an authorized attacker to execute code over a network.</div>
-        </td>
-        <td><span class="badge sev-critical">CRITICAL</span></td>
-        <td><span class="src-badge">CISA KEV</span></td>
-        <td class="dt">2026-07-01 00:00</td>
-      </tr>      <tr class="advisory-row" data-severity="critical" data-source="msrc">
+                <tr class="advisory-row" data-severity="critical" data-source="msrc">
         <td><div class="sev-bar sev-critical"></div></td>
         <td>
           <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-6450" target="_blank" rel="noopener" class="advisory-link">CVE-2026-6450 CRL critical extension bypass in ParseCRL_Extensions</a>
@@ -521,462 +344,471 @@ NOTE: The vendor was contac</div>
         <td><span class="badge sev-critical">CRITICAL</span></td>
         <td><span class="src-badge">Microsoft MSRC</span></td>
         <td class="dt">2026-07-01 08:03</td>
-      </tr>      <tr class="advisory-row" data-severity="high" data-source="nvd">
-        <td><div class="sev-bar sev-high"></div></td>
+      </tr>      <tr class="advisory-row" data-severity="critical" data-source="nvd">
+        <td><div class="sev-bar sev-critical"></div></td>
         <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11589" target="_blank" rel="noopener" class="advisory-link">CVE-2026-11589 (CVSS 8.8)</a>
-          <div class="summary">The WP Support Plus Responsive Ticket System WordPress plugin through 9.1.2 does not properly validate uploaded files, allowing unauthenticated users to upload files containing malicious JavaScript (such as HTML or SVG) to a publicly accessible location, leading to Stored Cross-Site Scripting attack</div>
-        </td>
-        <td><span class="badge sev-high">HIGH</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 07:16</td>
-      </tr>      <tr class="advisory-row" data-severity="high" data-source="nvd">
-        <td><div class="sev-bar sev-high"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11590" target="_blank" rel="noopener" class="advisory-link">CVE-2026-11590 (CVSS 8.6)</a>
-          <div class="summary">The WP Support Plus Responsive Ticket System WordPress plugin through 9.1.2 does not sanitize user-supplied array keys before using them in a SQL statement, allowing unauthenticated users to perform SQL injection attacks.</div>
-        </td>
-        <td><span class="badge sev-high">HIGH</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 07:16</td>
-      </tr>      <tr class="advisory-row" data-severity="high" data-source="nvd">
-        <td><div class="sev-bar sev-high"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12240" target="_blank" rel="noopener" class="advisory-link">CVE-2026-12240 (CVSS 8.0)</a>
-          <div class="summary">The Export User Data plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the unserialize function in all versions up to, and including, 2.2.6. This makes it possible for authenticated attackers, with subscriber-level access and above, to delete a</div>
-        </td>
-        <td><span class="badge sev-high">HIGH</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 07:16</td>
-      </tr>      <tr class="advisory-row" data-severity="high" data-source="nvd">
-        <td><div class="sev-bar sev-high"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-14164" target="_blank" rel="noopener" class="advisory-link">CVE-2026-14164 (CVSS 7.5)</a>
-          <div class="summary">A double free issue has been identified in libarchive's RAR5 reader. During parsing of a specially crafted RAR5 archive, the filtered_buf pointer may remain stale after being freed during unpacking state reinitialization. Subsequent processing of another archive entry can trigger a second free of th</div>
-        </td>
-        <td><span class="badge sev-high">HIGH</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 07:16</td>
-      </tr>      <tr class="advisory-row" data-severity="high" data-source="nvd">
-        <td><div class="sev-bar sev-high"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-24815" target="_blank" rel="noopener" class="advisory-link">CVE-2025-24815 (CVSS 7.8)</a>
-          <div class="summary">Nokia MantaRay NM is subject to an unrestricted file upload vulnerability due to insufficient file type validation. Successful exploitation could allow an authenticated attacker to upload malicious files onto the system.</div>
-        </td>
-        <td><span class="badge sev-high">HIGH</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 10:16</td>
-      </tr>      <tr class="advisory-row" data-severity="high" data-source="nvd">
-        <td><div class="sev-bar sev-high"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-7406" target="_blank" rel="noopener" class="advisory-link">CVE-2025-7406 (CVSS 7.8)</a>
-          <div class="summary">Nokia MantaRay NM is vulnerable to a sudo privilege escalation vulnerability where a local attacker possessing administrative (local admin) privileges can escalate to full root privileges on the host. Successful exploitation results in root-level access to the filesystem and the ability to execute a</div>
-        </td>
-        <td><span class="badge sev-high">HIGH</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 10:16</td>
-      </tr>      <tr class="advisory-row" data-severity="high" data-source="nvd">
-        <td><div class="sev-bar sev-high"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-8141" target="_blank" rel="noopener" class="advisory-link">CVE-2026-8141 (CVSS 7.2)</a>
-          <div class="summary">The Ajax Load More - Filters plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'taxonomy_include_children' parameter in all versions up to, and including, 3.4.1 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to</div>
-        </td>
-        <td><span class="badge sev-high">HIGH</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 10:16</td>
-      </tr>      <tr class="advisory-row" data-severity="high" data-source="nvd">
-        <td><div class="sev-bar sev-high"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-49432" target="_blank" rel="noopener" class="advisory-link">CVE-2026-49432 (CVSS 7.5)</a>
-          <div class="summary">Improper Input Validation vulnerability in Apache ActiveMQ, Apache ActiveMQ All, Apache ActiveMQ Stomp.
-
-A remote unauthenticated peer that can reach an exposed STOMP connector can trigger denial-of-service behavior by sending a negative content-length. For the NIO STOMP transport, an attacker can k</div>
-        </td>
-        <td><span class="badge sev-high">HIGH</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 11:16</td>
-      </tr>      <tr class="advisory-row" data-severity="high" data-source="nvd">
-        <td><div class="sev-bar sev-high"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-49434" target="_blank" rel="noopener" class="advisory-link">CVE-2026-49434 (CVSS 7.5)</a>
-          <div class="summary">Improper Input Validation vulnerability in Apache ActiveMQ Broker, Apache ActiveMQ, Apache ActiveMQ All.
-
-An attacker that has access to publish or modify entries in LDAP that match the configured searchBase and searchFilter can instantiate denied transports inside the broker JVM. This can be used t</div>
-        </td>
-        <td><span class="badge sev-high">HIGH</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 11:16</td>
-      </tr>      <tr class="advisory-row" data-severity="high" data-source="nvd">
-        <td><div class="sev-bar sev-high"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-49877" target="_blank" rel="noopener" class="advisory-link">CVE-2026-49877 (CVSS 8.1)</a>
-          <div class="summary">Improper Authorization vulnerability in Apache ActiveMQ.
-
-An authenticated low-privilege Web Console user by default can access /admin/* paths in the Web Console. The default Jetty settings incorrectly did not limit those paths to only admins.
-This issue affects Apache ActiveMQ: before 5.19.8, from </div>
-        </td>
-        <td><span class="badge sev-high">HIGH</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 11:16</td>
-      </tr>      <tr class="advisory-row" data-severity="high" data-source="nvd">
-        <td><div class="sev-bar sev-high"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-50734" target="_blank" rel="noopener" class="advisory-link">CVE-2026-50734 (CVSS 7.5)</a>
-          <div class="summary">Memory Allocation with Excessive Size Value vulnerability in Apache ActiveMQ Client, Apache ActiveMQ, Apache ActiveMQ All.
-
-An unauthenticated network attacker can cause a broker DoS by sending a crafted WireFormatInfo frame with a malicious large size value. The value is not validate and causes the</div>
-        </td>
-        <td><span class="badge sev-high">HIGH</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 11:16</td>
-      </tr>      <tr class="advisory-row" data-severity="high" data-source="nvd">
-        <td><div class="sev-bar sev-high"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-50750" target="_blank" rel="noopener" class="advisory-link">CVE-2026-50750 (CVSS 7.5)</a>
-          <div class="summary">Denial of Service via Out of Memory vulnerability in Apache ActiveMQ Broker, Apache ActiveMQ, Apache ActiveMQ All.
-
-Following the fix for  CVE-2026-49270 an unauthenticated attacker can now cause broker OOM by sending an repeated BrokerInfo commands without sending a ConnectionInfo, until the broker</div>
-        </td>
-        <td><span class="badge sev-high">HIGH</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 11:16</td>
-      </tr>      <tr class="advisory-row" data-severity="high" data-source="nvd">
-        <td><div class="sev-bar sev-high"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-53916" target="_blank" rel="noopener" class="advisory-link">CVE-2026-53916 (CVSS 7.5)</a>
-          <div class="summary">Memory Allocation with Excessive Size Value vulnerability in Apache ActiveMQ, Apache ActiveMQ All, Apache ActiveMQ Stomp.
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10539" target="_blank" rel="noopener" class="advisory-link">CVE-2026-10539 (CVSS 9.0)</a>
+          <div class="summary">A Control-M/Server communication command does not sufficiently filter or sanitize user-supplied input. Under certain conditions, this issue may allow an unauthenticated attacker to execute unauthorized commands on the affected server, potentially leading to compromise of the server. 
 
 
-An unauthenticated client that opens a STOMP NIO connection can send header bytes that never terminate which makes the broker buffer them without limit, exhausting the JVM heap</div>
-        </td>
-        <td><span class="badge sev-high">HIGH</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 11:16</td>
-      </tr>      <tr class="advisory-row" data-severity="high" data-source="nvd">
-        <td><div class="sev-bar sev-high"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-53917" target="_blank" rel="noopener" class="advisory-link">CVE-2026-53917 (CVSS 7.5)</a>
-          <div class="summary">Memory Allocation with Excessive Size Value vulnerability in Apache ActiveMQ, Apache ActiveMQ All, Apache ActiveMQ Client, Apache ActiveMQ Broker.
 
-An authenticated user can cause a broker DoS by sending a crafted OpenWire Message with a large encoded size value for the map. OpenWire message propert</div>
+This vulnera</div>
         </td>
-        <td><span class="badge sev-high">HIGH</span></td>
+        <td><span class="badge sev-critical">CRITICAL</span></td>
         <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 11:16</td>
-      </tr>      <tr class="advisory-row" data-severity="high" data-source="nvd">
-        <td><div class="sev-bar sev-high"></div></td>
+        <td class="dt">2026-07-01 08:16</td>
+      </tr>      <tr class="advisory-row" data-severity="critical" data-source="nvd">
+        <td><div class="sev-bar sev-critical"></div></td>
         <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-54475" target="_blank" rel="noopener" class="advisory-link">CVE-2026-54475 (CVSS 7.5)</a>
-          <div class="summary">Missing Authorization vulnerability in Apache ActiveMQ Broker, Apache ActiveMQ All, Apache ActiveMQ.
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11387" target="_blank" rel="noopener" class="advisory-link">CVE-2026-11387 (CVSS 9.8)</a>
+          <div class="summary">The SMS Alert – SMS & OTP for WooCommerce, Order Notifications & Abandoned Cart Recovery plugin for WordPress is vulnerable to privilege escalation via account takeover in all versions up to, and including, 3.9.5. This is due to the plugin not properly validating a user's identity prior to updating </div>
+        </td>
+        <td><span class="badge sev-critical">CRITICAL</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 08:16</td>
+      </tr>      <tr class="advisory-row" data-severity="critical" data-source="nvd">
+        <td><div class="sev-bar sev-critical"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-14198" target="_blank" rel="noopener" class="advisory-link">CVE-2026-14198 (CVSS 9.1)</a>
+          <div class="summary">@fastify/middie versions 9.1.0 through 9.3.2 decode the encoded slash %2F inside path parameter values before matching middleware paths, while Fastify's underlying router preserves the encoding during route lookup. The two layers disagree on the canonical request path, so the middleware fails to mat</div>
+        </td>
+        <td><span class="badge sev-critical">CRITICAL</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 12:16</td>
+      </tr>      <tr class="advisory-row" data-severity="critical" data-source="nvd">
+        <td><div class="sev-bar sev-critical"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-57692" target="_blank" rel="noopener" class="advisory-link">CVE-2026-57692 (CVSS 9.8)</a>
+          <div class="summary">Incorrect Privilege Assignment vulnerability in LCweb PrivateContent allows Privilege Escalation.
 
-Apache ActiveMQ Classic temporary destinations are expected to be isolated to the connection that created them. The isolation can be broken as this is only checked in the client, allowing a differen</div>
+This issue affects PrivateContent: from n/a through 9.9.2.</div>
         </td>
-        <td><span class="badge sev-high">HIGH</span></td>
+        <td><span class="badge sev-critical">CRITICAL</span></td>
         <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 11:16</td>
+        <td class="dt">2026-07-01 14:16</td>
+      </tr>      <tr class="advisory-row" data-severity="critical" data-source="nvd">
+        <td><div class="sev-bar sev-critical"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-23537" target="_blank" rel="noopener" class="advisory-link">CVE-2026-23537 (CVSS 9.1)</a>
+          <div class="summary">A vulnerability has been identified in the Feast Feature Server’s `/save-document` endpoint that allows an unauthenticated remote attacker to write arbitrary JSON files to the server's filesystem. Although the system attempts to restrict file locations, these protections can be bypassed, enabling an</div>
+        </td>
+        <td><span class="badge sev-critical">CRITICAL</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 15:17</td>
       </tr>      <tr class="advisory-row" data-severity="high" data-source="nvd">
         <td><div class="sev-bar sev-high"></div></td>
         <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-14161" target="_blank" rel="noopener" class="advisory-link">CVE-2026-14161 (CVSS 7.5)</a>
-          <div class="summary">Hospital Quening Management developed by Advantech has a Sensitive Data Exposure vulnerability, allowing unauthenticated remote attackers to access a specific URL to obtain API documentation.</div>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10750" target="_blank" rel="noopener" class="advisory-link">CVE-2026-10750 (CVSS 8.1)</a>
+          <div class="summary">The Royal MCP  WordPress plugin before 1.4.26 does not perform capability checks on the majority of its MCP tools after token authentication, allowing authenticated users with a low-privileged role such as Subscriber to read private content, enumerate all users and their roles, and create, modify, o</div>
         </td>
         <td><span class="badge sev-high">HIGH</span></td>
         <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 12:16</td>
+        <td class="dt">2026-07-01 07:16</td>
       </tr>      <tr class="advisory-row" data-severity="high" data-source="nvd">
         <td><div class="sev-bar sev-high"></div></td>
         <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41053" target="_blank" rel="noopener" class="advisory-link">CVE-2026-41053 (CVSS 8.8)</a>
-          <div class="summary">Incorrect authentication caching in the team member ship expansion of the Rancher Github authentication provider caused it granting principal access to any logged in user, in 2.13 before 2.13.6 and 2.14 before 2.14.2.</div>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11568" target="_blank" rel="noopener" class="advisory-link">CVE-2026-11568 (CVSS 7.5)</a>
+          <div class="summary">The Product Configurator for WooCommerce WordPress plugin before 1.7.3 does not perform any authorisation or post-status check before returning WooCommerce product data through a public AJAX action, allowing unauthenticated users to retrieve the data (title, price, weight, stock status, and configur</div>
         </td>
         <td><span class="badge sev-high">HIGH</span></td>
         <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 12:16</td>
+        <td class="dt">2026-07-01 07:16</td>
       </tr>      <tr class="advisory-row" data-severity="high" data-source="nvd">
         <td><div class="sev-bar sev-high"></div></td>
         <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-57080" target="_blank" rel="noopener" class="advisory-link">CVE-2026-57080 (CVSS 7.5)</a>
-          <div class="summary">Net::BitTorrent versions through 2.0.1 for Perl allow remote memory exhaustion via an uncapped peer-wire message-length prefix.
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11794" target="_blank" rel="noopener" class="advisory-link">CVE-2026-11794 (CVSS 8.1)</a>
+          <div class="summary">The Advanced Form Integration — Connect Forms to 200+ Apps WordPress plugin before 2.1.1 does not restrict the WordPress role assigned when it creates a user from a public form submission, allowing unauthenticated visitors to create an administrator account when an active integration maps the user r</div>
+        </td>
+        <td><span class="badge sev-high">HIGH</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 07:16</td>
+      </tr>      <tr class="advisory-row" data-severity="high" data-source="nvd">
+        <td><div class="sev-bar sev-high"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11823" target="_blank" rel="noopener" class="advisory-link">CVE-2026-11823 (CVSS 7.5)</a>
+          <div class="summary">The BookingPress Appointment Booking Pro plugin for WordPress is vulnerable to SQL Injection via the 'store_service_date' parameter of the bpa_assign_staffmember_to_slots() function in versions up to and including 5.7.1. This is due to the explicit use of stripslashes_deep() on user-supplied POST da</div>
+        </td>
+        <td><span class="badge sev-high">HIGH</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 07:16</td>
+      </tr>      <tr class="advisory-row" data-severity="high" data-source="nvd">
+        <td><div class="sev-bar sev-high"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11883" target="_blank" rel="noopener" class="advisory-link">CVE-2026-11883 (CVSS 7.2)</a>
+          <div class="summary">The WebAuthn Provider for Two Factor WordPress plugin before 2.5.6 does not correctly validate the second-factor authentication response, allowing an attacker who already knows a user's password to bypass the two-factor authentication requirement by submitting a malformed request.</div>
+        </td>
+        <td><span class="badge sev-high">HIGH</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 07:16</td>
+      </tr>      <tr class="advisory-row" data-severity="high" data-source="nvd">
+        <td><div class="sev-bar sev-high"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12579" target="_blank" rel="noopener" class="advisory-link">CVE-2026-12579 (CVSS 7.4)</a>
+          <div class="summary">AS228T with Authentication Bypass Vulnerability</div>
+        </td>
+        <td><span class="badge sev-high">HIGH</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 07:16</td>
+      </tr>      <tr class="advisory-row" data-severity="high" data-source="nvd">
+        <td><div class="sev-bar sev-high"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-14193" target="_blank" rel="noopener" class="advisory-link">CVE-2026-14193 (CVSS 7.5)</a>
+          <div class="summary">DVP80ES300T with Improper Validation of Array Index Vulnerability</div>
+        </td>
+        <td><span class="badge sev-high">HIGH</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 07:16</td>
+      </tr>      <tr class="advisory-row" data-severity="high" data-source="nvd">
+        <td><div class="sev-bar sev-high"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1239" target="_blank" rel="noopener" class="advisory-link">CVE-2026-1239 (CVSS 7.5)</a>
+          <div class="summary">The Ninja Forms – The Contact Form Builder That Grows With You plugin for WordPress is vulnerable to unauthorized access of data due to a missing authorization check on the 'ninja-forms-views/token/refresh' REST callback in all versions up to, and including, 3.14.1. This makes it possible for unauth</div>
+        </td>
+        <td><span class="badge sev-high">HIGH</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 07:16</td>
+      </tr>      <tr class="advisory-row" data-severity="high" data-source="nvd">
+        <td><div class="sev-bar sev-high"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10538" target="_blank" rel="noopener" class="advisory-link">CVE-2026-10538 (CVSS 8.0)</a>
+          <div class="summary">Messaging consumer functionality allows deserialization of user-controlled data without sufficient restriction of allowed object types in the out of support Control-M/Server and Control-M/Enterprise Manager versions 9.0.20.x and potentially earlier. This issue may allow an authenticated attacker to </div>
+        </td>
+        <td><span class="badge sev-high">HIGH</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 08:16</td>
+      </tr>      <tr class="advisory-row" data-severity="high" data-source="nvd">
+        <td><div class="sev-bar sev-high"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12158" target="_blank" rel="noopener" class="advisory-link">CVE-2026-12158 (CVSS 8.8)</a>
+          <div class="summary">The RegistrationMagic – User Registration Forms Plugin plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 6.0.9.1. This is due to missing or incorrect nonce validation on the process_request function. This makes it possible for unauthenticated atta</div>
+        </td>
+        <td><span class="badge sev-high">HIGH</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 08:16</td>
+      </tr>      <tr class="advisory-row" data-severity="high" data-source="nvd">
+        <td><div class="sev-bar sev-high"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12224" target="_blank" rel="noopener" class="advisory-link">CVE-2026-12224 (CVSS 8.8)</a>
+          <div class="summary">The Dokan Pro plugin for WordPress is vulnerable to privilege escalation via update_capabilities REST Endpoint in all versions up to, and including, 5.0.4.  This is due to the `update_capabilities()` REST handler accepting arbitrary capability strings from the request body and passing them directly </div>
+        </td>
+        <td><span class="badge sev-high">HIGH</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 08:16</td>
+      </tr>      <tr class="advisory-row" data-severity="high" data-source="nvd">
+        <td><div class="sev-bar sev-high"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12575" target="_blank" rel="noopener" class="advisory-link">CVE-2026-12575 (CVSS 7.5)</a>
+          <div class="summary">DVP80ES3 with 
+Improper Resource Shutdown or Release vulnerability.</div>
+        </td>
+        <td><span class="badge sev-high">HIGH</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 08:16</td>
+      </tr>      <tr class="advisory-row" data-severity="high" data-source="nvd">
+        <td><div class="sev-bar sev-high"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12576" target="_blank" rel="noopener" class="advisory-link">CVE-2026-12576 (CVSS 7.5)</a>
+          <div class="summary">DVP80ES3 with Improper Enforcement of Message Integrity During Transmission in a Communication Channel vulnerability.</div>
+        </td>
+        <td><span class="badge sev-high">HIGH</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 08:16</td>
+      </tr>      <tr class="advisory-row" data-severity="high" data-source="nvd">
+        <td><div class="sev-bar sev-high"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12142" target="_blank" rel="noopener" class="advisory-link">CVE-2026-12142 (CVSS 7.2)</a>
+          <div class="summary">The NEX-Forms – Ultimate Forms Plugin for WordPress plugin for WordPress is vulnerable to Stored Cross-Site Scripting via '_name[]' Array Parameter in all versions up to, and including, 9.2.2 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attac</div>
+        </td>
+        <td><span class="badge sev-high">HIGH</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 11:16</td>
+      </tr>      <tr class="advisory-row" data-severity="high" data-source="nvd">
+        <td><div class="sev-bar sev-high"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-13228" target="_blank" rel="noopener" class="advisory-link">CVE-2026-13228 (CVSS 8.8)</a>
+          <div class="summary">The LatePoint – Calendar Booking Plugin for Appointments and Events plugin for WordPress is vulnerable to Privilege Escalation to Administrator in versions up to, and including, 5.6.3 This is due to an Insecure Direct Object Reference (IDOR) in the create_or_update() function of OsOrdersController, </div>
+        </td>
+        <td><span class="badge sev-high">HIGH</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 11:16</td>
+      </tr>      <tr class="advisory-row" data-severity="high" data-source="nvd">
+        <td><div class="sev-bar sev-high"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-14181" target="_blank" rel="noopener" class="advisory-link">CVE-2026-14181 (CVSS 7.5)</a>
+          <div class="summary">@fastify/middie versions 9.1.0 through 9.3.2 fail to guard the URL normalization step used by the standalone engine when incoming request paths contain malformed percent-encoded sequences. Inputs such as an incomplete percent escape or a truncated multibyte sequence cause the underlying decoder to t</div>
+        </td>
+        <td><span class="badge sev-high">HIGH</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 12:16</td>
+      </tr>      <tr class="advisory-row" data-severity="high" data-source="nvd">
+        <td><div class="sev-bar sev-high"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5120" target="_blank" rel="noopener" class="advisory-link">CVE-2026-5120 (CVSS 8.1)</a>
+          <div class="summary">A Race Condition vulnerability affecting BIOVIA Workbook from Release 2021 through Release 2026 could allow a user to access unauthorized data from another user.</div>
+        </td>
+        <td><span class="badge sev-high">HIGH</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 13:17</td>
+      </tr>      <tr class="advisory-row" data-severity="high" data-source="nvd">
+        <td><div class="sev-bar sev-high"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5136" target="_blank" rel="noopener" class="advisory-link">CVE-2026-5136 (CVSS 8.8)</a>
+          <div class="summary">A flaw was found in Foreman. The Usergroup model in Foreman does not properly validate role assignments against the calling user's permissions. This allows an authenticated user with usergroup management permissions to attach arbitrary roles, including administrative roles, to a user group and then </div>
+        </td>
+        <td><span class="badge sev-high">HIGH</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 14:16</td>
+      </tr>      <tr class="advisory-row" data-severity="high" data-source="nvd">
+        <td><div class="sev-bar sev-high"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6682" target="_blank" rel="noopener" class="advisory-link">CVE-2026-6682 (CVSS 7.6)</a>
+          <div class="summary">In FatFS R0.16 and earlier contains a FAT32 integer overflow bug in mount_volume() where fasize *= fs->n_fats can wrap, leading to attacker-controlled file-size metadata and unsafe read lengths in downstream callers. This maps to CWE-190 (Integer Overflow or Wraparound). Estimated CVSS v3.1 vector: </div>
+        </td>
+        <td><span class="badge sev-high">HIGH</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 15:17</td>
+      </tr>      <tr class="advisory-row" data-severity="medium" data-source="nvd">
+        <td><div class="sev-bar sev-medium"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-15666" target="_blank" rel="noopener" class="advisory-link">CVE-2025-15666 (CVSS 5.3)</a>
+          <div class="summary">A security vulnerability has been detected in Open Asset Import Library Assimp up to 5.4.3. Affected by this vulnerability is the function Assimp::SceneCombiner::Copy of the file code/Common/SceneCombiner.cpp of the component Model File Handler. Such manipulation of the argument width/height leads t</div>
+        </td>
+        <td><span class="badge sev-medium">MEDIUM</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 07:16</td>
+      </tr>      <tr class="advisory-row" data-severity="medium" data-source="nvd">
+        <td><div class="sev-bar sev-medium"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11562" target="_blank" rel="noopener" class="advisory-link">CVE-2026-11562 (CVSS 4.3)</a>
+          <div class="summary">The WS Form LITE  WordPress plugin before 1.11.8 does not have a capability check on one of its settings-update actions, allowing authenticated users with subscriber-level access and above to modify the WS Form LITE  WordPress plugin before 1.11.8's settings.</div>
+        </td>
+        <td><span class="badge sev-medium">MEDIUM</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 07:16</td>
+      </tr>      <tr class="advisory-row" data-severity="medium" data-source="nvd">
+        <td><div class="sev-bar sev-medium"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11570" target="_blank" rel="noopener" class="advisory-link">CVE-2026-11570 (CVSS 4.2)</a>
+          <div class="summary">The User Submitted Posts  WordPress plugin before 20260608 does not escape a submitted value before outputting it in an admin-configured display template, leading to a Stored Cross-Site Scripting that can be triggered by unauthenticated users when a non-default display option is enabled.</div>
+        </td>
+        <td><span class="badge sev-medium">MEDIUM</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 07:16</td>
+      </tr>      <tr class="advisory-row" data-severity="medium" data-source="nvd">
+        <td><div class="sev-bar sev-medium"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11887" target="_blank" rel="noopener" class="advisory-link">CVE-2026-11887 (CVSS 4.3)</a>
+          <div class="summary">The Salon Booking System  WordPress plugin before 10.30.20 does not have proper authorisation checks on one of its AJAX actions, allowing any authenticated user, such as a subscriber, to modify a Salon Booking System  WordPress plugin before 10.30.20 setting and bypass the manual approval of new boo</div>
+        </td>
+        <td><span class="badge sev-medium">MEDIUM</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 07:16</td>
+      </tr>      <tr class="advisory-row" data-severity="medium" data-source="nvd">
+        <td><div class="sev-bar sev-medium"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10096" target="_blank" rel="noopener" class="advisory-link">CVE-2026-10096 (CVSS 4.3)</a>
+          <div class="summary">The Qi Blocks plugin for WordPress is vulnerable to Insecure Direct Object Reference in all versions up to, and including, 1.4.9 via the 'page_id' parameter due to missing validation on a user controlled key. This makes it possible for authenticated attackers, with author-level access and above, to </div>
+        </td>
+        <td><span class="badge sev-medium">MEDIUM</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 08:16</td>
+      </tr>      <tr class="advisory-row" data-severity="medium" data-source="nvd">
+        <td><div class="sev-bar sev-medium"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10540" target="_blank" rel="noopener" class="advisory-link">CVE-2026-10540 (CVSS 5.6)</a>
+          <div class="summary">The Control-M/Enterprise Manager uses weak protections for stored hashes of account passwords, potentially allowing offline password recovery attacks if credential data is obtained by an attacker. This vulnerability affects Control-M/Enterprise Manager unsupported versions 9.0.20.x and potentially e</div>
+        </td>
+        <td><span class="badge sev-medium">MEDIUM</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 08:16</td>
+      </tr>      <tr class="advisory-row" data-severity="medium" data-source="nvd">
+        <td><div class="sev-bar sev-medium"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12408" target="_blank" rel="noopener" class="advisory-link">CVE-2026-12408 (CVSS 4.3)</a>
+          <div class="summary">The Slim SEO – A Fast & Automated SEO Plugin For WordPress plugin for WordPress is vulnerable to Unauthorized Private Content Disclosure in all versions up to, and including, 4.9.8 via the `/wp-json/slim-seo/meta-tags/ai` REST API endpoint. This is due to the endpoint's `permission_callback` perform</div>
+        </td>
+        <td><span class="badge sev-medium">MEDIUM</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 08:16</td>
+      </tr>      <tr class="advisory-row" data-severity="medium" data-source="nvd">
+        <td><div class="sev-bar sev-medium"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12435" target="_blank" rel="noopener" class="advisory-link">CVE-2026-12435 (CVSS 4.3)</a>
+          <div class="summary">The Motors – Car Dealership & Classified Listings Plugin plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 1.4.111. This is due to the plugin not properly verifying that a user is authorized to perform an action. This makes it possible for authenticated</div>
+        </td>
+        <td><span class="badge sev-medium">MEDIUM</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 08:16</td>
+      </tr>      <tr class="advisory-row" data-severity="medium" data-source="nvd">
+        <td><div class="sev-bar sev-medium"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12732" target="_blank" rel="noopener" class="advisory-link">CVE-2026-12732 (CVSS 6.4)</a>
+          <div class="summary">The LearnPress plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'class_wrapper_form' shortcode attribute in versions up to, and including, 4.4.0. This is due to insufficient input sanitization and output escaping in the FilterCourseTemplate::sections() method at line 98, whe</div>
+        </td>
+        <td><span class="badge sev-medium">MEDIUM</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 08:16</td>
+      </tr>      <tr class="advisory-row" data-severity="medium" data-source="nvd">
+        <td><div class="sev-bar sev-medium"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-13733" target="_blank" rel="noopener" class="advisory-link">CVE-2026-13733 (CVSS 6.4)</a>
+          <div class="summary">The Download Manager plugin for WordPress is vulnerable to Stored Cross-Site Scripting via 'no_data_msg' Shortcode Attribute in all versions up to, and including, 3.3.60 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with contributor-l</div>
+        </td>
+        <td><span class="badge sev-medium">MEDIUM</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 08:16</td>
+      </tr>      <tr class="advisory-row" data-severity="medium" data-source="nvd">
+        <td><div class="sev-bar sev-medium"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56016" target="_blank" rel="noopener" class="advisory-link">CVE-2026-56016 (CVSS 5.9)</a>
+          <div class="summary">CGI::Session::ID::md5 versions before 4.49 for Perl generate predictable session ids from low-entropy sources.
 
-The peer-wire framing in _process_messages trusts the 4-byte length prefix sent by a connected peer with no upper bound, while receive_data appends every inbound byte to t</div>
+The generate_id method builds the session id from a MD5 digest of the process id, the epoch time, and the built-in rand() function. All three are predictable, low-entropy sources: the PID </div>
         </td>
-        <td><span class="badge sev-high">HIGH</span></td>
+        <td><span class="badge sev-medium">MEDIUM</span></td>
         <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 12:16</td>
-      </tr>      <tr class="advisory-row" data-severity="high" data-source="nvd">
-        <td><div class="sev-bar sev-high"></div></td>
+        <td class="dt">2026-07-01 08:16</td>
+      </tr>      <tr class="advisory-row" data-severity="medium" data-source="nvd">
+        <td><div class="sev-bar sev-medium"></div></td>
         <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-57081" target="_blank" rel="noopener" class="advisory-link">CVE-2026-57081 (CVSS 7.5)</a>
-          <div class="summary">Net::BitTorrent versions through 2.0.1 for Perl allow remote memory exhaustion via deeply nested bencoded input.
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12754" target="_blank" rel="noopener" class="advisory-link">CVE-2026-12754 (CVSS 6.1)</a>
+          <div class="summary">The VikBooking Hotel Booking Engine & PMS plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via the 'layoutstyle' parameter in all versions up to, and including, 1.8.12 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers</div>
+        </td>
+        <td><span class="badge sev-medium">MEDIUM</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 10:16</td>
+      </tr>      <tr class="advisory-row" data-severity="medium" data-source="nvd">
+        <td><div class="sev-bar sev-medium"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-13454" target="_blank" rel="noopener" class="advisory-link">CVE-2026-13454 (CVSS 6.5)</a>
+          <div class="summary">The MotoPress Appointment Booking plugin for WordPress is vulnerable to generic SQL Injection via the 's' parameter in all versions up to, and including, 2.4.5 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it poss</div>
+        </td>
+        <td><span class="badge sev-medium">MEDIUM</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 10:16</td>
+      </tr>      <tr class="advisory-row" data-severity="medium" data-source="nvd">
+        <td><div class="sev-bar sev-medium"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27435" target="_blank" rel="noopener" class="advisory-link">CVE-2026-27435 (CVSS 5.3)</a>
+          <div class="summary">Missing Authorization vulnerability in WofficeIO Woffice allows Exploiting Incorrectly Configured Access Control Security Levels.
 
-bdecode recurses once per nested list or dictionary level with no depth cap, and each recursive call receives the remaining buffer by value while the list and dictionary branches capture</div>
-        </td>
-        <td><span class="badge sev-high">HIGH</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 12:16</td>
-      </tr>      <tr class="advisory-row" data-severity="high" data-source="nvd">
-        <td><div class="sev-bar sev-high"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-8451" target="_blank" rel="noopener" class="advisory-link">CVE-2026-8451 (CVSS 7.5)</a>
-          <div class="summary">Insufficient input validation in NetScaler ADC and NetScaler Gateway leading to memory overread if NetScaler ADC or NetScaler Gateway is configured as a SAML IDP</div>
-        </td>
-        <td><span class="badge sev-high">HIGH</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 13:19</td>
-      </tr>      <tr class="advisory-row" data-severity="high" data-source="nvd">
-        <td><div class="sev-bar sev-high"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27957" target="_blank" rel="noopener" class="advisory-link">CVE-2026-27957 (CVSS 8.8)</a>
-          <div class="summary">Coolify is an open-source and self-hostable tool for managing servers, applications, and databases. Prior to 4.0.0-beta.464, an authenticated command injection vulnerability in the CA Certificate management feature allows any authenticated user to execute arbitrary commands as the configured SSH use</div>
-        </td>
-        <td><span class="badge sev-high">HIGH</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 15:16</td>
-      </tr>      <tr class="advisory-row" data-severity="high" data-source="nvd">
-        <td><div class="sev-bar sev-high"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-48285" target="_blank" rel="noopener" class="advisory-link">CVE-2026-48285 (CVSS 8.6)</a>
-          <div class="summary">ColdFusion versions 2025.9, 2023.20 and earlier are affected by a Server-Side Request Forgery (SSRF) vulnerability that could result in a Security feature bypass. An attacker could leverage this vulnerability to bypass security measures and gain unauthorized read access. Exploitation of this issue d</div>
-        </td>
-        <td><span class="badge sev-high">HIGH</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 16:16</td>
-      </tr>      <tr class="advisory-row" data-severity="high" data-source="nvd">
-        <td><div class="sev-bar sev-high"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-48307" target="_blank" rel="noopener" class="advisory-link">CVE-2026-48307 (CVSS 8.8)</a>
-          <div class="summary">ColdFusion versions 2025.9, 2023.20 and earlier are affected by a reflected Cross-Site Scripting (XSS) vulnerability. An attacker could exploit this vulnerability to inject malicious scripts into a web page, potentially resulting in arbitrary code execution in the context of the current user. Exploi</div>
-        </td>
-        <td><span class="badge sev-high">HIGH</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 16:16</td>
-      </tr>      <tr class="advisory-row" data-severity="medium" data-source="nvd">
-        <td><div class="sev-bar sev-medium"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11581" target="_blank" rel="noopener" class="advisory-link">CVE-2026-11581 (CVSS 5.9)</a>
-          <div class="summary">The Kali Forms — Contact Form & Drag-and-Drop Builder WordPress plugin before 2.4.13 does not sanitise a form field's caption before outputting it as a column header on the administrator form-entries screen, allowing users with Contributor-level access or above to store JavaScript that executes in a</div>
+This issue affects Woffice: from n/a before 5.4.33.</div>
         </td>
         <td><span class="badge sev-medium">MEDIUM</span></td>
         <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 07:16</td>
+        <td class="dt">2026-07-01 10:16</td>
       </tr>      <tr class="advisory-row" data-severity="medium" data-source="nvd">
         <td><div class="sev-bar sev-medium"></div></td>
         <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-9576" target="_blank" rel="noopener" class="advisory-link">CVE-2026-9576 (CVSS 4.9)</a>
-          <div class="summary">The Fluent Booking  WordPress plugin before 2.1.2 does not verify ownership of the requested group_id before exporting attendee data via the export endpoint, allowing users with at least the Calendar Manager role to retrieve attendees' PII (name, email, phone, address, payment information) from cale</div>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10095" target="_blank" rel="noopener" class="advisory-link">CVE-2026-10095 (CVSS 6.4)</a>
+          <div class="summary">The WP Photo Album Plus plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'subtext' parameter in all versions up to, and including, 9.1.13.005 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with contributor-leve</div>
         </td>
         <td><span class="badge sev-medium">MEDIUM</span></td>
         <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 07:16</td>
+        <td class="dt">2026-07-01 11:16</td>
       </tr>      <tr class="advisory-row" data-severity="medium" data-source="nvd">
         <td><div class="sev-bar sev-medium"></div></td>
         <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-24816" target="_blank" rel="noopener" class="advisory-link">CVE-2025-24816 (CVSS 6.5)</a>
-          <div class="summary">Nokia MantaRay is subject to an Improper Access Control vulnerability due to insufficient authorization within the API. Successful exploitation could allow an authenticated attacker to retrieve confidential information beyond their assigned privileges.</div>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-14258" target="_blank" rel="noopener" class="advisory-link">CVE-2026-14258 (CVSS 6.5)</a>
+          <div class="summary">A flaw was found in dhcpcd's IPv6 Neighbor Discovery Router Advertisement processing. A specially crafted IPv6 Router Advertisement containing a zero-length Neighbor Discovery option can bypass validation during packet storage and later be reparsed without adequate validation, causing the parser to </div>
         </td>
         <td><span class="badge sev-medium">MEDIUM</span></td>
         <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 10:16</td>
+        <td class="dt">2026-07-01 11:16</td>
       </tr>      <tr class="advisory-row" data-severity="medium" data-source="nvd">
         <td><div class="sev-bar sev-medium"></div></td>
         <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12610" target="_blank" rel="noopener" class="advisory-link">CVE-2026-12610 (CVSS 6.4)</a>
-          <div class="summary">A flaw was found in sssd. When authenticating with a YubiKey, the SSSD PAM responder can crash due to a use-after-free vulnerability, where a memory pointer is incorrectly handled. A local attacker could exploit this flaw by manipulating smartcard or YubiKey contents, leading to a denial of service </div>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-13323" target="_blank" rel="noopener" class="advisory-link">CVE-2026-13323 (CVSS 4.1)</a>
+          <div class="summary">In Open VSX Registry before 1.0.2, the /vscode/unpkg/ endpoint serves user-supplied HTML files with Content-Type: text/html and without a Content-Security-Policy or Content-Disposition: attachment response header. An unauthenticated attacker can register a publisher account, upload a VSIX containing</div>
         </td>
         <td><span class="badge sev-medium">MEDIUM</span></td>
         <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 10:16</td>
+        <td class="dt">2026-07-01 12:16</td>
       </tr>      <tr class="advisory-row" data-severity="medium" data-source="nvd">
         <td><div class="sev-bar sev-medium"></div></td>
         <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-13316" target="_blank" rel="noopener" class="advisory-link">CVE-2026-13316 (CVSS 4.4)</a>
-          <div class="summary">A flaw has been found in foreman when HTTP parameters are modified in http_proxies_controller and http_proxy files. Attackers can perform an SSRF attack and steal cloud metadata service on AWS/GCP/Azure environment through foreman component.</div>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-14324" target="_blank" rel="noopener" class="advisory-link">CVE-2026-14324 (CVSS 6.5)</a>
+          <div class="summary">RAOP module accepts unbounded Content-Length values and does not check the pw_array_add() return.</div>
         </td>
         <td><span class="badge sev-medium">MEDIUM</span></td>
         <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 11:16</td>
+        <td class="dt">2026-07-01 15:17</td>
       </tr>      <tr class="advisory-row" data-severity="medium" data-source="nvd">
         <td><div class="sev-bar sev-medium"></div></td>
         <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-52760" target="_blank" rel="noopener" class="advisory-link">CVE-2026-52760 (CVSS 6.1)</a>
-          <div class="summary">Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Apache ActiveMQ, Apache ActiveMQ Web Console.
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-14330" target="_blank" rel="noopener" class="advisory-link">CVE-2026-14330 (CVSS 5.5)</a>
+          <div class="summary">Multiple unbounded alloca() calls in the PulseAudio protocol server.</div>
+        </td>
+        <td><span class="badge sev-medium">MEDIUM</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 15:17</td>
+      </tr>      <tr class="advisory-row" data-severity="medium" data-source="nvd">
+        <td><div class="sev-bar sev-medium"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5135" target="_blank" rel="noopener" class="advisory-link">CVE-2026-5135 (CVSS 6.5)</a>
+          <div class="summary">A flaw was found in Foreman. This broken access control vulnerability allows an authenticated user with host-edit permissions to retarget an existing lookup value override to a different host. This is achieved by modifying the match field through nested host attributes, effectively bypassing authori</div>
+        </td>
+        <td><span class="badge sev-medium">MEDIUM</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 15:17</td>
+      </tr>      <tr class="advisory-row" data-severity="medium" data-source="nvd">
+        <td><div class="sev-bar sev-medium"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5138" target="_blank" rel="noopener" class="advisory-link">CVE-2026-5138 (CVSS 4.3)</a>
+          <div class="summary">A flaw was found in Foreman. An authenticated user with host-edit permissions could exploit a cross-tenant information disclosure vulnerability. This flaw occurs because the taxonomy_scope controller method does not properly validate organization and location IDs from nested request parameters, bypa</div>
+        </td>
+        <td><span class="badge sev-medium">MEDIUM</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 15:17</td>
+      </tr>      <tr class="advisory-row" data-severity="medium" data-source="nvd">
+        <td><div class="sev-bar sev-medium"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5142" target="_blank" rel="noopener" class="advisory-link">CVE-2026-5142 (CVSS 6.5)</a>
+          <div class="summary">A flaw was found in foreman. Authenticated users with 'view_keypairs' permission can bypass taxonomy scoping, allowing them to download private SSH (Secure Shell) keys from other organizations by directly querying key pair IDs. This vulnerability leads to cross-tenant data exposure in multi-tenant d</div>
+        </td>
+        <td><span class="badge sev-medium">MEDIUM</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 15:17</td>
+      </tr>      <tr class="advisory-row" data-severity="medium" data-source="nvd">
+        <td><div class="sev-bar sev-medium"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5220" target="_blank" rel="noopener" class="advisory-link">CVE-2026-5220 (CVSS 6.4)</a>
+          <div class="summary">Improper neutralization of input during web page generation ('cross-site scripting') vulnerability in DivvyDrive Information Technologies Inc. DivvyDrive allows Stored XSS.
 
-The browse page in the web console renders a message Id directly without sanitization. This allows an authenticated producer to send a message with a J</div>
+This issue affects DivvyDrive: from 4.8.2.23 before v.4.8.3.1.</div>
         </td>
         <td><span class="badge sev-medium">MEDIUM</span></td>
         <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 11:16</td>
+        <td class="dt">2026-07-01 15:17</td>
       </tr>      <tr class="advisory-row" data-severity="medium" data-source="nvd">
         <td><div class="sev-bar sev-medium"></div></td>
         <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-57079" target="_blank" rel="noopener" class="advisory-link">CVE-2026-57079 (CVSS 5.3)</a>
-          <div class="summary">Net::BitTorrent versions through 2.0.1 for Perl write files outside the download directory via path traversal in peer-supplied metadata.
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6283" target="_blank" rel="noopener" class="advisory-link">CVE-2026-6283 (CVSS 5.4)</a>
+          <div class="summary">Improper neutralization of input during web page generation ('cross-site scripting') vulnerability in DivvyDrive Information Technologies Inc. DivvyDrive allows Stored XSS.
 
-Net::BitTorrent validates file path components only on the .torrent-file ingest path. The peer and magnet metadata path (_on_metadata_received, reached from the B</div>
+This issue affects DivvyDrive: from v.4.8.2.23 before v.4.8.3.1.</div>
         </td>
         <td><span class="badge sev-medium">MEDIUM</span></td>
         <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 12:16</td>
+        <td class="dt">2026-07-01 15:17</td>
       </tr>      <tr class="advisory-row" data-severity="medium" data-source="nvd">
         <td><div class="sev-bar sev-medium"></div></td>
         <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-57082" target="_blank" rel="noopener" class="advisory-link">CVE-2026-57082 (CVSS 5.9)</a>
-          <div class="summary">Net::BitTorrent versions through 2.0.1 for Perl generate the MSE Diffie-Hellman private key with a non-cryptographic PRNG.
-
-The MSE (Message Stream Encryption) handshake derives its 160-bit Diffie-Hellman private key from Perl's rand(), a non-cryptographic drand48-class generator seeded once per pro</div>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6683" target="_blank" rel="noopener" class="advisory-link">CVE-2026-6683 (CVSS 4.6)</a>
+          <div class="summary">FatFs R0.16 and earlier contains a divide-by-zero in exFAT sync logic bug when crafted metadata causes n_fatent - 2 to be zero during write/sync operations. This maps to CWE-369 (Divide By Zero). Estimated CVSS v3.1 vector: CVSS:3.1/AV:P/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H (4.6, Medium). Network-delivere</div>
         </td>
         <td><span class="badge sev-medium">MEDIUM</span></td>
         <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 12:16</td>
-      </tr>      <tr class="advisory-row" data-severity="medium" data-source="nvd">
-        <td><div class="sev-bar sev-medium"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12388" target="_blank" rel="noopener" class="advisory-link">CVE-2026-12388 (CVSS 6.5)</a>
-          <div class="summary">A flaw was found in the Identity Provider (IdP) mapper component of Keycloak, which is used to manage how user information from external services is mapped to Keycloak users. An administrator with limited permissions to manage identity providers can exploit this flaw by creating a "Hardcoded Role" m</div>
-        </td>
-        <td><span class="badge sev-medium">MEDIUM</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 13:17</td>
-      </tr>      <tr class="advisory-row" data-severity="medium" data-source="nvd">
-        <td><div class="sev-bar sev-medium"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-14209" target="_blank" rel="noopener" class="advisory-link">CVE-2026-14209 (CVSS 4.3)</a>
-          <div class="summary">A vulnerability was discovered in Keycloak's Admin UI extension that allows certain administrative users to bypass security restrictions. When Fine-Grained Admin Permissions (FGAPv2) are enabled, an administrator who should only be able to search for users (but not view their full details) can use a</div>
-        </td>
-        <td><span class="badge sev-medium">MEDIUM</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 13:17</td>
-      </tr>      <tr class="advisory-row" data-severity="medium" data-source="nvd">
-        <td><div class="sev-bar sev-medium"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4629" target="_blank" rel="noopener" class="advisory-link">CVE-2026-4629 (CVSS 6.5)</a>
-          <div class="summary">A flaw was found in Keycloak. A highly privileged user with `manage-clients` permission can exploit this vulnerability by injecting a hardcoded role mapper into any client. This action allows the user to bypass existing scope restrictions and inject the `realm-admin` role into generated tokens, resu</div>
-        </td>
-        <td><span class="badge sev-medium">MEDIUM</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 13:18</td>
-      </tr>      <tr class="advisory-row" data-severity="medium" data-source="nvd">
-        <td><div class="sev-bar sev-medium"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-58374" target="_blank" rel="noopener" class="advisory-link">CVE-2026-58374 (CVSS 6.5)</a>
-          <div class="summary">In hostapd before 2.12, a missing bounds check in AP-mode Wi-Fi 7 (IEEE 802.11be) Multi-Link Operation (MLO) association request processing allows an unauthenticated attacker within wireless range to send a crafted management frame containing a malformed Multi-Link Element or Per-STA Profile subelem</div>
-        </td>
-        <td><span class="badge sev-medium">MEDIUM</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 13:19</td>
-      </tr>      <tr class="advisory-row" data-severity="medium" data-source="nvd">
-        <td><div class="sev-bar sev-medium"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-8403" target="_blank" rel="noopener" class="advisory-link">CVE-2026-8403 (CVSS 6.1)</a>
-          <div class="summary">Improper neutralization of input during web page generation ('cross-site scripting') vulnerability in Eksagate Electronic Engineering and Computer Industry Trade Inc. SYSGUARD 6001 allows Stored XSS.
-
-This issue affects SYSGUARD 6001: from 2.0.2 before 6.1.4.0. 
-
-NOTE: The vendor was contacted and i</div>
-        </td>
-        <td><span class="badge sev-medium">MEDIUM</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 13:19</td>
-      </tr>      <tr class="advisory-row" data-severity="medium" data-source="nvd">
-        <td><div class="sev-bar sev-medium"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-53648" target="_blank" rel="noopener" class="advisory-link">CVE-2025-53648 (CVSS 5.4)</a>
-          <div class="summary">SQL misconfiguration in the Gravitino UI, in versions 1.0.0 and below, can allow a malicious user to read or truncate files.
-Users are recommended to upgrade to version 1.0.0, which fixes this issue.</div>
-        </td>
-        <td><span class="badge sev-medium">MEDIUM</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 14:16</td>
-      </tr>      <tr class="advisory-row" data-severity="medium" data-source="nvd">
-        <td><div class="sev-bar sev-medium"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-14178" target="_blank" rel="noopener" class="advisory-link">CVE-2026-14178 (CVSS 5.9)</a>
-          <div class="summary">openGauss 在处理带 NLS 参数的 to_timestamp 调用时，to_timestamp_with_fmt_nls() 会将 nls_fmt_str 保存到 u_sess->parser_cxt.nls_fmt_str。在 seqscan + sort 执行路径下，该字符串原本被分配在 SeqScan 的表达式上下文中；当 SeqScan 完成后，该内存上下文会被 reset，但后续结果输出阶段 timestamp_out() 仍会通过 CheckNlsFormat() 访问 u_sess->parser_cxt.nls_fmt_str，导致访问已释放内存。攻击者在具备数据库 </div>
-        </td>
-        <td><span class="badge sev-medium">MEDIUM</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 14:16</td>
-      </tr>      <tr class="advisory-row" data-severity="medium" data-source="nvd">
-        <td><div class="sev-bar sev-medium"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27881" target="_blank" rel="noopener" class="advisory-link">CVE-2026-27881 (CVSS 5.0)</a>
-          <div class="summary">Coolify is an open-source and self-hostable tool for managing servers, applications, and databases. Prior to 4.0.0-beta.464, `GET /api/v1/deployments/{uuid}` in DeployController.php retrieves deployment details without validating that the deployment belongs to the authenticated user's team. Any auth</div>
-        </td>
-        <td><span class="badge sev-medium">MEDIUM</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 15:16</td>
-      </tr>      <tr class="advisory-row" data-severity="medium" data-source="nvd">
-        <td><div class="sev-bar sev-medium"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27882" target="_blank" rel="noopener" class="advisory-link">CVE-2026-27882 (CVSS 4.8)</a>
-          <div class="summary">Coolify is an open-source and self-hostable tool for managing servers, applications, and databases. Prior to 4.0.0-beta.461, the GitLab webhook endpoint uses a non-constant-time string comparison operator (!==) to validate the webhook secret token. This implementation is vulnerable to timing attacks</div>
-        </td>
-        <td><span class="badge sev-medium">MEDIUM</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 15:16</td>
-      </tr>      <tr class="advisory-row" data-severity="medium" data-source="nvd">
-        <td><div class="sev-bar sev-medium"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27883" target="_blank" rel="noopener" class="advisory-link">CVE-2026-27883 (CVSS 5.0)</a>
-          <div class="summary">Coolify is an open-source and self-hostable tool for managing servers, applications, and databases. Prior to 4.0.0-beta.464, the `GET /api/v1/deployments/{uuid}` endpoint allows any authenticated user to access deployment details belonging to any team, bypassing team-based authorization. The $teamId</div>
-        </td>
-        <td><span class="badge sev-medium">MEDIUM</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 15:16</td>
-      </tr>      <tr class="advisory-row" data-severity="medium" data-source="nvd">
-        <td><div class="sev-bar sev-medium"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27955" target="_blank" rel="noopener" class="advisory-link">CVE-2026-27955 (CVSS 6.6)</a>
-          <div class="summary">Coolify is an open-source and self-hostable tool for managing servers, applications, and databases. Prior to 4.0.0-beta.464, the executeInDocker() helper wraps commands in bash -c '{$command}' without escaping single quotes. User-controlled docker_compose_custom_build_command and docker_compose_cust</div>
-        </td>
-        <td><span class="badge sev-medium">MEDIUM</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 15:16</td>
-      </tr>      <tr class="advisory-row" data-severity="medium" data-source="nvd">
-        <td><div class="sev-bar sev-medium"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27956" target="_blank" rel="noopener" class="advisory-link">CVE-2026-27956 (CVSS 4.3)</a>
-          <div class="summary">Coolify is an open-source and self-hostable tool for managing servers, applications, and databases. Prior to 4.0.0-beta.464, `GET /api/v1/servers/{server_uuid}/domains?uuid={app_uuid}` bypasses team scoping when the optional uuid query parameter is provided. Any authenticated API user can enumerate </div>
-        </td>
-        <td><span class="badge sev-medium">MEDIUM</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 15:16</td>
-      </tr>      <tr class="advisory-row" data-severity="medium" data-source="nvd">
-        <td><div class="sev-bar sev-medium"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-48192" target="_blank" rel="noopener" class="advisory-link">CVE-2026-48192 (CVSS 5.4)</a>
-          <div class="summary">A vulnerability has been identified in Mendix Studio Pro 10.11 (All versions), Mendix Studio Pro 10.12 (All versions), Mendix Studio Pro 10.13 (All versions), Mendix Studio Pro 10.14 (All versions), Mendix Studio Pro 10.15 (All versions), Mendix Studio Pro 10.16 (All versions), Mendix Studio Pro 10.</div>
-        </td>
-        <td><span class="badge sev-medium">MEDIUM</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 15:16</td>
-      </tr>      <tr class="advisory-row" data-severity="medium" data-source="nvd">
-        <td><div class="sev-bar sev-medium"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-13455" target="_blank" rel="noopener" class="advisory-link">CVE-2026-13455 (CVSS 4.3)</a>
-          <div class="summary">PostgreSQL Anonymizer contains a vulnerability that allows unprivileged masked users to repeatedly call the anon.hash() function and collects (seed, hash_output) pairs to perform an offline brute-force attack and deduce the salt. The problem is resolved in PostgreSQL Anonymizer 3.1.2 and later versi</div>
-        </td>
-        <td><span class="badge sev-medium">MEDIUM</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 16:16</td>
-      </tr>      <tr class="advisory-row" data-severity="medium" data-source="nvd">
-        <td><div class="sev-bar sev-medium"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-48314" target="_blank" rel="noopener" class="advisory-link">CVE-2026-48314 (CVSS 6.5)</a>
-          <div class="summary">ColdFusion versions 2025.9, 2023.20 and earlier are affected by an Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability that could result in a Security feature bypass. An attacker could leverage this vulnerability to gain limited read and write access to unaut</div>
-        </td>
-        <td><span class="badge sev-medium">MEDIUM</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 16:16</td>
-      </tr>      <tr class="advisory-row" data-severity="low" data-source="msrc">
+        <td class="dt">2026-07-01 15:17</td>
+      </tr>      <tr class="advisory-row" data-severity="low" data-source="nvd">
         <td><div class="sev-bar sev-low"></div></td>
         <td>
-          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-11979" target="_blank" rel="noopener" class="advisory-link">CVE-2026-11979 Stack-Based Buffer Overflow in libxml2</a>
-          <div class="summary">Information published.</div>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11880" target="_blank" rel="noopener" class="advisory-link">CVE-2026-11880 (CVSS 3.1)</a>
+          <div class="summary">The Fluent Forms  WordPress plugin before 6.2.1 does not properly verify ownership before processing a subscription cancellation request, allowing authenticated users with a low-privilege account to cancel subscriptions belonging to other users.</div>
         </td>
         <td><span class="badge sev-low">LOW</span></td>
-        <td><span class="src-badge">Microsoft MSRC</span></td>
-        <td class="dt">2026-06-30 08:02</td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 07:16</td>
       </tr>      <tr class="advisory-row" data-severity="low" data-source="msrc">
         <td><div class="sev-bar sev-low"></div></td>
         <td>
@@ -1040,55 +872,55 @@ Users are recommended to upgrade to version 1.0.0, which fixes this issue.</div>
         <td><span class="badge sev-low">LOW</span></td>
         <td><span class="src-badge">Microsoft MSRC</span></td>
         <td class="dt">2026-07-01 08:40</td>
-      </tr>      <tr class="advisory-row" data-severity="low" data-source="ubuntu">
+      </tr>      <tr class="advisory-row" data-severity="low" data-source="msrc">
         <td><div class="sev-bar sev-low"></div></td>
         <td>
-          <a href="https://ubuntu.com/security/notices/USN-8489-1" target="_blank" rel="noopener" class="advisory-link">USN-8489-1: Linux kernel (OEM) vulnerabilities</a>
-          <div class="summary">It was discovered that the Linux kernel did not properly handle shared page
-fragments during socket buffer operations, collectively known as Dirty
-Frag. A logic flaw existed in the XFRM ESP-in-TCP subsystem and in the
-RxRPC networking subsystem when processing paged fragments. A local
-attacker could</div>
+          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57100" target="_blank" rel="noopener" class="advisory-link">CVE-2026-57100 Microsoft Entra Provisioning Service Elevation of Privilege Vulnerability</a>
+          <div class="summary">Server-side request forgery (ssrf) in Microsoft Entra Provisioning Service (SyncFabric) allows an authorized attacker to elevate privileges over a network.</div>
         </td>
         <td><span class="badge sev-low">LOW</span></td>
-        <td><span class="src-badge">Ubuntu</span></td>
-        <td class="dt">2026-07-01 14:46</td>
-      </tr>      <tr class="advisory-row" data-severity="low" data-source="ubuntu">
+        <td><span class="src-badge">Microsoft MSRC</span></td>
+        <td class="dt">2026-07-02 14:00</td>
+      </tr>      <tr class="advisory-row" data-severity="low" data-source="msrc">
         <td><div class="sev-bar sev-low"></div></td>
         <td>
-          <a href="https://ubuntu.com/security/notices/USN-8490-1" target="_blank" rel="noopener" class="advisory-link">USN-8490-1: Linux kernel vulnerabilities</a>
-          <div class="summary">Several security issues were discovered in the Linux kernel.
-An attacker could possibly use these to compromise the system.
-This update corrects flaws in the following subsystems:
-  - ARM64 architecture;
-  - Block layer subsystem;
-  - Cryptographic API;
-  - DMA engine subsystem;
-  - InfiniBand drive</div>
+          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45499" target="_blank" rel="noopener" class="advisory-link">CVE-2026-45499 Azure OpenAI Elevation of Privilege Vulnerability</a>
+          <div class="summary">Server-side request forgery (ssrf) in Azure OpenAI allows an authorized attacker to elevate privileges over a network.</div>
         </td>
         <td><span class="badge sev-low">LOW</span></td>
-        <td><span class="src-badge">Ubuntu</span></td>
-        <td class="dt">2026-07-01 15:19</td>
-      </tr>      <tr class="advisory-row" data-severity="low" data-source="ubuntu">
+        <td><span class="src-badge">Microsoft MSRC</span></td>
+        <td class="dt">2026-07-02 14:00</td>
+      </tr>      <tr class="advisory-row" data-severity="low" data-source="msrc">
         <td><div class="sev-bar sev-low"></div></td>
         <td>
-          <a href="https://ubuntu.com/security/notices/USN-8491-1" target="_blank" rel="noopener" class="advisory-link">USN-8491-1: Linux kernel (OEM) vulnerabilities</a>
-          <div class="summary">Several security issues were discovered in the Linux kernel.
-An attacker could possibly use these to compromise the system.
-This update corrects flaws in the following subsystems:
-  - ARM64 architecture;
-  - x86 architecture;
-  - Block layer subsystem;
-  - Cryptographic API;
-  - DMA engine subsystem</div>
+          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-26145" target="_blank" rel="noopener" class="advisory-link">CVE-2026-26145 Microsoft Azure Synapse Elevation of Privilege Vulnerability</a>
+          <div class="summary">Improper access control in Azure Synapse allows an authorized attacker to elevate privileges over a network.</div>
         </td>
         <td><span class="badge sev-low">LOW</span></td>
-        <td><span class="src-badge">Ubuntu</span></td>
-        <td class="dt">2026-07-01 15:28</td>
+        <td><span class="src-badge">Microsoft MSRC</span></td>
+        <td class="dt">2026-07-02 14:00</td>
+      </tr>      <tr class="advisory-row" data-severity="low" data-source="msrc">
+        <td><div class="sev-bar sev-low"></div></td>
+        <td>
+          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41106" target="_blank" rel="noopener" class="advisory-link">CVE-2026-41106 Microsoft 365 Copilot Elevation of Privilege Vulnerability</a>
+          <div class="summary">Url redirection to untrusted site ('open redirect') in M365 Copilot allows an unauthorized attacker to elevate privileges over a network.</div>
+        </td>
+        <td><span class="badge sev-low">LOW</span></td>
+        <td><span class="src-badge">Microsoft MSRC</span></td>
+        <td class="dt">2026-07-02 14:00</td>
+      </tr>      <tr class="advisory-row" data-severity="low" data-source="msrc">
+        <td><div class="sev-bar sev-low"></div></td>
+        <td>
+          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-54998" target="_blank" rel="noopener" class="advisory-link">CVE-2026-54998 Microsoft Exchange Online Elevation of Privilege Vulnerability</a>
+          <div class="summary">Incorrect authorization in Microsoft Exchange Online allows an authorized attacker to elevate privileges over a network.</div>
+        </td>
+        <td><span class="badge sev-low">LOW</span></td>
+        <td><span class="src-badge">Microsoft MSRC</span></td>
+        <td class="dt">2026-07-02 14:00</td>
       </tr>      <tr class="advisory-row" data-severity="low" data-source="ubuntu">
         <td><div class="sev-bar sev-low"></div></td>
         <td>
-          <a href="https://ubuntu.com/security/notices/USN-8488-1" target="_blank" rel="noopener" class="advisory-link">USN-8488-1: Linux kernel vulnerabilities</a>
+          <a href="https://ubuntu.com/security/notices/USN-8488-2" target="_blank" rel="noopener" class="advisory-link">USN-8488-2: Linux kernel (Raspberry Pi) vulnerabilities</a>
           <div class="summary">It was discovered that some AMD processors did not properly clear data in
 the floating point divider unit during speculative execution. A local
 attacker could use this to expose sensitive information. (CVE-2025-54505)
@@ -1098,11 +930,11 @@ An attacker could po</div>
         </td>
         <td><span class="badge sev-low">LOW</span></td>
         <td><span class="src-badge">Ubuntu</span></td>
-        <td class="dt">2026-07-01 16:07</td>
+        <td class="dt">2026-07-02 15:02</td>
       </tr>      <tr class="advisory-row" data-severity="low" data-source="ubuntu">
         <td><div class="sev-bar sev-low"></div></td>
         <td>
-          <a href="https://ubuntu.com/security/notices/USN-8492-1" target="_blank" rel="noopener" class="advisory-link">USN-8492-1: Linux kernel vulnerabilities</a>
+          <a href="https://ubuntu.com/security/notices/USN-8492-2" target="_blank" rel="noopener" class="advisory-link">USN-8492-2: Linux kernel vulnerabilities</a>
           <div class="summary">Several security issues were discovered in the Linux kernel.
 An attacker could possibly use these to compromise the system.
 This update corrects flaws in the following subsystems:
@@ -1114,11 +946,54 @@ This update corrects flaws in the following subsystems:
         </td>
         <td><span class="badge sev-low">LOW</span></td>
         <td><span class="src-badge">Ubuntu</span></td>
-        <td class="dt">2026-07-01 16:57</td>
+        <td class="dt">2026-07-02 15:24</td>
       </tr>      <tr class="advisory-row" data-severity="low" data-source="ubuntu">
         <td><div class="sev-bar sev-low"></div></td>
         <td>
-          <a href="https://ubuntu.com/security/notices/USN-8493-1" target="_blank" rel="noopener" class="advisory-link">USN-8493-1: Linux kernel vulnerabilities</a>
+          <a href="https://ubuntu.com/security/notices/USN-8497-1" target="_blank" rel="noopener" class="advisory-link">USN-8497-1: Linux kernel (Low Latency) vulnerabilities</a>
+          <div class="summary">It was discovered that the Linux kernel did not properly handle shared page
+fragments during socket buffer operations, collectively known as Dirty
+Frag. A logic flaw existed in the XFRM ESP-in-TCP subsystem and in the
+RxRPC networking subsystem when processing paged fragments. A local
+attacker could</div>
+        </td>
+        <td><span class="badge sev-low">LOW</span></td>
+        <td><span class="src-badge">Ubuntu</span></td>
+        <td class="dt">2026-07-02 15:40</td>
+      </tr>      <tr class="advisory-row" data-severity="low" data-source="ubuntu">
+        <td><div class="sev-bar sev-low"></div></td>
+        <td>
+          <a href="https://ubuntu.com/security/notices/USN-8498-1" target="_blank" rel="noopener" class="advisory-link">USN-8498-1: Linux kernel (NVIDIA Tegra) vulnerabilities</a>
+          <div class="summary">Several security issues were discovered in the Linux kernel.
+An attacker could possibly use these to compromise the system.
+This update corrects flaws in the following subsystems:
+  - ARM64 architecture;
+  - MIPS architecture;
+  - PowerPC architecture;
+  - x86 architecture;
+  - Block layer subsystem</div>
+        </td>
+        <td><span class="badge sev-low">LOW</span></td>
+        <td><span class="src-badge">Ubuntu</span></td>
+        <td class="dt">2026-07-02 15:49</td>
+      </tr>      <tr class="advisory-row" data-severity="low" data-source="ubuntu">
+        <td><div class="sev-bar sev-low"></div></td>
+        <td>
+          <a href="https://ubuntu.com/security/notices/USN-8499-1" target="_blank" rel="noopener" class="advisory-link">USN-8499-1: Linux kernel (Xilinx) vulnerabilities</a>
+          <div class="summary">It was discovered that the Linux kernel algif_aead module did not properly
+handle in-place cryptographic operations. This flaw is known as Copy Fail.
+A local attacker could use this to escalate privileges, or possibly escape
+a container. (CVE-2026-31431)
+
+It was discovered that the Linux kernel did </div>
+        </td>
+        <td><span class="badge sev-low">LOW</span></td>
+        <td><span class="src-badge">Ubuntu</span></td>
+        <td class="dt">2026-07-02 15:56</td>
+      </tr>      <tr class="advisory-row" data-severity="low" data-source="ubuntu">
+        <td><div class="sev-bar sev-low"></div></td>
+        <td>
+          <a href="https://ubuntu.com/security/notices/USN-8493-2" target="_blank" rel="noopener" class="advisory-link">USN-8493-2: Linux kernel (Oracle) vulnerabilities</a>
           <div class="summary">Several security issues were discovered in the Linux kernel.
 An attacker could possibly use these to compromise the system.
 This update corrects flaws in the following subsystems:
@@ -1131,389 +1006,21 @@ This update corrects flaws in the following subsystems:
         </td>
         <td><span class="badge sev-low">LOW</span></td>
         <td><span class="src-badge">Ubuntu</span></td>
-        <td class="dt">2026-07-01 17:15</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
-        <td><div class="sev-bar sev-unknown"></div></td>
+        <td class="dt">2026-07-02 16:07</td>
+      </tr>      <tr class="advisory-row" data-severity="low" data-source="ubuntu">
+        <td><div class="sev-bar sev-low"></div></td>
         <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12818" target="_blank" rel="noopener" class="advisory-link">CVE-2026-12818 (CVSS N/A)</a>
-          <div class="summary">Delta Electronics DVP12SE PLCs are susceptible to a resource allocation vulnerability without limits or throttling (CWE-770) within their Modbus TCP service.</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 07:16</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12819" target="_blank" rel="noopener" class="advisory-link">CVE-2026-12819 (CVSS N/A)</a>
-          <div class="summary">Delta Electronics DVP12SE PLC exposes a Modbus TCP service over a specified port without authentication or access control, permitting unauthenticated interaction with security-sensitive PLC functions.</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 07:16</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56137" target="_blank" rel="noopener" class="advisory-link">CVE-2026-56137 (CVSS N/A)</a>
-          <div class="summary">RPG MAKER MV and MZ provided by Gotcha Gotcha Games Inc. contain an OS command injection vulnerability. If a user loads a specially crafted save-file, arbitrary OS command may be executed.</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 07:16</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56808" target="_blank" rel="noopener" class="advisory-link">CVE-2026-56808 (CVSS N/A)</a>
-          <div class="summary">DGM3103SCT provided by AVTECH Security Corporation contains an OS command injection vulnerability, which may lead to arbitrary command execution with the root privilege by a user who can log in to the web management console of the affected product.</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 07:16</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56809" target="_blank" rel="noopener" class="advisory-link">CVE-2026-56809 (CVSS N/A)</a>
-          <div class="summary">Multiple laser printers and MFPs (multifunction printers) which implement Ricoh Web Image Monitor contain a reflected cross-site scripting vulnerability. An arbitrary script may be executed on the web browser of the user who accesses Web Image Monitor.</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 07:16</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-54369" target="_blank" rel="noopener" class="advisory-link">CVE-2026-54369 acl < 2.4.0 Symlink Traversal Privilege Escalation via libacl Functions</a>
-          <div class="summary">Information published.</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">Microsoft MSRC</span></td>
-        <td class="dt">2026-06-30 08:01</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41991" target="_blank" rel="noopener" class="advisory-link">CVE-2026-41991 Predictable Temporary File in GNU gzip</a>
-          <div class="summary">Information published.</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">Microsoft MSRC</span></td>
-        <td class="dt">2026-06-30 08:01</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-53325" target="_blank" rel="noopener" class="advisory-link">CVE-2026-53325 agp/amd64: Fix broken error propagation in agp_amd64_probe()</a>
-          <div class="summary">Information published.</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">Microsoft MSRC</span></td>
-        <td class="dt">2026-06-30 08:02</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12578" target="_blank" rel="noopener" class="advisory-link">CVE-2026-12578 (CVSS N/A)</a>
-          <div class="summary">The affected product is vulnerable to a deserialization of untrusted data, which may allow an attacker to execute arbitrary code.</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 09:16</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45822" target="_blank" rel="noopener" class="advisory-link">CVE-2026-45822 (CVSS N/A)</a>
-          <div class="summary">decode-uri-component through 0.4.1 is vulnerable to denial of service. The decode() function splits input on '%' producing N tokens and calls decodeComponents(), exhibiting super-linear parsing time: 200 '%ab' tokens takes approximately 0.7s, 700 tokens approximately 6s, and 1400 tokens approximatel</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 09:16</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10763" target="_blank" rel="noopener" class="advisory-link">CVE-2026-10763 (CVSS N/A)</a>
-          <div class="summary">PROMOD V is using insecure HTTP communication instead of HTTPS. The vulnerability is due to the lack of HTTPS support from 3rd party Digipede server.</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 10:16</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12076" target="_blank" rel="noopener" class="advisory-link">CVE-2026-12076 (CVSS N/A)</a>
-          <div class="summary">Raytha CMS is vulnerable to SQL Injection within the OData filter parsing pipeline.  The vulnerability allows a remote, unauthenticated attacker to execute 
-arbitrary SQL statements against the underlying PostgreSQL database, 
-leading to full database compromise, including credential extraction.
+          <a href="https://ubuntu.com/security/notices/USN-8501-1" target="_blank" rel="noopener" class="advisory-link">USN-8501-1: Linux kernel vulnerabilities</a>
+          <div class="summary">It was discovered that a logic flaw existed in the XFRM ESP-in-TCP
+subsystem in the Linux kernel when handling socket buffer fragments. This
+flaw is known as Fragnesia. A local attacker could use this to escalate
+privileges, or possibly escape a container. (CVE-2026-43503)
 
-Be</div>
+Several security issues w</div>
         </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 10:16</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-13149" target="_blank" rel="noopener" class="advisory-link">CVE-2026-13149 (CVSS N/A)</a>
-          <div class="summary">brace-expansion through 5.0.6 is vulnerable to denial of service. The expand() function exhibits exponential-time complexity in the number of consecutive non-expanding '{}' brace groups. An attacker who passes a crafted string to expand(), directly or transitively, can cause significant CPU consumpt</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 10:16</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6953" target="_blank" rel="noopener" class="advisory-link">CVE-2026-6953 (CVSS N/A)</a>
-          <div class="summary">HTML injection vulnerability in Intermark IT's WebControl CMS v3.5. This vulnerability allows an attacker to send an email containing malicious HTML code to a victim via the contact form. To exploit this vulnerability, the attacker must send a request using the 'nombreApellidos', 'dirección ', and '</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 10:16</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6954" target="_blank" rel="noopener" class="advisory-link">CVE-2026-6954 (CVSS N/A)</a>
-          <div class="summary">Cross-Site Scripting (XSS) vulnerability in Intermark IT's WebControl CMS v3.5. This vulnerability allows an attacker to execute JavaScript code or inject a dynamic iframe into the victim’s browser by sending a malicious URL via the 'urlDestino' parameter in '/portal.do'. This vulnerability can be e</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 10:16</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="ubuntu">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://ubuntu.com/security/notices/USN-8484-1" target="_blank" rel="noopener" class="advisory-link">USN-8484-1: GD.pm vulnerability</a>
-          <div class="summary">It was discovered that GD.pm incorrectly handled filename arguments. An
-attacker could possibly use this issue to execute arbitrary commands or
-overwrite files.</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="badge sev-low">LOW</span></td>
         <td><span class="src-badge">Ubuntu</span></td>
-        <td class="dt">2026-06-30 11:42</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="ubuntu">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://ubuntu.com/security/notices/USN-8485-1" target="_blank" rel="noopener" class="advisory-link">USN-8485-1: libyang vulnerability</a>
-          <div class="summary">It was discovered that libyang incorrectly handled certain metadata list
-pointers. An attacker could use this issue to cause libyang to crash,
-resulting in a denial of service, or possibly execute arbitrary code.</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">Ubuntu</span></td>
-        <td class="dt">2026-06-30 11:49</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-53690" target="_blank" rel="noopener" class="advisory-link">CVE-2026-53690 (CVSS N/A)</a>
-          <div class="summary">An SQL Injection vulnerability exists in Redeight CMS version 1.0 via the "userEmail" parameter in the POST "/admin/index.php" login endpoint. The application fails to sanitize user input and directly interpolates it into SQL queries without using prepared statements, which allows unauthenticated re</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 12:16</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-53691" target="_blank" rel="noopener" class="advisory-link">CVE-2026-53691 (CVSS N/A)</a>
-          <div class="summary">An Unrestricted File Upload vulnerability in Redeight CMS version 1.0 allows authenticated attackers to achieve Remote Code Execution via the POST "/admin/index.php?module=pages&mode=FileAdd" endpoint. The application fails to validate file extensions and MIME types, permitting the upload of arbitra</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 12:16</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-53692" target="_blank" rel="noopener" class="advisory-link">CVE-2026-53692 (CVSS N/A)</a>
-          <div class="summary">Redeight CMS version 1.0 uses the MD5 algorithm without a salt to store user passwords. Because MD5 is a cryptographically broken algorithm and lacks salting, attackers who obtain the password hashes can trivially reverse them using rainbow tables, leading to the exposure of plaintext credentials.</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 12:16</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="ubuntu">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://ubuntu.com/security/notices/USN-8486-1" target="_blank" rel="noopener" class="advisory-link">USN-8486-1: libssh2 vulnerabilities</a>
-          <div class="summary">It was discovered that libssh2 incorrectly handled the sftp_symlink()
-function. A malicious SSH server or machine-in-the-middle attacker could
-possibly use this issue to obtain sensitive information or cause a denial
-of service. (CVE-2025-15661)
-
-It was discovered that libssh2 had a pre-authenticati</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">Ubuntu</span></td>
-        <td class="dt">2026-06-30 12:41</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10816" target="_blank" rel="noopener" class="advisory-link">CVE-2026-10816 (CVSS N/A)</a>
-          <div class="summary">Arbitrary File Read (Unauthenticated) in NetScaler ADC and NetScaler Gateway if the access to NSIP, Cluster Management IP or SNIP with management access is enabled</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 13:17</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10817" target="_blank" rel="noopener" class="advisory-link">CVE-2026-10817 (CVSS N/A)</a>
-          <div class="summary">Insufficient input validation leading to memory overread in NetScaler ADC and NetScaler Gateway if the TCP TimeStamp is enabled in TCP Profile and is associated with the virtual server (of type LB, CS, VPN) or the service configured on NetScaler</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 13:17</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-13474" target="_blank" rel="noopener" class="advisory-link">CVE-2026-13474 (CVSS N/A)</a>
-          <div class="summary">Denial of service via malformed HTTP/2 requests in NetScaler ADC and NetScaler Gateway if HTTP/2 is enabled in HTTP Profile and associated with the virtual server (of type LB, CS, VPN) or the service configured on NetScaler</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 13:17</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-44946" target="_blank" rel="noopener" class="advisory-link">CVE-2026-44946 (CVSS N/A)</a>
-          <div class="summary">A SAML authentication replay vulnerability in Rancher's Assertion
- Consumer Service (ACS) handler did not enforce 
-one-time use of SAML assertion, potentially allowing person in the middle attacks against Rancher, affecting Rancher 2.14.0 before 2.14.3,</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 13:18</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-47105" target="_blank" rel="noopener" class="advisory-link">CVE-2026-47105 (CVSS N/A)</a>
-          <div class="summary">Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 13:18</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-53432" target="_blank" rel="noopener" class="advisory-link">CVE-2026-53432 (CVSS N/A)</a>
-          <div class="summary">fzf is vulnerable to Integer Overflow leading to crash in FuzzyMatchV2 function. When input line length is approximately 2,200,000 bytes and pattern length is 999 bytes, the product overflows. The Go runtime detects the invalid slice bounds and terminates the process immediately with a non-recoverab</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 13:19</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-53433" target="_blank" rel="noopener" class="advisory-link">CVE-2026-53433 (CVSS N/A)</a>
-          <div class="summary">fzf is vulnerable to a Denial of Service (DoS) due to inefficient HTTP body processing in the --listen mode due to inefficient HTTP body processing using repeated string concatenation, resulting in quadratic time complexity (O(n²)). A crafted POST request with many small segments can trigger excessi</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 13:19</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42910" target="_blank" rel="noopener" class="advisory-link">CVE-2026-42910 Windows Hotpatch Monitoring Service Elevation of Privilege Vulnerability</a>
-          <div class="summary">Updated an acknowledgement. This is an informational change only.</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">Microsoft MSRC</span></td>
-        <td class="dt">2026-06-30 14:00</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35095" target="_blank" rel="noopener" class="advisory-link">CVE-2026-35095 (CVSS N/A)</a>
-          <div class="summary">KTM System e-BOK allows the session identifier to be set by the client prior to authentication. If a cookie with a valid name is set, its value remains unchanged after successful login. This behaviour enables an attacker to fix a session ID for a victim and later hijack the authenticated session.
-
-T</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 14:16</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35096" target="_blank" rel="noopener" class="advisory-link">CVE-2026-35096 (CVSS N/A)</a>
-          <div class="summary">KTM System e-BOK is vulnerable to Cross‑Site Request Forgery (CSRF) in both the email-change and password-change functionalities. An attacker can craft a malicious website that, when visited by an authenticated user, automatically sends a forged POST request to the application. This allows the attac</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 14:16</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35097" target="_blank" rel="noopener" class="advisory-link">CVE-2026-35097 (CVSS N/A)</a>
-          <div class="summary">KTM System e-BOK enforces a maximum password length of six numeric digits and does not permit the use of any alphabetic, special, or extended characters.
-
-This issue was fixed in the patch published in June 2026.</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 14:16</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35098" target="_blank" rel="noopener" class="advisory-link">CVE-2026-35098 (CVSS N/A)</a>
-          <div class="summary">KTM System e-BOK does not implement any limit or timeout on consecutive login attempts, allowing an attacker to perform unlimited authentication requests. This lack of rate‑limiting enables efficient brute‑force attacks against user accounts. When combined with vulnerability CVE-2026-35097, where pa</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 14:16</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-44947" target="_blank" rel="noopener" class="advisory-link">CVE-2026-44947 (CVSS N/A)</a>
-          <div class="summary">A missing clean-up in the legacy Project Role Template Binding (PRTB) 
-reconciler in Rancher versions 2.13.0 up to 2.13.7 and 2.14.0 up to 2.14.3 allowed users to retain unauthorized Pod Security 
-Admission (PSA) permissions after an administrator removes those 
-permissions from a RoleTemplate.</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 15:16</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-44949" target="_blank" rel="noopener" class="advisory-link">CVE-2026-44949 (CVSS N/A)</a>
-          <div class="summary">A Rancher FleetWorkspace admission path allowed side effects to occur in
- the Rancher webhook handler for versions 0.7.0 up to 0.7.10, 0.8.0 up to 0.8.7, 0.9.0 up to 0.9.6 and 0.10.0 up to 0.10.7. An unauthenticated attacker with network access to
- the in-cluster rancher-webhook service
- could submi</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 15:16</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4360" target="_blank" rel="noopener" class="advisory-link">CVE-2026-4360 (CVSS N/A)</a>
-          <div class="summary">In the Tarfile.extract() function, the filter parameter is not passed properly when extracting hardlinks. An affected system that extracts content from untrusted tar files could end up writing files with an unexpected uid/gid despite the user passing filter='data' to the extract() function.</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 15:16</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-44948" target="_blank" rel="noopener" class="advisory-link">CVE-2026-44948 (CVSS N/A)</a>
-          <div class="summary">A path traversal vulnerability was found in Fleet's ImageScan subsystem in Rancher Fleet 0.12.0 up to 0.12.16, 0.13.0 up to 0.13.12, 0.14.0 up to 0.14.7 and 0.15.0 up to 0.15.3 could be used to traverse outside of the intended directory, causing a denial of service.</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">NVD</span></td>
-        <td class="dt">2026-06-30 16:16</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="google">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="http://chromereleases.googleblog.com/2026/06/chrome-for-android-update_01486779060.html" target="_blank" rel="noopener" class="advisory-link">Chrome for Android Update</a>
-          <div class="summary"><p>&nbsp;Hi, everyone! We've just released <b>Chrome 150 (150.0.7871.63)</b> for Android. It'll become <a href="https://play.google.com/store/apps/details?id=com.android.chrome">available on Google Play</a> over the next few days.&nbsp;</p><p>This release includes stability and performance improveme</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">Google Chrome</span></td>
-        <td class="dt">2026-06-30 21:18</td>
-      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="ubuntu">
-        <td><div class="sev-bar sev-unknown"></div></td>
-        <td>
-          <a href="https://ubuntu.com/security/notices/USN-8487-1" target="_blank" rel="noopener" class="advisory-link">USN-8487-1: curl vulnerabilities</a>
-          <div class="summary">Andrew Nesbitt discovered that curl could reuse an existing live
-connection during STARTTLS-based connection upgrades even when the TLS
-configuration did not match. A remote attacker could possibly use this
-issue to cause curl to use an unintended TLS configuration.
-(CVE-2026-8286)
-
-Muhamad Arga Rek</div>
-        </td>
-        <td><span class="badge sev-unknown">UNKNOWN</span></td>
-        <td><span class="src-badge">Ubuntu</span></td>
-        <td class="dt">2026-06-30 21:34</td>
+        <td class="dt">2026-07-02 16:14</td>
       </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
         <td><div class="sev-bar sev-unknown"></div></td>
         <td>
@@ -1919,6 +1426,24 @@ Muhamad Arga Rek</div>
         <td><span class="badge sev-unknown">UNKNOWN</span></td>
         <td><span class="src-badge">Microsoft MSRC</span></td>
         <td class="dt">2026-07-01 08:06</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12577" target="_blank" rel="noopener" class="advisory-link">CVE-2026-12577 (CVSS N/A)</a>
+          <div class="summary">DVP80ES3 with Improperly Implemented Security Check for Standard vulnerability.</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 08:16</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-50043" target="_blank" rel="noopener" class="advisory-link">CVE-2026-50043 (CVSS N/A)</a>
+          <div class="summary">Improper neutralization of special elements used in an OS command ('OS Command Injection') issue exists in SkyBridge MB-A100/MB-A110. If this vulnerability is exploited, an arbitrary OS command may be executed by an attacker who can log in to the product with an administrative privilege.</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 08:16</td>
       </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
         <td><div class="sev-bar sev-unknown"></div></td>
         <td>
@@ -1928,6 +1453,95 @@ Muhamad Arga Rek</div>
         <td><span class="badge sev-unknown">UNKNOWN</span></td>
         <td><span class="src-badge">Microsoft MSRC</span></td>
         <td class="dt">2026-07-01 08:40</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-53902" target="_blank" rel="noopener" class="advisory-link">CVE-2026-53902 (CVSS N/A)</a>
+          <div class="summary">MCO does not properly enforce authorization checks in the /customer/servlet/mco/webapi/profile-sections/group-membership endpoint. An authenticated user can modify their group membership without proper authorization checks, allowing privilege escalation.
+An attacker can add themselves to arbitrary g</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 13:17</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-53903" target="_blank" rel="noopener" class="advisory-link">CVE-2026-53903 (CVSS N/A)</a>
+          <div class="summary">MCO is vulnerable to an Insecure Direct Object Reference (IDOR) vulnerability in the /customer/servlet/mco/webapi/trading-document/fetchPdfStatement endpoint. The application does not properly validate whether an authenticated user is authorized to access a requested document, allowing direct retrie</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 13:17</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-53904" target="_blank" rel="noopener" class="advisory-link">CVE-2026-53904 (CVSS N/A)</a>
+          <div class="summary">MCO is vulnerable to Account Denial of Service due to improper implementation of password reset functionality. Each password reset request invalidates previously set password as well as previously issued temporary passwords, furthermore, password resets are not limited in any way. An attacker who pr</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 13:17</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-53905" target="_blank" rel="noopener" class="advisory-link">CVE-2026-53905 (CVSS N/A)</a>
+          <div class="summary">MCO does not properly enforce authorization checks in the /customer/servlet/mco/webapi/admin-view-hierarchy/get-acl-tree-structure endpoint. An authenticated, low-privileged user can retrieve administrator access control structures without proper authorization checks.
+This may expose sensitive permi</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 13:17</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-53906" target="_blank" rel="noopener" class="advisory-link">CVE-2026-53906 (CVSS N/A)</a>
+          <div class="summary">MCO is vulnerable to Path Disclosure and Path Traversal in file handling functionality related to data export and upload. Improper validation of the filename parameter allows writing files to arbitrary locations as well as indirect disclosure of absolute server paths through error messages.
+
+Because</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 13:17</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-53907" target="_blank" rel="noopener" class="advisory-link">CVE-2026-53907 (CVSS N/A)</a>
+          <div class="summary">MCO is vulnerable to Stored Cross‑Site Scripting (XSS) via the application logo upload functionality. An attacker with the ability to change the application logo can upload a crafted SVG file containing malicious JavaScript code that is executed when the logo is rendered or opened.
+
+Because vendor c</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 13:17</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-53908" target="_blank" rel="noopener" class="advisory-link">CVE-2026-53908 (CVSS N/A)</a>
+          <div class="summary">MCO is vulnerable to User Enumeration through authentication-related functionalities. The application returns distinguishable responses for valid and invalid users during username reminder and password reset operations. An attacker can leverage these differences to enumerate valid usernames and emai</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 13:17</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-53909" target="_blank" rel="noopener" class="advisory-link">CVE-2026-53909 (CVSS N/A)</a>
+          <div class="summary">MCO does not correctly validate types of uploaded files. File upload validation functionality relies only on client-side checks, which can be bypassed. An authorized, low-privileged attacker can upload files with arbitrary types to the server.
+
+Because vendor contact attempts were unsuccessful, the </div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 13:17</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-8387" target="_blank" rel="noopener" class="advisory-link">CVE-2026-8387 (CVSS N/A)</a>
+          <div class="summary">A vulnerability in allegroai/clearml versions up to and including 1.16.5 allows for relative path traversal when extracting `.zip` archives using the `ZipFile.extractall()` method in `StorageManager._extract_to_cache()`. This issue arises due to the lack of path traversal validation, enabling an att</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 13:17</td>
       </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
         <td><div class="sev-bar sev-unknown"></div></td>
         <td>
@@ -1937,6 +1551,496 @@ Muhamad Arga Rek</div>
         <td><span class="badge sev-unknown">UNKNOWN</span></td>
         <td><span class="src-badge">Microsoft MSRC</span></td>
         <td class="dt">2026-07-01 14:00</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-13603" target="_blank" rel="noopener" class="advisory-link">CVE-2026-13603 (CVSS N/A)</a>
+          <div class="summary">The payment integration pretix-oppwa provides support 
+for the payment providers VR Payment, Hobex, and potentially others 
+based on Oppwa's technology. The integration of Oppwa, following their 
+official documentation, includes a step where the user is redirected 
+from the payment provider back to </div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 14:16</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-53326" target="_blank" rel="noopener" class="advisory-link">CVE-2026-53326 (CVSS N/A)</a>
+          <div class="summary">In the Linux kernel, the following vulnerability has been resolved:
+
+debugobjects: Don't call fill_pool() in early boot hardirq context
+
+When booting a debug PREEMPT_RT kernel on an ARM64 system, a "inconsistent
+{HARDIRQ-ON-W} -> {IN-HARDIRQ-W} usage" lockdep warning message was
+reported to the cons</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 14:16</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-53327" target="_blank" rel="noopener" class="advisory-link">CVE-2026-53327 (CVSS N/A)</a>
+          <div class="summary">In the Linux kernel, the following vulnerability has been resolved:
+
+debugobjects: Do not fill_pool() if pi_blocked_on
+
+On RT enabled kernels, fill_pool() ends up calling rtlock_lock(), which
+asserts if current::pi_blocked_on is set, because a task can obviously only
+block on one lock as otherwise t</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 14:16</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-53328" target="_blank" rel="noopener" class="advisory-link">CVE-2026-53328 (CVSS N/A)</a>
+          <div class="summary">In the Linux kernel, the following vulnerability has been resolved:
+
+sched_ext: Don't warn on NULL cgrp_moving_from in scx_cgroup_move_task()
+
+A WARN fires when systemd's user manager writes "+cpu +memory +pids" to
+its own subtree_control while a sched_ext scheduler is loaded:
+
+  WARNING: at kernel/</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 14:16</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-53329" target="_blank" rel="noopener" class="advisory-link">CVE-2026-53329 (CVSS N/A)</a>
+          <div class="summary">In the Linux kernel, the following vulnerability has been resolved:
+
+drm/amd/display: Use krealloc_array() in dal_vector_reserve()
+
+[Why & How]
+dal_vector_reserve() computes the allocation size as
+"capacity * vector->struct_size" using uint32_t arithmetic, which can
+silently wrap to a small value on</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 14:16</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-53330" target="_blank" rel="noopener" class="advisory-link">CVE-2026-53330 (CVSS N/A)</a>
+          <div class="summary">In the Linux kernel, the following vulnerability has been resolved:
+
+drm/amd/display: Fix out-of-bounds read in dp_get_eq_aux_rd_interval()
+
+[Why & How]
+The aux_rd_interval array in struct dc_lttpr_caps is declared with
+MAX_REPEATER_CNT - 1 (7) elements, indexed 0..6. However, the offset
+parameter p</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 14:16</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-53331" target="_blank" rel="noopener" class="advisory-link">CVE-2026-53331 (CVSS N/A)</a>
+          <div class="summary">In the Linux kernel, the following vulnerability has been resolved:
+
+slimbus: qcom-ngd-ctrl: Avoid ABBA on tx_lock/ctrl->lock
+
+During the SSR/PDR down notification the tx_lock is taken with the
+intent to provide synchronization with active DMA transfers.
+
+But during this period qcom_slim_ngd_down() </div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 14:16</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-53332" target="_blank" rel="noopener" class="advisory-link">CVE-2026-53332 (CVSS N/A)</a>
+          <div class="summary">In the Linux kernel, the following vulnerability has been resolved:
+
+slimbus: qcom-ngd-ctrl: Register callbacks after creating the ngd
+
+When the remoteproc starts in parallel with the NGD driver being probed,
+or the remoteproc is already up when the PDR lookup is being registered,
+or in the theoreti</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 14:16</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-53333" target="_blank" rel="noopener" class="advisory-link">CVE-2026-53333 (CVSS N/A)</a>
+          <div class="summary">In the Linux kernel, the following vulnerability has been resolved:
+
+mm/mincore: handle non-swap entries before !CONFIG_SWAP guard
+
+mincore_swap() also fields migration/hwpoison entries (and shmem
+swapin-error entries), which can exist on !CONFIG_SWAP builds when
+CONFIG_MIGRATION or CONFIG_MEMORY_FA</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 14:16</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-53334" target="_blank" rel="noopener" class="advisory-link">CVE-2026-53334 (CVSS N/A)</a>
+          <div class="summary">In the Linux kernel, the following vulnerability has been resolved:
+
+mm/damon/reclaim: handle ctx allocation failure
+
+Patch series "mm/damon/{reclaim,lru_sort}: handle ctx allocation failures".
+
+DAMON_RECLAIM and DAMON_LRU_SORT could dereference NULL pointers if their
+damon_ctx object allocations fa</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 14:16</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-53335" target="_blank" rel="noopener" class="advisory-link">CVE-2026-53335 (CVSS N/A)</a>
+          <div class="summary">In the Linux kernel, the following vulnerability has been resolved:
+
+mm/damon/lru_sort: handle ctx allocation failure
+
+DAMON_LRU_SORT allocates the damon_ctx object for its kdamond in its init
+function.  damon_lru_sort_enabled_store() wrongly assumes the allocation
+will always succeed once tried.  I</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 14:16</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-53336" target="_blank" rel="noopener" class="advisory-link">CVE-2026-53336 (CVSS N/A)</a>
+          <div class="summary">In the Linux kernel, the following vulnerability has been resolved:
+
+nvmem: layouts: onie-tlv: fix hang on unknown types
+
+The EEPROM on my board has a vendor specific entry of type 0x41. When
+stumbling upon that, this driver hangs in an endless loop.
+
+Fix it by keep incrementing the offset on unknow</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 14:16</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-53337" target="_blank" rel="noopener" class="advisory-link">CVE-2026-53337 (CVSS N/A)</a>
+          <div class="summary">In the Linux kernel, the following vulnerability has been resolved:
+
+net: bonding: fix NULL pointer dereference in bond_do_ioctl()
+
+In bond_do_ioctl(), slave_dev is obtained via __dev_get_by_name() which
+can return NULL if the requested interface name does not exist. However,
+the subsequent slave_db</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 14:16</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-53338" target="_blank" rel="noopener" class="advisory-link">CVE-2026-53338 (CVSS N/A)</a>
+          <div class="summary">In the Linux kernel, the following vulnerability has been resolved:
+
+net: airoha: Add NULL check for of_reserved_mem_lookup() in airoha_qdma_init_hfwd_queues()
+
+of_reserved_mem_lookup() may return NULL if the reserved memory region
+referenced by the "memory-region" phandle is not found in the reserv</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 14:16</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-53339" target="_blank" rel="noopener" class="advisory-link">CVE-2026-53339 (CVSS N/A)</a>
+          <div class="summary">In the Linux kernel, the following vulnerability has been resolved:
+
+i2c: qcom-cci: Fix NULL pointer dereference in cci_remove()
+
+On all modern platforms Qualcomm CCI controller provides two I2C masters,
+and on particular boards only one I2C master may be initialized, and in
+such cases the device un</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 14:16</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-53340" target="_blank" rel="noopener" class="advisory-link">CVE-2026-53340 (CVSS N/A)</a>
+          <div class="summary">In the Linux kernel, the following vulnerability has been resolved:
+
+i2c: imx: fix clock and pinctrl state inconsistency in runtime PM
+
+In i2c_imx_runtime_suspend(), the clock is disabled before switching
+the pinctrl state to sleep. If pinctrl_pm_select_sleep_state() fails,
+the runtime suspend is ab</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 14:16</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-53341" target="_blank" rel="noopener" class="advisory-link">CVE-2026-53341 (CVSS N/A)</a>
+          <div class="summary">In the Linux kernel, the following vulnerability has been resolved:
+
+fhandle: fix UAF due to unlocked ->mnt_ns read in may_decode_fh()
+
+may_decode_fh() accesses mount::mnt_ns without holding any locks; that
+means the mount can concurrently be unmounted, and the mnt_namespace can
+concurrently be free</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 14:16</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-53342" target="_blank" rel="noopener" class="advisory-link">CVE-2026-53342 (CVSS N/A)</a>
+          <div class="summary">In the Linux kernel, the following vulnerability has been resolved:
+
+arm64: mm: call pagetable dtor when freeing hot-removed page tables
+
+Since 5e8eb9aeeda3 ("arm64: mm: always call PTE/PMD ctor in
+__create_pgd_mapping()") page-table allocation on ARM64 always calls
+pagetable_{pte,pmd,pud,p4d}_ctor(</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 14:16</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-53343" target="_blank" rel="noopener" class="advisory-link">CVE-2026-53343 (CVSS N/A)</a>
+          <div class="summary">In the Linux kernel, the following vulnerability has been resolved:
+
+ARM: 9475/1: entry: use byte load for KASAN VMAP stack shadow
+
+Commit 44e9a3bb76e5 ("ARM: 9430/1: entry: Do a dummy read from
+VMAP shadow") added a dummy read from the KASAN VMAP stack shadow in
+__switch_to(). The read uses ldr, bu</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 14:16</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-53344" target="_blank" rel="noopener" class="advisory-link">CVE-2026-53344 (CVSS N/A)</a>
+          <div class="summary">In the Linux kernel, the following vulnerability has been resolved:
+
+pinctrl: mcp23s08: Initialize mcp->dev and mcp->addr before regmap init
+
+Regmap initialization triggers regcache_maple_populate() which attempts
+SPI read to populate cache. SPI read requires mcp->dev and mcp->addr to
+be set, withou</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 14:16</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-53345" target="_blank" rel="noopener" class="advisory-link">CVE-2026-53345 (CVSS N/A)</a>
+          <div class="summary">In the Linux kernel, the following vulnerability has been resolved:
+
+KVM: Don't WARN if memory is dirtied without a vCPU when the VM is dying
+
+When marking a page dirty, complain about not having a running/loaded vCPU
+if and only if the VM is still alive, i.e. its refcount is non-zero.  This
+will al</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 14:16</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-53346" target="_blank" rel="noopener" class="advisory-link">CVE-2026-53346 (CVSS N/A)</a>
+          <div class="summary">In the Linux kernel, the following vulnerability has been resolved:
+
+rust: arm64: set uwtable llvm module flag for CONFIG_UNWIND_TABLES
+
+Due to a rustc bug [1] the -Cforce-unwind-tables=y flag only emits the
+uwtable annotation for functions, but not for the module. This means
+that compiler-generated</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 14:16</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-53347" target="_blank" rel="noopener" class="advisory-link">CVE-2026-53347 (CVSS N/A)</a>
+          <div class="summary">In the Linux kernel, the following vulnerability has been resolved:
+
+drm/virtio: Fix driver removal with disabled KMS
+
+DRM atomic and modesetting aren't initialized if virtio-gpu driver built
+with disabled KMS, leading to access of uninitialized data on driver
+removal/unbinding and crashing kernel. </div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 14:16</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-53348" target="_blank" rel="noopener" class="advisory-link">CVE-2026-53348 (CVSS N/A)</a>
+          <div class="summary">In the Linux kernel, the following vulnerability has been resolved:
+
+ASoC: SDCA: fix NULL pointer dereference in sdca_dev_unregister_functions
+
+sdca_dev_unregister_functions() iterates over all SDCA function
+descriptors and calls sdca_dev_unregister() on each func_dev without
+checking for NULL. When</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 14:16</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-53349" target="_blank" rel="noopener" class="advisory-link">CVE-2026-53349 (CVSS N/A)</a>
+          <div class="summary">In the Linux kernel, the following vulnerability has been resolved:
+
+netfilter: nf_conntrack: destroy stale expectfn expectations on unregister
+
+NAT helpers such as nf_nat_h323 store a raw pointer to module text in
+exp->expectfn (e.g. ip_nat_q931_expect). nf_ct_helper_expectfn_unregister()
+only unli</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 14:16</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-53350" target="_blank" rel="noopener" class="advisory-link">CVE-2026-53350 (CVSS N/A)</a>
+          <div class="summary">In the Linux kernel, the following vulnerability has been resolved:
+
+ASoC: wm_adsp: Fix NULL dereference when removing firmware controls
+
+In wm_adsp_control_remove() check that the priv pointer is not NULL
+before attempting to cleanup what it points to.
+
+When cs_dsp creates a control it calls wm_ads</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 14:16</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-53351" target="_blank" rel="noopener" class="advisory-link">CVE-2026-53351 (CVSS N/A)</a>
+          <div class="summary">In the Linux kernel, the following vulnerability has been resolved:
+
+riscv/ptrace: Use USER_REGSET_NOTE_TYPE for REGSET_CFI
+
+Fixes a warning while dumping core:
+
+[54983.546369][    C7] WARNING: [!note_name] fs/binfmt_elf.c:1771 at elf_core_dump+0x910/0xf68, CPU#7: abort01/31982</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 14:16</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-53352" target="_blank" rel="noopener" class="advisory-link">CVE-2026-53352 (CVSS N/A)</a>
+          <div class="summary">In the Linux kernel, the following vulnerability has been resolved:
+
+signal: clear JOBCTL_PENDING_MASK for caller in zap_other_threads()
+
+When a multi-threaded process receives a stop signal (e.g., SIGSTOP),
+do_signal_stop() sets JOBCTL_STOP_PENDING and JOBCTL_STOP_CONSUME on all
+threads and sets si</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 14:16</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-53353" target="_blank" rel="noopener" class="advisory-link">CVE-2026-53353 (CVSS N/A)</a>
+          <div class="summary">In the Linux kernel, the following vulnerability has been resolved:
+
+hsr: Remove WARN_ONCE() in hsr_addr_is_self().
+
+syzbot reported the warning [0] in hsr_addr_is_self(),
+whose assumption is simply wrong.
+
+hsr->self_node is cleared in hsr_del_self_node(), which
+is called from hsr_dellink().
+
+Since </div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 14:16</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-53354" target="_blank" rel="noopener" class="advisory-link">CVE-2026-53354 (CVSS N/A)</a>
+          <div class="summary">In the Linux kernel, the following vulnerability has been resolved:
+
+arm64: errata: Mitigate TLBI errata on various Arm CPUs
+
+A number of CPUs developed by Arm suffer from errata whereby a broadcast
+TLBI;DSB sequence may complete before the global observation of writes
+which are translated by an aff</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 14:16</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-53355" target="_blank" rel="noopener" class="advisory-link">CVE-2026-53355 (CVSS N/A)</a>
+          <div class="summary">In the Linux kernel, the following vulnerability has been resolved:
+
+net: rds: clear i_sends on setup unwind
+
+The RDS IB connection teardown path is written so it can run during
+partial startup and on repeated shutdown attempts. It uses NULL
+pointers to distinguish resources that are still owned fro</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 14:16</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-53356" target="_blank" rel="noopener" class="advisory-link">CVE-2026-53356 (CVSS N/A)</a>
+          <div class="summary">In the Linux kernel, the following vulnerability has been resolved:
+
+drm/i915/gem: Fix phys BO pread/pwrite with offset
+
+sg_page() returns struct page pointer not (void *) so the scaling
+of pread/pwrite is wrong for phys BO and wrong parts of BO would be
+accessed if non-zero offset is used.
+
+Last im</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 14:16</td>
       </tr>      <tr class="advisory-row" data-severity="unknown" data-source="google">
         <td><div class="sev-bar sev-unknown"></div></td>
         <td>
@@ -1946,6 +2050,150 @@ Muhamad Arga Rek</div>
         <td><span class="badge sev-unknown">UNKNOWN</span></td>
         <td><span class="src-badge">Google Chrome</span></td>
         <td class="dt">2026-07-01 14:58</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12374" target="_blank" rel="noopener" class="advisory-link">CVE-2026-12374 (CVSS N/A)</a>
+          <div class="summary">Improper certificate validation and a time-of-check time-of-use (TOCTOU) race condition in the PrivilegedHelperTool XPC service in Cato Client before v.5.13.1 on macOS allows a local authenticated attacker to escalate privileges to root via a self-signed certificate that bypasses the XPC caller veri</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 15:16</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-13602" target="_blank" rel="noopener" class="advisory-link">CVE-2026-13602 (CVSS N/A)</a>
+          <div class="summary">We found a chain of combining multiple weaknesses in the product that could allow an attacker to become any user in the backend and access any data:
+
+
+
+
+
+
+
+  *  
+
+
+The payment integration plugins Stripe (included in the core system), pretix-mollie, pretix-oppwa, pretix-bitpay, pretix-payone, pretix-</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 15:16</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2891" target="_blank" rel="noopener" class="advisory-link">CVE-2026-2891 (CVSS N/A)</a>
+          <div class="summary">The following Poly Voice IP devices, CCX, Trio, and Edge E, might be inoperable if they connect to a malicious SIP server and receive malformed data. HP is releasing updates to mitigate these potential vulnerabilities.</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 15:17</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-58031" target="_blank" rel="noopener" class="advisory-link">CVE-2026-58031 (CVSS N/A)</a>
+          <div class="summary">Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in Wikimedia Foundation MediaWiki.
+
+ This vulnerability is associated with program files resources/src/mediawiki.Special.Apisandbox/ApiSandboxLayout.Js.
+
+
+
+This issue affects MediaWiki: from 1.4</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 15:17</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-58034" target="_blank" rel="noopener" class="advisory-link">CVE-2026-58034 (CVSS N/A)</a>
+          <div class="summary">Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in Wikimedia Foundation CheckUser.
+
+ This vulnerability is associated with program files modules/ext.CheckUser.TempAccounts/components/blockConnectedTempAccountsField.Vue.
+
+
+
+This issue affects </div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 15:17</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-58035" target="_blank" rel="noopener" class="advisory-link">CVE-2026-58035 (CVSS N/A)</a>
+          <div class="summary">Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in Wikimedia Foundation MediaWiki.
+
+ This vulnerability is associated with program files resources/src/mediawiki.Special.Block/SpecialBlock.Vue.</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 15:17</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="nvd">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-58399" target="_blank" rel="noopener" class="advisory-link">CVE-2026-58399 (CVSS N/A)</a>
+          <div class="summary">@acastellon/auth is an authentication control system for microservices. Versions prior to 2.3.0 appear to allow an unauthenticated authentication bypass in validateToken() through spoofable auth-user and Host request headers. The validateToken middleware contains a service-to-service bypass for auth</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">NVD</span></td>
+        <td class="dt">2026-07-01 15:17</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="ubuntu">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://ubuntu.com/security/notices/USN-8495-1" target="_blank" rel="noopener" class="advisory-link">USN-8495-1: nghttp2 vulnerability</a>
+          <div class="summary">It was discovered that the nghttp2 nghttpx proxy incorrectly handled
+HTTP/1.1 Upgrade requests that included a Content-Length header and body.
+A remote attacker could possibly use this issue to perform HTTP request and
+response smuggling attacks against backend services.</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">Ubuntu</span></td>
+        <td class="dt">2026-07-02 13:57</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="msrc">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50521" target="_blank" rel="noopener" class="advisory-link">CVE-2026-50521 Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability</a>
+          <div class="summary">Added Edge software to the Security Updates table.  Customers that are running supported version of Edge are encouraged to update to the indicated version to be protected from this vulnerability.</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">Microsoft MSRC</span></td>
+        <td class="dt">2026-07-02 14:00</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="ubuntu">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://ubuntu.com/security/notices/USN-8496-1" target="_blank" rel="noopener" class="advisory-link">USN-8496-1: cifs-utils vulnerability</a>
+          <div class="summary">It was discovered that cifs-utils incorrectly dropped root privileges
+before looking up user information. A local attacker could possibly use
+this issue to execute arbitrary code as the root user.</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">Ubuntu</span></td>
+        <td class="dt">2026-07-02 15:11</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="google">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="http://chromereleases.googleblog.com/2026/07/chrome-beta-for-android-update.html" target="_blank" rel="noopener" class="advisory-link">Chrome Beta for Android Update</a>
+          <div class="summary"><p>Hi everyone! We've just released Chrome Beta 151 (151.0.7922.6) for Android. It's now available on <a href="https://play.google.com/store/apps/details?id=com.chrome.beta">Google Play</a>.</p><p>You can see a partial list of the changes in the <a href="https://chromium.googlesource.com/chromium/sr</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">Google Chrome</span></td>
+        <td class="dt">2026-07-02 15:28</td>
+      </tr>      <tr class="advisory-row" data-severity="unknown" data-source="ubuntu">
+        <td><div class="sev-bar sev-unknown"></div></td>
+        <td>
+          <a href="https://ubuntu.com/security/notices/USN-8500-1" target="_blank" rel="noopener" class="advisory-link">USN-8500-1: Vim vulnerabilities</a>
+          <div class="summary">It was discovered that Vim incorrectly handled path traversal in the
+zip.vim plugin. An attacker could possibly use this issue to overwrite
+arbitrary files. This issue only affected Ubuntu 14.04 LTS, Ubuntu 16.04
+LTS, Ubuntu 18.04 LTS, Ubuntu 20.04 LTS, and Ubuntu 22.04 LTS.
+(CVE-2026-35177)
+
+It was</div>
+        </td>
+        <td><span class="badge sev-unknown">UNKNOWN</span></td>
+        <td><span class="src-badge">Ubuntu</span></td>
+        <td class="dt">2026-07-02 16:46</td>
       </tr>
         </tbody>
       </table>
@@ -1958,7 +2206,7 @@ Muhamad Arga Rek</div>
     <div class="panel-header">
       <span class="panel-title">Analýza hrozeb</span>
       <span class="panel-subtitle">CrowdStrike · Sophos · Malwarebytes</span>
-      <span class="record-pill pill-purple" id="intel-count">12 záznamů</span>
+      <span class="record-pill pill-purple" id="intel-count">13 záznamů</span>
     </div>
     <div class="filters">
       <div class="filter-group">
@@ -1996,21 +2244,49 @@ Muhamad Arga Rek</div>
           <div class="summary"></div>
         </td>
         <td><span class="src-badge">CrowdStrike</span></td>
-        <td class="dt">2026-07-02 06:43</td>
+        <td class="dt">2026-07-03 06:40</td>
       </tr>      <tr class="intel-row" data-source="crowdstrike">
         <td>
           <a href="https://www.crowdstrike.com/en-us/blog/crowdstrike-state-of-cdr-survey-key-takeaways/" target="_blank" rel="noopener" class="advisory-link">94% of Organizations Report Cloud Breaches: CrowdStrike State of CDR Survey</a>
           <div class="summary"></div>
         </td>
         <td><span class="src-badge">CrowdStrike</span></td>
-        <td class="dt">2026-07-02 06:43</td>
+        <td class="dt">2026-07-03 06:40</td>
       </tr>      <tr class="intel-row" data-source="crowdstrike">
         <td>
           <a href="https://www.crowdstrike.com/en-us/blog/browser-security-zero-days-are-only-part-of-the-problem/" target="_blank" rel="noopener" class="advisory-link">Browser Security: Zero-Days Are Only Part of the Problem</a>
           <div class="summary"></div>
         </td>
         <td><span class="src-badge">CrowdStrike</span></td>
-        <td class="dt">2026-07-02 06:43</td>
+        <td class="dt">2026-07-03 06:40</td>
+      </tr>      <tr class="intel-row" data-source="malwarebytes">
+        <td>
+          <a href="https://www.malwarebytes.com/blog/news/2026/07/apples-hide-my-email-doesnt-hide-it-very-well" target="_blank" rel="noopener" class="advisory-link">Apple’s Hide My Email doesn&#8217;t hide it very well</a>
+          <div class="summary">A year ago a researcher found a vulnerability in Apple's Hide My Email feature and now he's tired of waiting for a fix.</div>
+        </td>
+        <td><span class="src-badge">Malwarebytes</span></td>
+        <td class="dt">2026-07-02 16:22</td>
+      </tr>      <tr class="intel-row" data-source="malwarebytes">
+        <td>
+          <a href="https://www.malwarebytes.com/blog/threat-intel/2026/07/fake-google-and-cloudflare-verification-pages-spread-multiple-malware-families" target="_blank" rel="noopener" class="advisory-link">Fake Google and Cloudflare verification pages spread multiple malware families</a>
+          <div class="summary">We uncovered ClickFix attacks using fake Google and Cloudflare pages to deliver everything from infostealers to a newly discovered malware loader.</div>
+        </td>
+        <td><span class="src-badge">Malwarebytes</span></td>
+        <td class="dt">2026-07-02 16:05</td>
+      </tr>      <tr class="intel-row" data-source="malwarebytes">
+        <td>
+          <a href="https://www.malwarebytes.com/blog/news/2026/07/winrar-flaw-could-allow-attackers-to-take-control-of-your-computer" target="_blank" rel="noopener" class="advisory-link">WinRAR flaw could allow attackers to take control of your computer</a>
+          <div class="summary">A new WinRAR update fixes a serious security flaw, but without automatic updates many users could miss the patch.</div>
+        </td>
+        <td><span class="src-badge">Malwarebytes</span></td>
+        <td class="dt">2026-07-02 12:38</td>
+      </tr>      <tr class="intel-row" data-source="securelist">
+        <td>
+          <a href="https://securelist.com/compromise-assessment-findings-2025/120542/" target="_blank" rel="noopener" class="advisory-link">Missed incidents, persistent threats, and response gaps: Insights from compromise assessment projects</a>
+          <div class="summary">Kaspersky Compromise Assessment specialists analyze trends from the service's 2025 projects and provide tips on how to enhance your organization's security.</div>
+        </td>
+        <td><span class="src-badge">securelist</span></td>
+        <td class="dt">2026-07-02 09:00</td>
       </tr>      <tr class="intel-row" data-source="malwarebytes">
         <td>
           <a href="https://www.malwarebytes.com/blog/privacy/2026/07/fake-perplexity-chrome-extension-spies-on-your-searches" target="_blank" rel="noopener" class="advisory-link">Fake Perplexity Chrome extension spies on your searches</a>
@@ -2053,27 +2329,6 @@ Muhamad Arga Rek</div>
         </td>
         <td><span class="src-badge">securelist</span></td>
         <td class="dt">2026-07-01 06:42</td>
-      </tr>      <tr class="intel-row" data-source="malwarebytes">
-        <td>
-          <a href="https://www.malwarebytes.com/blog/scams/2026/06/watch-out-for-high-paying-low-effort-amazon-job-texts" target="_blank" rel="noopener" class="advisory-link">Watch out for &#8220;high paying, low effort&#8221; Amazon job texts</a>
-          <div class="summary">Scammers are using Amazon and the promise of big money to lure people in to their trap.</div>
-        </td>
-        <td><span class="src-badge">Malwarebytes</span></td>
-        <td class="dt">2026-06-30 20:46</td>
-      </tr>      <tr class="intel-row" data-source="malwarebytes">
-        <td>
-          <a href="https://www.malwarebytes.com/blog/news/2026/06/update-time-apple-releases-security-patches-for-ios-macos-tahoe-safari" target="_blank" rel="noopener" class="advisory-link">Update time: Apple releases security patches for iOS, MacOS Tahoe, Safari</a>
-          <div class="summary">A new Apple update fixes a multitude of browser and browser related vulnerabilities which have been public knowledge for a while</div>
-        </td>
-        <td><span class="src-badge">Malwarebytes</span></td>
-        <td class="dt">2026-06-30 14:35</td>
-      </tr>      <tr class="intel-row" data-source="securelist">
-        <td>
-          <a href="https://securelist.com/toddycat-apt-umbrij-tool-and-oauth/120251/" target="_blank" rel="noopener" class="advisory-link">ToddyCat: your hidden email assistant. Part 2</a>
-          <div class="summary">An in-depth analysis of Umbrij, a new tool used by the ToddyCat APT group to compromise corporate email communications in Gmail. The attack targeted OAuth authorization tokens, allowing threat actors to gain access to Google services.</div>
-        </td>
-        <td><span class="src-badge">securelist</span></td>
-        <td class="dt">2026-06-30 10:00</td>
       </tr>
         </tbody>
       </table>

@@ -2,32 +2,1382 @@
   {
     "source": "crowdstrike",
     "category": "threat_intel",
-    "id": "https://www.crowdstrike.com/?p=838593",
-    "title": "94% of Organizations Report Cloud Breaches: CrowdStrike State of CDR Survey",
-    "link": "https://www.crowdstrike.com/en-us/blog/crowdstrike-state-of-cdr-survey-key-takeaways/",
-    "published": "2026-07-20T06:40:31.153873+00:00",
-    "summary": "",
-    "severity": "UNKNOWN"
-  },
-  {
-    "source": "crowdstrike",
-    "category": "threat_intel",
-    "id": "https://www.crowdstrike.com/?p=268984",
+    "id": "https://www.crowdstrike.com/?p=258025",
     "title": "Browser Security: Zero-Days Are Only Part of the Problem",
     "link": "https://www.crowdstrike.com/en-us/blog/browser-security-zero-days-are-only-part-of-the-problem/",
-    "published": "2026-07-20T06:40:31.153835+00:00",
+    "published": "2026-07-21T06:40:30.445568+00:00",
     "summary": "",
     "severity": "UNKNOWN"
   },
   {
     "source": "crowdstrike",
     "category": "threat_intel",
-    "id": "https://www.crowdstrike.com/?p=334002",
+    "id": "https://www.crowdstrike.com/?p=873686",
     "title": "July 2026 Patch Tuesday: Microsoft Patches 622 Vulnerabilities Including Two Exploited Zero-Days",
     "link": "https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-july-2026/",
-    "published": "2026-07-20T06:40:31.153765+00:00",
+    "published": "2026-07-21T06:40:30.445502+00:00",
     "summary": "",
     "severity": "UNKNOWN"
+  },
+  {
+    "source": "ubuntu",
+    "category": "advisory",
+    "id": "https://ubuntu.com/security/notices/USN-8558-1",
+    "title": "USN-8558-1: ImageMagick vulnerabilities",
+    "link": "https://ubuntu.com/security/notices/USN-8558-1",
+    "published": "2026-07-20T22:36:08+00:00",
+    "summary": "It was discovered that ImageMagick did not limit mutual references between\nMVG files. An attacker could possibly use this issue to cause a stack\noverflow, resulting in a denial of service. This issue only affected Ubuntu\n14.04 LTS, Ubuntu 16.04 LTS, Ubuntu 18.04 LTS, Ubuntu 20.04 LTS, Ubuntu\n22.04 LTS, and Ubuntu 24.04 LTS. (CVE-2025-68950)\n\nIt was discovered that the ImageMagick MSL coder destroyed a cloned image\ntwice when an MSL script failed. An attacker could possibly use this issue\nto caus",
+    "severity": "LOW"
+  },
+  {
+    "source": "ubuntu",
+    "category": "advisory",
+    "id": "https://ubuntu.com/security/notices/USN-8563-2",
+    "title": "USN-8563-2: nginx regression",
+    "link": "https://ubuntu.com/security/notices/USN-8563-2",
+    "published": "2026-07-20T21:37:33+00:00",
+    "summary": "USN-8563-1 fixed vulnerabilities in nginx. One of the fixes introduced ABI\nchanges that could cause issues with external modules. This update reverts\nthe fix for CVE-2026-42533 pending further investigation.\n\nWe apologize for the inconvenience.\n\nOriginal advisory details:\n\n It was discovered that nginx incorrectly handled certain map directives\n using regex matching and capture variables. A remote attacker could use\n this issue to cause nginx to crash, resulting in a denial of service, or\n possi",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "ubuntu",
+    "category": "advisory",
+    "id": "https://ubuntu.com/security/notices/USN-8573-1",
+    "title": "USN-8573-1: libde265 vulnerabilities",
+    "link": "https://ubuntu.com/security/notices/USN-8573-1",
+    "published": "2026-07-20T19:21:39+00:00",
+    "summary": "It was discovered that libde265 did not properly manage memory under\ncertain circumstances. An attacker could possibly use this issue to\ncause libde265 to crash, resulting in a denial of service. This issue\nonly affected Ubuntu 22.04 LTS. (CVE-2023-51792)\n\nIt was discovered that libde265 did not properly handle certain\nmalformed media files, leading to a heap buffer overflow. An attacker\ncould possibly use this issue to cause libde265 to crash, resulting in\na denial of service. (CVE-2024-38949, ",
+    "severity": "LOW"
+  },
+  {
+    "source": "ubuntu",
+    "category": "advisory",
+    "id": "https://ubuntu.com/security/notices/USN-8572-1",
+    "title": "USN-8572-1: Wget vulnerability",
+    "link": "https://ubuntu.com/security/notices/USN-8572-1",
+    "published": "2026-07-20T19:12:11+00:00",
+    "summary": "It was discovered that Wget did not properly validate the IP address\nprovided in an FTP PASV response when operating in FTP passive mode. A\nremote attacker controlling a malicious FTP server, or an HTTP server\nthat redirects to an FTP URL, could possibly use this issue to redirect\nWget's data connection to an arbitrary address and perform server-side\nrequest forgery, potentially accessing localhost services or internal\nnetwork resources.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "ubuntu",
+    "category": "advisory",
+    "id": "https://ubuntu.com/security/notices/USN-8571-1",
+    "title": "USN-8571-1: Apache HTTP Server vulnerabilities",
+    "link": "https://ubuntu.com/security/notices/USN-8571-1",
+    "published": "2026-07-20T19:03:33+00:00",
+    "summary": "Pavel Kohout and Arkadi Vainbrand discovered that Apache HTTP Server\nincorrectly handled certain memory operations in mod_authn_socache. A\nremote attacker could possibly use this issue to cause a denial of service.\n(CVE-2026-33007)\n\nHaruki Oyama, Merih Mengisteab, and Dawit Jeong discovered that Apache\nHTTP Server had an HTTP response splitting vulnerability in multiple\nmodules when used with untrusted or compromised backend servers. An\nattacker could possibly use this issue to inject arbitrary ",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "ubuntu",
+    "category": "advisory",
+    "id": "https://ubuntu.com/security/notices/USN-8569-1",
+    "title": "USN-8569-1: Linux kernel (HWE) vulnerabilities",
+    "link": "https://ubuntu.com/security/notices/USN-8569-1",
+    "published": "2026-07-20T16:06:38+00:00",
+    "summary": "It was discovered that some AMD processors did not properly clear data in\nthe floating point divider unit during speculative execution. A local\nattacker could use this to expose sensitive information. (CVE-2025-54505)\n\nIt was discovered that some AMD Zen 2 processors did not properly isolate\nshared resources in the operation cache. A local attacker could possibly\nuse this issue to corrupt instructions executed at a higher privilege\nlevel, resulting in privilege escalation. (CVE-2025-54518)\n\nIt w",
+    "severity": "HIGH"
+  },
+  {
+    "source": "ubuntu",
+    "category": "advisory",
+    "id": "https://ubuntu.com/security/notices/USN-8570-1",
+    "title": "USN-8570-1: Linux kernel vulnerabilities",
+    "link": "https://ubuntu.com/security/notices/USN-8570-1",
+    "published": "2026-07-20T15:55:42+00:00",
+    "summary": "Several security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n  - Foo-over-UDP (FOU);\n  - ARM64 architecture;\n  - x86 architecture;\n  - Block layer subsystem;\n  - Drivers core;\n  - Null block device driver;\n  - Bluetooth drivers;\n  - Counter interface drivers;\n  - DMA engine subsystem;\n  - DPLL subsystem;\n  - GPIO subsystem;\n  - GPU drivers;\n  - I2C subsystem;\n  - IIO ADC drivers",
+    "severity": "LOW"
+  },
+  {
+    "source": "ubuntu",
+    "category": "advisory",
+    "id": "https://ubuntu.com/security/notices/USN-8568-1",
+    "title": "USN-8568-1: Linux kernel (OEM) vulnerabilities",
+    "link": "https://ubuntu.com/security/notices/USN-8568-1",
+    "published": "2026-07-20T15:45:34+00:00",
+    "summary": "It was discovered that some AMD Zen 2 processors did not properly isolate\nshared resources in the operation cache. A local attacker could possibly\nuse this issue to corrupt instructions executed at a higher privilege\nlevel, resulting in privilege escalation. (CVE-2025-54518)\n\nSeveral security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n  - PSP security protocol;\n  - ARM64 archit",
+    "severity": "HIGH"
+  },
+  {
+    "source": "malwarebytes",
+    "category": "threat_intel",
+    "id": "https://www.malwarebytes.com/blog/threat-intel/2026/07/the-odyssey-piracy-scams-appear-within-hours-of-the-movies-release",
+    "title": "The Odyssey piracy scams appear within hours of the movie&#8217;s release",
+    "link": "https://www.malwarebytes.com/blog/threat-intel/2026/07/the-odyssey-piracy-scams-appear-within-hours-of-the-movies-release",
+    "published": "2026-07-20T15:41:26+00:00",
+    "summary": "The release of The Odyssey has already sparked a wave of piracy scams, from fake browser errors to malware masquerading as movie files.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "ubuntu",
+    "category": "advisory",
+    "id": "https://ubuntu.com/security/notices/USN-8567-1",
+    "title": "USN-8567-1: Linux kernel vulnerabilities",
+    "link": "https://ubuntu.com/security/notices/USN-8567-1",
+    "published": "2026-07-20T15:36:35+00:00",
+    "summary": "It was discovered that some AMD processors did not properly clear data in\nthe floating point divider unit during speculative execution. A local\nattacker could use this to expose sensitive information. (CVE-2025-54505)\n\nIt was discovered that some AMD Zen 2 processors did not properly isolate\nshared resources in the operation cache. A local attacker could possibly\nuse this issue to corrupt instructions executed at a higher privilege\nlevel, resulting in privilege escalation. (CVE-2025-54518)\n\nIt w",
+    "severity": "HIGH"
+  },
+  {
+    "source": "ubuntu",
+    "category": "advisory",
+    "id": "https://ubuntu.com/security/notices/USN-8566-1",
+    "title": "USN-8566-1: Linux kernel vulnerabilities",
+    "link": "https://ubuntu.com/security/notices/USN-8566-1",
+    "published": "2026-07-20T15:24:18+00:00",
+    "summary": "It was discovered that some AMD Zen 2 processors did not properly isolate\nshared resources in the operation cache. A local attacker could possibly\nuse this issue to corrupt instructions executed at a higher privilege\nlevel, resulting in privilege escalation. (CVE-2025-54518)\n\nSeveral security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n  - PSP security protocol;\n  - ARM64 archit",
+    "severity": "HIGH"
+  },
+  {
+    "source": "malwarebytes",
+    "category": "threat_intel",
+    "id": "https://www.malwarebytes.com/blog/data-breaches/2026/07/healthcare-giant-abbott-probes-two-cyber-incidents-amid-extortion-claims",
+    "title": "Healthcare giant Abbott probes two cyber incidents amid extortion claims",
+    "link": "https://www.malwarebytes.com/blog/data-breaches/2026/07/healthcare-giant-abbott-probes-two-cyber-incidents-amid-extortion-claims",
+    "published": "2026-07-20T14:31:17+00:00",
+    "summary": "Extortion groups ShinyHunters and ShadowByt3$ claim they stole vast amounts of patient data. Those allegations have not been verified.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-47302",
+    "title": "CVE-2026-47302 .NET Denial of Service Vulnerability",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47302",
+    "published": "2026-07-20T14:00:00+00:00",
+    "summary": "Updated product information in the Software Update table. This is an informational change only.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-50652",
+    "title": "CVE-2026-50652 Azure Active Directory Denial of Service Vulnerability",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50652",
+    "published": "2026-07-20T14:00:00+00:00",
+    "summary": "Updated product information in the Software Update table. This is an informational change only.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-50653",
+    "title": "CVE-2026-50653 Azure Active Directory Denial of Service Vulnerability",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50653",
+    "published": "2026-07-20T14:00:00+00:00",
+    "summary": "Updated product information in the Software Update table. This is an informational change only.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-47304",
+    "title": "CVE-2026-47304 .NET Security Feature Bypass Vulnerability",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47304",
+    "published": "2026-07-20T14:00:00+00:00",
+    "summary": "Updated product information in the Software Update table. This is an informational change only.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-50304",
+    "title": "CVE-2026-50304 Windows Active Directory Federation Services Denial of Service Vulnerability",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50304",
+    "published": "2026-07-20T14:00:00+00:00",
+    "summary": "Updated product information in the Software Update table. This is an informational change only.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-50368",
+    "title": "CVE-2026-50368 Windows Active Directory Federation Services Denial of Service Vulnerability",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50368",
+    "published": "2026-07-20T14:00:00+00:00",
+    "summary": "Updated product information in the Software Update table. This is an informational change only.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-50324",
+    "title": "CVE-2026-50324 Windows Active Directory Federation Services Denial of Service Vulnerability",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50324",
+    "published": "2026-07-20T14:00:00+00:00",
+    "summary": "Updated product information in the Software Update table. This is an informational change only.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-50355",
+    "title": "CVE-2026-50355 Windows Active Directory Federation Services Denial of Service Vulnerability",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50355",
+    "published": "2026-07-20T14:00:00+00:00",
+    "summary": "Updated product information in the Software Update table. This is an informational change only.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-50411",
+    "title": "CVE-2026-50411 Windows Active Directory Federation Services Denial of Service Vulnerability",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50411",
+    "published": "2026-07-20T14:00:00+00:00",
+    "summary": "Updated product information in the Software Update table. This is an informational change only.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-50525",
+    "title": "CVE-2026-50525 .NET Denial of Service Vulnerability",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50525",
+    "published": "2026-07-20T14:00:00+00:00",
+    "summary": "Updated product information in the Software Update table. This is an informational change only.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-50527",
+    "title": "CVE-2026-50527 .NET Framework Denial of Service Vulnerability",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50527",
+    "published": "2026-07-20T14:00:00+00:00",
+    "summary": "Updated product information in the Software Update table. This is an informational change only.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-50646",
+    "title": "CVE-2026-50646 .NET Framework Remote Code Execution Vulnerability",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50646",
+    "published": "2026-07-20T14:00:00+00:00",
+    "summary": "Updated product information in the Software Update table. This is an informational change only.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-50647",
+    "title": "CVE-2026-50647 Active Directory Federation Server Denial of Service Vulnerability",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50647",
+    "published": "2026-07-20T14:00:00+00:00",
+    "summary": "Updated product information in the Software Update table. This is an informational change only.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-50648",
+    "title": "CVE-2026-50648 .NET Framework Denial of Service Vulnerability",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50648",
+    "published": "2026-07-20T14:00:00+00:00",
+    "summary": "Updated product information in the Software Update table. This is an informational change only.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-50649",
+    "title": "CVE-2026-50649 .NET Remote Code Execution Vulnerability",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50649",
+    "published": "2026-07-20T14:00:00+00:00",
+    "summary": "Updated product information in the Software Update table. This is an informational change only.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-50650",
+    "title": "CVE-2026-50650 .NET Framework Elevation of Privilege Vulnerability",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50650",
+    "published": "2026-07-20T14:00:00+00:00",
+    "summary": "Updated product information in the Software Update table. This is an informational change only.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-50659",
+    "title": "CVE-2026-50659 .NET Spoofing Vulnerability",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50659",
+    "published": "2026-07-20T14:00:00+00:00",
+    "summary": "Updated product information in the Software Update table. This is an informational change only.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2024-35248",
+    "title": "CVE-2024-35248 Microsoft Dynamics 365 Business Central Elevation of Privilege Vulnerability",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-35248",
+    "published": "2026-07-20T14:00:00+00:00",
+    "summary": "Updated the build numbers.  This is an informational update only.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "malwarebytes",
+    "category": "threat_intel",
+    "id": "https://www.malwarebytes.com/blog/threat-intel/2026/07/fake-games-spread-stealers-with-renpy-loader-msbuild-and-etherhiding",
+    "title": "Fake games spread stealers with RenPy Loader, MSBuild and EtherHiding",
+    "link": "https://www.malwarebytes.com/blog/threat-intel/2026/07/fake-games-spread-stealers-with-renpy-loader-msbuild-and-etherhiding",
+    "published": "2026-07-20T10:59:45+00:00",
+    "summary": "We look into how attackers are using the legitimate Ren'Py game engine to spread a malware loader that ultimately delivers Amatera Stealer.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-62389",
+    "title": "CVE-2026-62389 ws < 8.21.1 Default maxFragments Allows Memory Exhaustion DoS",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62389",
+    "published": "2026-07-20T08:40:45+00:00",
+    "summary": "Information published.",
+    "severity": "LOW"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-45784",
+    "title": "CVE-2026-45784 rust-openssl: Potential out-of-bounds write in `CipherCtxRef::cipher_update_inplace` for AES-KW-PAD ciphers",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45784",
+    "published": "2026-07-20T08:40:39+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-63808",
+    "title": "CVE-2026-63808 exfat: fix potential use-after-free in exfat_find_dir_entry()",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63808",
+    "published": "2026-07-20T08:08:28+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-53381",
+    "title": "CVE-2026-53381 virtiofs: fix UAF on submount umount",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-53381",
+    "published": "2026-07-20T08:08:22+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-63827",
+    "title": "CVE-2026-63827 apparmor: fix use-after-free in rawdata dedup loop",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63827",
+    "published": "2026-07-20T08:08:16+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-53398",
+    "title": "CVE-2026-53398 NFSD: Fix SECINFO_NO_NAME decode error cleanup",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-53398",
+    "published": "2026-07-20T08:08:10+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-63795",
+    "title": "CVE-2026-63795 9p: avoid putting oldfid in p9_client_walk() error path",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63795",
+    "published": "2026-07-20T08:08:03+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-53382",
+    "title": "CVE-2026-53382 media: vidtv: fix NULL pointer dereference in vidtv_mux_push_si",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-53382",
+    "published": "2026-07-20T08:07:57+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-53383",
+    "title": "CVE-2026-53383 ksmbd: reject non-VALID session in compound request branch",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-53383",
+    "published": "2026-07-20T08:07:51+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-63814",
+    "title": "CVE-2026-63814 f2fs: validate ACL entry sizes in f2fs_acl_from_disk()",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63814",
+    "published": "2026-07-20T08:07:45+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-63828",
+    "title": "CVE-2026-63828 apparmor: mediate the implicit connect of TCP fast open sendmsg",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63828",
+    "published": "2026-07-20T08:07:39+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-63801",
+    "title": "CVE-2026-63801 tipc: fix slab-use-after-free Read in tipc_aead_decrypt_done",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63801",
+    "published": "2026-07-20T08:07:32+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-53390",
+    "title": "CVE-2026-53390 ksmbd: fix out-of-bounds read in smb_check_perm_dacl()",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-53390",
+    "published": "2026-07-20T08:07:26+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-53385",
+    "title": "CVE-2026-53385 vc_screen: fix null-ptr-deref in vcs_notifier() during concurrent vcs_write",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-53385",
+    "published": "2026-07-20T08:07:20+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-63812",
+    "title": "CVE-2026-63812 f2fs: fix incorrect FI_NO_EXTENT handling in __destroy_extent_node()",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63812",
+    "published": "2026-07-20T08:07:14+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-63802",
+    "title": "CVE-2026-63802 blk-cgroup: fix UAF in __blkcg_rstat_flush()",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63802",
+    "published": "2026-07-20T08:07:07+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-63831",
+    "title": "CVE-2026-63831 mac802154: llsec: add skb_cow_data() before in-place crypto",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63831",
+    "published": "2026-07-20T08:07:01+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-63804",
+    "title": "CVE-2026-63804 gfs2: fix use-after-free in gfs2_qd_dealloc",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63804",
+    "published": "2026-07-20T08:06:55+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-63817",
+    "title": "CVE-2026-63817 f2fs: validate compress cache inode only when enabled",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63817",
+    "published": "2026-07-20T08:06:49+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-63796",
+    "title": "CVE-2026-63796 ocfs2: reject oversized group bitmap descriptors",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63796",
+    "published": "2026-07-20T08:06:42+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-63797",
+    "title": "CVE-2026-63797 rpmsg: char: Fix use-after-free on probe error path",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63797",
+    "published": "2026-07-20T08:06:36+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-63800",
+    "title": "CVE-2026-63800 pNFS: Fix use-after-free in pnfs_update_layout()",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63800",
+    "published": "2026-07-20T08:06:30+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-63823",
+    "title": "CVE-2026-63823 keys: Pin request_key_auth payload in instantiate paths",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63823",
+    "published": "2026-07-20T08:06:24+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-63798",
+    "title": "CVE-2026-63798 irqchip/imgpdc: Fix resource leak, add missing chained handler cleanup on remove",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63798",
+    "published": "2026-07-20T08:06:17+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-63824",
+    "title": "CVE-2026-63824 KEYS: fix overflow in keyctl_pkey_params_get_2()",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63824",
+    "published": "2026-07-20T08:06:11+00:00",
+    "summary": "Information published.",
+    "severity": "LOW"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-63821",
+    "title": "CVE-2026-63821 wifi: rtw88: usb: fix memory leaks on USB write failures",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63821",
+    "published": "2026-07-20T08:06:05+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-63836",
+    "title": "CVE-2026-63836 batman-adv: tp_meter: avoid divide-by-zero for dec_cwnd",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63836",
+    "published": "2026-07-20T08:05:58+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-53397",
+    "title": "CVE-2026-53397 nfsd: fix posix_acl leak on SETACL decode failure",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-53397",
+    "published": "2026-07-20T08:05:52+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-63794",
+    "title": "CVE-2026-63794 KVM: SVM: Fix page overflow in sev_dbg_crypt() for ENCRYPT path",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63794",
+    "published": "2026-07-20T08:05:46+00:00",
+    "summary": "Information published.",
+    "severity": "LOW"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-53388",
+    "title": "CVE-2026-53388 fuse: re-lock request before replacing page cache folio",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-53388",
+    "published": "2026-07-20T08:05:40+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-63822",
+    "title": "CVE-2026-63822 wifi: ath11k: fix warning when unbinding",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63822",
+    "published": "2026-07-20T08:05:34+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-53391",
+    "title": "CVE-2026-53391 NFSv4/pNFS: reject zero-length r_addr in nfs4_decode_mp_ds_addr",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-53391",
+    "published": "2026-07-20T08:05:28+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-63830",
+    "title": "CVE-2026-63830 net: skmsg: preserve sg.copy across SG transforms",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63830",
+    "published": "2026-07-20T08:05:21+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-53384",
+    "title": "CVE-2026-53384 serial: 8250_dw: unregister 8250 port if clk_notifier_register() fails",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-53384",
+    "published": "2026-07-20T08:05:15+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-63834",
+    "title": "CVE-2026-63834 batman-adv: tp_meter: restrict number of unacked list entries",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63834",
+    "published": "2026-07-20T08:05:09+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-63803",
+    "title": "CVE-2026-63803 hdlc_ppp: sync per-proto timers before freeing hdlc state",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63803",
+    "published": "2026-07-20T08:05:02+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-63807",
+    "title": "CVE-2026-63807 KVM: x86/mmu: Ensure hugepage is in by slot before checking max mapping level",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63807",
+    "published": "2026-07-20T08:04:56+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-63835",
+    "title": "CVE-2026-63835 batman-adv: v: prevent OGM aggregation on disabled hardif",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63835",
+    "published": "2026-07-20T08:04:50+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-63809",
+    "title": "CVE-2026-63809 bpf: use kvfree() for replaced sysctl write buffer",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63809",
+    "published": "2026-07-20T08:04:44+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-53393",
+    "title": "CVE-2026-53393 nfsd: reset write verifier on deferred writeback errors",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-53393",
+    "published": "2026-07-20T08:04:37+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-53387",
+    "title": "CVE-2026-53387 iio: light: veml6075: add bounds check to veml6075_it_ms index",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-53387",
+    "published": "2026-07-20T08:04:31+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-63832",
+    "title": "CVE-2026-63832 wifi: mt76: add wcid publish check in mt76_sta_add",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63832",
+    "published": "2026-07-20T08:04:24+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-53375",
+    "title": "CVE-2026-53375 drm/amdgpu/vce: Prevent partial address patches",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-53375",
+    "published": "2026-07-20T08:04:18+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-63829",
+    "title": "CVE-2026-63829 net: ip_gre: require CAP_NET_ADMIN in the device netns for changelink",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63829",
+    "published": "2026-07-20T08:04:12+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-63818",
+    "title": "CVE-2026-63818 f2fs: validate orphan inode entry count",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63818",
+    "published": "2026-07-20T08:04:06+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-63858",
+    "title": "CVE-2026-63858 netfilter: nf_tables: add hook transactions for device deletions",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63858",
+    "published": "2026-07-20T08:04:00+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-63826",
+    "title": "CVE-2026-63826 fbdev: fix use-after-free in store_modes()",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63826",
+    "published": "2026-07-20T08:03:53+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-53399",
+    "title": "CVE-2026-53399 nfsd: release layout stid on setlease failure",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-53399",
+    "published": "2026-07-20T08:03:47+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-63872",
+    "title": "CVE-2026-63872 esp: fix page frag reference leak on skb_to_sgvec failure",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63872",
+    "published": "2026-07-20T08:03:41+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-63871",
+    "title": "CVE-2026-63871 Bluetooth: ISO: Fix data-race on iso_pi fields in hci_get_route calls",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63871",
+    "published": "2026-07-20T08:03:35+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-63833",
+    "title": "CVE-2026-63833 ntfs3: reject direct userspace writes to reserved $LX* xattrs",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63833",
+    "published": "2026-07-20T08:03:29+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-53400",
+    "title": "CVE-2026-53400 i2c: core: fix adapter registration race",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-53400",
+    "published": "2026-07-20T08:03:23+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-53368",
+    "title": "CVE-2026-53368 f2fs: fix fsck inconsistency caused by incorrect nat_entry flag usage",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-53368",
+    "published": "2026-07-20T08:03:16+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-53377",
+    "title": "CVE-2026-53377 drm/msm: always recover the gpu",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-53377",
+    "published": "2026-07-20T08:03:10+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-63806",
+    "title": "CVE-2026-63806 KVM: Replace guest-triggerable BUG_ON() in ioeventfd datamatch with get_unaligned()",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63806",
+    "published": "2026-07-20T08:03:04+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-53376",
+    "title": "CVE-2026-53376 drm/amdkfd: Add upper bound check for num_of_nodes",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-53376",
+    "published": "2026-07-20T08:02:57+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-53403",
+    "title": "CVE-2026-53403 fbdev: Fix fb_new_modelist to prevent null-ptr-deref in fb_videomode_to_var",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-53403",
+    "published": "2026-07-20T08:02:51+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-63793",
+    "title": "CVE-2026-63793 ntfs: serialize volume label accesses",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63793",
+    "published": "2026-07-20T08:02:45+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-53374",
+    "title": "CVE-2026-53374 drm/amdgpu: zero-initialize GART table on allocation",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-53374",
+    "published": "2026-07-20T08:02:39+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-53392",
+    "title": "CVE-2026-53392 NFSv4/flexfiles: reject zero filehandle version count",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-53392",
+    "published": "2026-07-20T08:02:33+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-63811",
+    "title": "CVE-2026-63811 f2fs: read COW data with the original inode during atomic write",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63811",
+    "published": "2026-07-20T08:02:26+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-53401",
+    "title": "CVE-2026-53401 fbdev: omap2: fix use-after-free in omapfb_mmap",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-53401",
+    "published": "2026-07-20T08:02:20+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-63810",
+    "title": "CVE-2026-63810 block: Avoid mounting the bdev pseudo-filesystem in userspace",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63810",
+    "published": "2026-07-20T08:02:14+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-63819",
+    "title": "CVE-2026-63819 f2fs: fix to do sanity check on f2fs_get_node_folio_ra()",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63819",
+    "published": "2026-07-20T08:02:08+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-53402",
+    "title": "CVE-2026-53402 fbdev: fbcon: fix out-of-bounds read in err_out of fbcon_do_set_font()",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-53402",
+    "published": "2026-07-20T08:02:01+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-63853",
+    "title": "CVE-2026-63853 drm/amdgpu/vcn: set no_user_fence for VCN v4.0 enc ring",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63853",
+    "published": "2026-07-20T08:01:55+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-53386",
+    "title": "CVE-2026-53386 iio: adc: ti-ads1298: add bounds check to pga_settings index",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-53386",
+    "published": "2026-07-20T08:01:49+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-63825",
+    "title": "CVE-2026-63825 gcov: use atomic counter updates to fix concurrent access crashes",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63825",
+    "published": "2026-07-20T08:01:43+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-63816",
+    "title": "CVE-2026-63816 f2fs: atomic: fix UAF issue on f2fs_inode_info.atomic_inode",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63816",
+    "published": "2026-07-20T08:01:36+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-63805",
+    "title": "CVE-2026-63805 crypto: nx - fix nx_crypto_ctx_exit argument",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63805",
+    "published": "2026-07-20T08:01:30+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "msrc",
+    "category": "advisory",
+    "id": "CVE-2026-63815",
+    "title": "CVE-2026-63815 f2fs: bound i_inline_xattr_size for non-inline-xattr inodes",
+    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63815",
+    "published": "2026-07-20T08:01:23+00:00",
+    "summary": "Information published.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "malwarebytes",
+    "category": "threat_intel",
+    "id": "https://www.malwarebytes.com/blog/news/2026/07/a-week-in-security-july-13-july-19",
+    "title": "A week in security (July 13 &#8211; July 19)",
+    "link": "https://www.malwarebytes.com/blog/news/2026/07/a-week-in-security-july-13-july-19",
+    "published": "2026-07-20T07:02:00+00:00",
+    "summary": "A list of topics we covered in the week of July 13 to July 19 of 2026",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "nvd",
+    "category": "advisory",
+    "id": "CVE-2026-63844",
+    "title": "CVE-2026-63844 (CVSS 7.8)",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-63844",
+    "published": "2026-07-19T15:16:51.187",
+    "summary": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdgpu/jpeg: set no_user_fence for JPEG v4.0.3 ring\n\nJPEG rings do not support 64-bit user fence writes, reject CS\nsubmissions with user fences.\n\n(cherry picked from commit 2f6afc97d259d530f4f86c7743efbc573a8da927)",
+    "severity": "HIGH"
+  },
+  {
+    "source": "nvd",
+    "category": "advisory",
+    "id": "CVE-2026-63843",
+    "title": "CVE-2026-63843 (CVSS 7.8)",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-63843",
+    "published": "2026-07-19T15:16:51.093",
+    "summary": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdgpu/jpeg: set no_user_fence for JPEG v4.0.5 ring\n\nJPEG rings do not support 64-bit user fence writes, reject CS\nsubmissions with user fences.\n\n(cherry picked from commit f05d0a4f21fc720116d6e238f23308b199891058)",
+    "severity": "HIGH"
+  },
+  {
+    "source": "nvd",
+    "category": "advisory",
+    "id": "CVE-2026-63842",
+    "title": "CVE-2026-63842 (CVSS 7.8)",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-63842",
+    "published": "2026-07-19T15:16:50.987",
+    "summary": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdgpu/jpeg: set no_user_fence for JPEG v5.0.0 ring\n\nJPEG rings do not support 64-bit user fence writes, reject CS\nsubmissions with user fences.\n\n(cherry picked from commit 0f43893d3cd478fa57836697525b338817c9c23d)",
+    "severity": "HIGH"
+  },
+  {
+    "source": "nvd",
+    "category": "advisory",
+    "id": "CVE-2026-63841",
+    "title": "CVE-2026-63841 (CVSS 7.8)",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-63841",
+    "published": "2026-07-19T15:16:50.883",
+    "summary": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdgpu/jpeg: set no_user_fence for JPEG v5.0.1 ring\n\nJPEG rings do not support 64-bit user fence writes, reject CS\nsubmissions with user fences.\n\n(cherry picked from commit 742a98e2e81702df8fe1b1eccee5223220a03dc2)",
+    "severity": "HIGH"
+  },
+  {
+    "source": "nvd",
+    "category": "advisory",
+    "id": "CVE-2026-63840",
+    "title": "CVE-2026-63840 (CVSS 7.8)",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-63840",
+    "published": "2026-07-19T15:16:50.787",
+    "summary": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdgpu/jpeg: set no_user_fence for JPEG v5.3.0 ring\n\nJPEG rings do not support 64-bit user fence writes, reject CS\nsubmissions with user fences.\n\n(cherry picked from commit 86ac011ae234c03fb872f4945913391ea1d8862e)",
+    "severity": "HIGH"
+  },
+  {
+    "source": "nvd",
+    "category": "advisory",
+    "id": "CVE-2026-63839",
+    "title": "CVE-2026-63839 (CVSS N/A)",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-63839",
+    "published": "2026-07-19T15:16:50.693",
+    "summary": "In the Linux kernel, the following vulnerability has been resolved:\n\nplatform/x86: lenovo-wmi-helpers: Fix memory leak in lwmi_dev_evaluate_int()\n\nlwmi_dev_evaluate_int() leaks output.pointer when retval == NULL (found\nby sashiko.dev [1]).\n\nFix it by moving `ret_obj = output.pointer' outside of the `if (retval)'\nblock so that it is always freed by the __free cleanup callback.\n\nNo functional change intended.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "nvd",
+    "category": "advisory",
+    "id": "CVE-2026-63838",
+    "title": "CVE-2026-63838 (CVSS N/A)",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-63838",
+    "published": "2026-07-19T15:16:50.583",
+    "summary": "In the Linux kernel, the following vulnerability has been resolved:\n\nASoC: rsnd: Fix potential out-of-bounds access of component_dais[]\n\ncomponent_dais[RSND_MAX_COMPONENT] is initially zero-initialized\nand later populated in rsnd_dai_of_node(). However, the existing boundary check:\n  if (i >= RSND_MAX_COMPONENT)\n\ndoes not guarantee that the last valid element remains zero. As a result,\nthe loop can rely on component_dais[RSND_MAX_COMPONENT] being zero,\nwhich may lead to an out-of-bounds access.\n",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "nvd",
+    "category": "advisory",
+    "id": "CVE-2026-63837",
+    "title": "CVE-2026-63837 (CVSS N/A)",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-63837",
+    "published": "2026-07-19T15:16:50.480",
+    "summary": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet: ena: PHC: Check return code before setting timestamp output\n\nena_phc_gettimex64() is setting the output parameter regardless\nof whether ena_com_phc_get_timestamp() succeeded or failed.\n\nWhen ena_com_phc_get_timestamp() returns an error, the timestamp\nparameter may contain uninitialized stack memory (e.g., when PHC is\ndisabled or in blocked state) or invalid hardware values. Passing\nthese to userspace via the PTP ioctl is b",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "nvd",
+    "category": "advisory",
+    "id": "CVE-2026-16221",
+    "title": "CVE-2026-16221 (CVSS 7.5)",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16221",
+    "published": "2026-07-19T15:16:49.027",
+    "summary": "Impact: fast-uri versions from 2.3.1 through 4.1.0 (including the 3.x line up to 3.1.3 and the 2.x line up to 2.4.2) do not treat a literal backslash character (U+005C) as an authority delimiter. Node's native WHATWG URL parser, used by fetch, undici, and Node's http and https clients, normalizes the backslash to a forward slash for special schemes such as http, https, ws, wss, ftp, and file. As a result, the two parsers extract different hosts from the same input string. Applications that use f",
+    "severity": "HIGH"
+  },
+  {
+    "source": "nvd",
+    "category": "advisory",
+    "id": "CVE-2026-63820",
+    "title": "CVE-2026-63820 (CVSS N/A)",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-63820",
+    "published": "2026-07-19T12:16:55.103",
+    "summary": "In the Linux kernel, the following vulnerability has been resolved:\n\nf2fs: fix missing read bio submission on large folio error\n\nf2fs_read_data_large_folio() can keep a read bio across multiple\nreadahead folios.  If a later folio hits an error before any of its\nblocks are added to the bio, folio_in_bio is false and the current error\npath returns immediately after ending that folio.\n\nThis can leave the bio accumulated for earlier folios unsubmitted.  Those\nfolios then never receive read completio",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "nvd",
+    "category": "advisory",
+    "id": "CVE-2026-63813",
+    "title": "CVE-2026-63813 (CVSS 7.8)",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-63813",
+    "published": "2026-07-19T12:16:54.253",
+    "summary": "In the Linux kernel, the following vulnerability has been resolved:\n\nRevert \"f2fs: remove non-uptodate folio from the page cache in move_data_block\"\n\nThis reverts commit 9609dd704725a40cd63d915f2ab6c44248a44598.\n\nThe kernel panics are keeping to be reported especially when the f2fs\npartition get almost full. By investigation, we find that the reason is\none f2fs page got freed to buddy without being deleted from LRU and the\nroot cause is the race happened in [2] which is enrolled by this commit.\n",
+    "severity": "HIGH"
+  },
+  {
+    "source": "nvd",
+    "category": "advisory",
+    "id": "CVE-2026-63799",
+    "title": "CVE-2026-63799 (CVSS 7.8)",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-63799",
+    "published": "2026-07-19T12:16:52.433",
+    "summary": "In the Linux kernel, the following vulnerability has been resolved:\n\nsched/mmcid: Fix OOB clear_bit when CID is MM_CID_UNSET in fixup path\n\nIn mm_cid_fixup_cpus_to_tasks(), when rq->curr has the target mm and\nmm_cid.active is set, the CID is checked with cid_in_transit() before\nsetting the transition bit.  In per-CPU mode a newly forked or exec'd\ntask can be running with mm_cid.cid == MM_CID_UNSET because CIDs are\nassigned lazily on schedule-in.  With cid_in_transit() the guard passes\nfor MM_CID",
+    "severity": "HIGH"
+  },
+  {
+    "source": "nvd",
+    "category": "advisory",
+    "id": "CVE-2026-53396",
+    "title": "CVE-2026-53396 (CVSS 7.1)",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-53396",
+    "published": "2026-07-19T12:16:50.693",
+    "summary": "In the Linux kernel, the following vulnerability has been resolved:\n\nnfsd: fix posix_acl leak and ignored error in nfsd4_create_file\n\nnfsd4_create_file() has two bugs in its ACL handling:\n\nThe return value of nfsd4_acl_to_attr() is silently discarded.  When\nthe NFSv4-to-POSIX ACL conversion fails (e.g., -EINVAL for\nunsupported ACE types), the file is created without any ACL and the\nclient receives NFS4_OK.  This violates RFC 7530/8881 which require\nthe server to reject unsupported attributes on ",
+    "severity": "HIGH"
+  },
+  {
+    "source": "nvd",
+    "category": "advisory",
+    "id": "CVE-2026-53395",
+    "title": "CVE-2026-53395 (CVSS 7.5)",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-53395",
+    "published": "2026-07-19T12:16:50.597",
+    "summary": "In the Linux kernel, the following vulnerability has been resolved:\n\nnfsd: fix dead ACL conflict guard in nfsd4_create\n\nnfsd4_create() steals create->cr_dpacl/cr_pacl into the local\nnfsd_attrs via the designated initializer, then immediately sets the\nsource pointers to NULL. The subsequent conflict guard tests the\nalready-nilled source fields, making it permanently dead code:\n\n    if (create->cr_acl) {\n        if (create->cr_dpacl || create->cr_pacl)  /* always false */\n\nWhen a client encodes bo",
+    "severity": "HIGH"
+  },
+  {
+    "source": "nvd",
+    "category": "advisory",
+    "id": "CVE-2026-53394",
+    "title": "CVE-2026-53394 (CVSS 7.5)",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-53394",
+    "published": "2026-07-19T12:16:50.480",
+    "summary": "In the Linux kernel, the following vulnerability has been resolved:\n\nnfsd: avoid leaking pre-allocated openowner on unconfirmed retry race\n\nWhen find_or_alloc_open_stateowner() encounters an unconfirmed owner, it\ncalls release_openowner() and sets oo = NULL. Control then falls through\npast the `if (oo)` guard -- which would have freed any pre-allocated\n`new` -- and unconditionally executes `new = alloc_stateowner(...)`. If\n`new` was already allocated on a prior iteration, the pointer is\nsilently",
+    "severity": "HIGH"
+  },
+  {
+    "source": "nvd",
+    "category": "advisory",
+    "id": "CVE-2026-53389",
+    "title": "CVE-2026-53389 (CVSS 7.8)",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-53389",
+    "published": "2026-07-19T12:16:49.890",
+    "summary": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet/tcp-ao: fix use-after-free of key in del_async path\n\nIn tcp_ao_delete_key(), the del_async path skips the current_key\nand rnext_key validity checks present in the synchronous path,\nassuming these pointers are always NULL on LISTEN sockets.  However,\nif a key was added with set_current=1/set_rnext=1 while the socket\nwas in CLOSE state, current_key and rnext_key will be non-NULL\nafter listen() transitions the socket to LISTEN",
+    "severity": "HIGH"
+  },
+  {
+    "source": "nvd",
+    "category": "advisory",
+    "id": "CVE-2026-53380",
+    "title": "CVE-2026-53380 (CVSS 7.8)",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-53380",
+    "published": "2026-07-19T11:16:39.173",
+    "summary": "In the Linux kernel, the following vulnerability has been resolved:\n\nmedia: rzv2h-ivc: Fix concurrent buffer list access\n\nThe list of buffers (`rzv2h_ivc::buffers.queue`) is protected by a\nspinlock (`rzv2h_ivc::buffers.lock`). However, in\n`rzv2h_ivc_transfer_buffer()`, which runs in a separate workqueue, the\n`list_del()` call is executed without holding the spinlock, which makes\nit possible for the list to be concurrently modified\n\nFix that by removing a buffer from the list in the lock protecte",
+    "severity": "HIGH"
+  },
+  {
+    "source": "nvd",
+    "category": "advisory",
+    "id": "CVE-2026-53379",
+    "title": "CVE-2026-53379 (CVSS N/A)",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-53379",
+    "published": "2026-07-19T11:16:39.060",
+    "summary": "In the Linux kernel, the following vulnerability has been resolved:\n\nmedia: i2c: ov8856: free control handler on error in ov8856_init_controls()\n\nThe control handler wasn't freed if adding controls failed, add an error\nexit label and convert the existing error return to use it.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "nvd",
+    "category": "advisory",
+    "id": "CVE-2026-53378",
+    "title": "CVE-2026-53378 (CVSS N/A)",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-53378",
+    "published": "2026-07-19T11:16:38.953",
+    "summary": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/colorop: Fix blob property reference tracking in state lifecycle\n\nThe colorop state blob property handling had memory leaks during state\nduplication, destruction, and reset operations. The implementation\nfailed to follow the established pattern from drm_crtc's handling of\nDEGAMMA/GAMMA blob properties.\n\nIssues fixed:\n- drm_colorop_atomic_destroy_state() was freeing state memory without\n  releasing the blob reference, causin",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "nvd",
+    "category": "advisory",
+    "id": "CVE-2026-53373",
+    "title": "CVE-2026-53373 (CVSS 7.8)",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-53373",
+    "published": "2026-07-19T11:16:38.390",
+    "summary": "In the Linux kernel, the following vulnerability has been resolved:\n\nmm/vma: do not try to unmap a VMA if mmap_prepare() invoked from mmap()\n\nThe mmap_prepare hook functionality includes the ability to invoke\nmmap_prepare() from the mmap() hook of existing 'stacked' drivers, that is\nones which are capable of calling the mmap hooks of other drivers/file\nsystems (e.g.  overlayfs, shm).\n\nAs part of the mmap_prepare action functionality, we deal with errors by\nunmapping the VMA should one arise.  Th",
+    "severity": "HIGH"
+  },
+  {
+    "source": "nvd",
+    "category": "advisory",
+    "id": "CVE-2026-16229",
+    "title": "CVE-2026-16229 (CVSS 4.3)",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16229",
+    "published": "2026-07-19T10:16:32.830",
+    "summary": "A flaw has been found in itsourcecode Courier Management System up to 1.0. Affected by this vulnerability is an unknown functionality of the file /index.php. Executing a manipulation of the argument page can lead to cross site scripting. It is possible to launch the attack remotely. The exploit has been published and may be used.",
+    "severity": "MEDIUM"
+  },
+  {
+    "source": "nvd",
+    "category": "advisory",
+    "id": "CVE-2026-16228",
+    "title": "CVE-2026-16228 (CVSS 7.3)",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16228",
+    "published": "2026-07-19T10:16:32.677",
+    "summary": "A vulnerability was detected in SourceCodester Class and Exam Timetabling System 1.0. Affected is an unknown function of the file /edit_schoolyr.php. Performing a manipulation of the argument ID results in sql injection. It is possible to initiate the attack remotely. The exploit is now public and may be used.",
+    "severity": "HIGH"
+  },
+  {
+    "source": "nvd",
+    "category": "advisory",
+    "id": "CVE-2026-16227",
+    "title": "CVE-2026-16227 (CVSS 7.3)",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16227",
+    "published": "2026-07-19T10:16:31.380",
+    "summary": "A security vulnerability has been detected in SourceCodester Class and Exam Timetabling System 1.0. This impacts an unknown function of the file /edit_subject.php. Such manipulation of the argument ID leads to sql injection. The attack may be performed from remote. The exploit has been disclosed publicly and may be used.",
+    "severity": "HIGH"
+  },
+  {
+    "source": "nvd",
+    "category": "advisory",
+    "id": "CVE-2026-53372",
+    "title": "CVE-2026-53372 (CVSS N/A)",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-53372",
+    "published": "2026-07-19T09:17:02.367",
+    "summary": "In the Linux kernel, the following vulnerability has been resolved:\n\niommu/vt-d: Block PASID attachment to nested domain with dirty tracking\n\nKernel lacks dirty tracking support on nested domain attached to PASID,\nfails the attachment early if nesting parent domain is dirty tracking\nconfigured, otherwise dirty pages would be lost.",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "nvd",
+    "category": "advisory",
+    "id": "CVE-2026-53371",
+    "title": "CVE-2026-53371 (CVSS N/A)",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-53371",
+    "published": "2026-07-19T09:17:02.260",
+    "summary": "In the Linux kernel, the following vulnerability has been resolved:\n\nRDMA/ionic: bound node_desc sysfs read with %.64s\n\nnode_desc[64] in struct ib_device is not guaranteed to be NUL-\nterminated. The core IB sysfs handler uses \"%.64s\" for exactly this\nreason (drivers/infiniband/core/sysfs.c:1307), since node_desc_store()\nperforms a raw memcpy of up to IB_DEVICE_NODE_DESC_MAX bytes with no NUL\ntermination:\n\n  memcpy(desc.node_desc, buf, min_t(int, count, IB_DEVICE_NODE_DESC_MAX));\n\nIf exactly 64 b",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "nvd",
+    "category": "advisory",
+    "id": "CVE-2026-53370",
+    "title": "CVE-2026-53370 (CVSS N/A)",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-53370",
+    "published": "2026-07-19T09:17:02.153",
+    "summary": "In the Linux kernel, the following vulnerability has been resolved:\n\nperf/x86/intel: Improve validation and configuration of ACR masks\n\nCurrently there are several issues on the user space ACR mask validation\nand configuration.\n- The validation for user space ACR mask (attr.config2) is incomplete,\n  e.g., the ACR mask could include the index which belongs to another\n  ACR events group, but it's not validated.\n- An early return on an invalid ACR mask caused all subsequent ACR groups\n  to be skipp",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "nvd",
+    "category": "advisory",
+    "id": "CVE-2026-53369",
+    "title": "CVE-2026-53369 (CVSS 8.4)",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-53369",
+    "published": "2026-07-19T09:17:02.017",
+    "summary": "In the Linux kernel, the following vulnerability has been resolved:\n\nudf: reject descriptors with oversized CRC length\n\nudf_read_tagged() skips CRC verification when descCRCLength +\nsizeof(struct tag) exceeds the block size.  A crafted UDF image can\nset descCRCLength to an oversized value to bypass CRC validation\nentirely; the descriptor is then accepted based solely on the 8-bit\ntag checksum, which is trivially recomputable.\n\nReject such descriptors instead of silently accepting them.  A\nlegiti",
+    "severity": "HIGH"
+  },
+  {
+    "source": "nvd",
+    "category": "advisory",
+    "id": "CVE-2026-53367",
+    "title": "CVE-2026-53367 (CVSS N/A)",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-53367",
+    "published": "2026-07-19T09:17:01.773",
+    "summary": "In the Linux kernel, the following vulnerability has been resolved:\n\nselinux: fix avdcache auditing\n\nThe per-task avdcache was incorrectly saving and reusing the\naudited vector computed by avc_audit_required() rather than\nrecomputing based on the currently requested permissions and\ndistinguishing the denied versus allowed cases. As a result,\nsome permission checks were not being audited, e.g.\ndirectory write checks after a previously cached directory\nsearch check.\n\n[PM: line wrap tweaks]",
+    "severity": "UNKNOWN"
+  },
+  {
+    "source": "nvd",
+    "category": "advisory",
+    "id": "CVE-2026-16226",
+    "title": "CVE-2026-16226 (CVSS 4.7)",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16226",
+    "published": "2026-07-19T09:17:01.593",
+    "summary": "A weakness has been identified in SourceCodester Pizzafy Ecommerce System 1.0. This affects the function save_settings of the file /admin/admin_class_novo.php. This manipulation of the argument img causes unrestricted upload. The attack is possible to be carried out remotely.",
+    "severity": "MEDIUM"
+  },
+  {
+    "source": "nvd",
+    "category": "advisory",
+    "id": "CVE-2026-16225",
+    "title": "CVE-2026-16225 (CVSS 6.3)",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16225",
+    "published": "2026-07-19T09:17:01.423",
+    "summary": "A security flaw has been discovered in davenardella snap7 up to 1.4.3. The impacted element is the function TSnap7Peer::NegotiatePDULength of the file src/core/s7_peer.cpp. The manipulation of the argument PDULength results in out-of-bounds write. The attack can be executed remotely. The exploit has been released to the public and may be used for attacks.",
+    "severity": "MEDIUM"
+  },
+  {
+    "source": "nvd",
+    "category": "advisory",
+    "id": "CVE-2026-16224",
+    "title": "CVE-2026-16224 (CVSS 4.3)",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16224",
+    "published": "2026-07-19T09:17:01.250",
+    "summary": "A vulnerability was identified in jxxghp MoviePilot up to 2.13.5. The affected element is an unknown function of the file /jxxghp/MoviePilot of the component Application API. The manipulation leads to improper authorization. Remote exploitation of the attack is possible. The identifier of the patch is dc2b6910a423b3bfadeffaa303e1ba75cfb33900. Applying a patch is the recommended action to fix this issue.",
+    "severity": "MEDIUM"
+  },
+  {
+    "source": "nvd",
+    "category": "advisory",
+    "id": "CVE-2026-16223",
+    "title": "CVE-2026-16223 (CVSS 6.3)",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16223",
+    "published": "2026-07-19T08:16:43.647",
+    "summary": "A vulnerability was determined in 1Panel-dev CordysCRM up to 1.4.1. Impacted is the function getSqlBotSrc of the file backend/crm/src/main/java/cn/cordys/crm/system/service/IntegrationConfigService.java of the component Third Party Edit Endpoint. Executing a manipulation of the argument appSecret can lead to server-side request forgery. The attack may be launched remotely. The exploit has been publicly disclosed and may be utilized.",
+    "severity": "MEDIUM"
+  },
+  {
+    "source": "nvd",
+    "category": "advisory",
+    "id": "CVE-2026-16222",
+    "title": "CVE-2026-16222 (CVSS 6.3)",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16222",
+    "published": "2026-07-19T08:16:42.620",
+    "summary": "A vulnerability was found in 1Panel-dev CordysCRM up to 1.4.1. This issue affects some unknown processing of the file backend/crm/src/main/java/cn/cordys/crm/integration/sso/service/TokenService.java of the component Third Party Endpoint. Performing a manipulation of the argument mkAddress results in server-side request forgery. The attack may be initiated remotely. The exploit has been made public and could be used. The project closed the issue report, stating that this is not the official way ",
+    "severity": "MEDIUM"
   },
   {
     "source": "nvd",
@@ -47,1026 +1397,6 @@
     "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16219",
     "published": "2026-07-19T07:16:48.540",
     "summary": "A flaw has been found in Croogo CMS up to 4.0.7. This affects the function FileManager::isEditable of the file FileManager/src/Utility/FileManager.php of the component Admin File Manager. This manipulation causes path traversal. The attack can be initiated remotely. The exploit has been published and may be used. The project was informed of the problem early through an issue report but has not responded yet.",
-    "severity": "MEDIUM"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-16218",
-    "title": "CVE-2026-16218 (CVSS 2.6)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16218",
-    "published": "2026-07-19T06:17:10.067",
-    "summary": "A vulnerability was detected in hunvreus devpush up to 0.4.6. Affected by this issue is the function reset_storage of the file app/workers/tasks/storage.py of the component Storage Reset Failure Handler. The manipulation results in improper check or handling of exceptional conditions. A high complexity level is associated with this attack. The exploitation is known to be difficult. The project was informed of the problem early through an issue report but has not responded yet.",
-    "severity": "LOW"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-16217",
-    "title": "CVE-2026-16217 (CVSS 6.3)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16217",
-    "published": "2026-07-19T06:17:09.863",
-    "summary": "A security vulnerability has been detected in guohongze adminset up to 0.61. Affected by this vulnerability is an unknown functionality of the file delivery/deli.py of the component Delivery Deployment Endpoint. The manipulation of the argument project_id leads to authorization bypass. It is possible to initiate the attack remotely. The exploit has been disclosed publicly and may be used. The project was informed of the problem early through an issue report but has not responded yet.",
-    "severity": "MEDIUM"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-16216",
-    "title": "CVE-2026-16216 (CVSS 4.3)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16216",
-    "published": "2026-07-19T06:17:09.510",
-    "summary": "A weakness has been identified in geex-arts django-jet up to 1.0.8. Affected is an unknown function of the component OAuth Handler. Executing a manipulation can lead to cross-site request forgery. The attack may be performed from remote. The exploit has been made available to the public and could be used for attacks. The project was informed of the problem early through an issue report but has not responded yet.",
-    "severity": "MEDIUM"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-16215",
-    "title": "CVE-2026-16215 (CVSS 6.5)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16215",
-    "published": "2026-07-19T05:16:38.603",
-    "summary": "A security flaw has been discovered in geex-arts django-jet up to 1.0.8. This impacts an unknown function of the component OAuth Credential Revoke Handler. Performing a manipulation results in missing authorization. The attack is possible to be carried out remotely. The exploit has been released to the public and may be used for attacks. The project was informed of the problem early through an issue report but has not responded yet.",
-    "severity": "MEDIUM"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-16214",
-    "title": "CVE-2026-16214 (CVSS 6.3)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16214",
-    "published": "2026-07-19T05:16:38.440",
-    "summary": "A vulnerability was identified in geex-arts django-jet up to 1.0.8. This affects an unknown function of the file jet/dashboard/views.py of the component Dashboard Module. Such manipulation leads to authorization bypass. The attack can be executed remotely. The exploit is publicly available and might be used. The project was informed of the problem early through an issue report but has not responded yet.",
-    "severity": "MEDIUM"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-16213",
-    "title": "CVE-2026-16213 (CVSS 3.3)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16213",
-    "published": "2026-07-19T05:16:38.277",
-    "summary": "A security flaw has been discovered in Fantomas42 django-blog-zinnia up to 0.20. Affected by this vulnerability is an unknown functionality of the file zinnia/views/mixins/entry_protection.py of the component Protected Entry Password Handler. The manipulation results in cleartext storage of sensitive information. The attack needs to be approached locally. The project was informed of the problem early through an issue report but has not responded yet.",
-    "severity": "LOW"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-16212",
-    "title": "CVE-2026-16212 (CVSS 4.2)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16212",
-    "published": "2026-07-19T05:16:37.357",
-    "summary": "A vulnerability was identified in awesto django-shop up to 1.2.4. Affected is an unknown function of the file shop/models/inventory.py of the component Purchase Stock Handler. The manipulation leads to race condition. The attack is possible to be carried out remotely. The attack is considered to have high complexity. The exploitability is told to be difficult. The exploit is publicly available and might be used. The project was informed of the problem early through an issue report but has not re",
-    "severity": "MEDIUM"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-16211",
-    "title": "CVE-2026-16211 (CVSS 2.6)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16211",
-    "published": "2026-07-19T04:17:05.010",
-    "summary": "A vulnerability was determined in allegro up to bcf65b994ef29fb3fc2e10b660e6288723d5209e. This impacts the function AssetLastHostname.increment_hostname of the file src/ralph/assets/models/assets.py of the component Hostname Allocation Handler. Executing a manipulation of the argument counter can lead to race condition. Attacks of this nature are highly complex. The exploitability is said to be difficult. The exploit has been publicly disclosed and may be utilized. The project was informed of th",
-    "severity": "LOW"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-16210",
-    "title": "CVE-2026-16210 (CVSS 7.3)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16210",
-    "published": "2026-07-19T04:17:04.343",
-    "summary": "A vulnerability was found in newpanjing simpleui 2026.01.13. This affects the function self.get_action of the file simpleui/admin.py of the component AjaxAdmin AJAX Endpoint. Performing a manipulation results in missing authentication. Remote exploitation of the attack is possible. The exploit has been made public and could be used. The project was informed of the problem early through an issue report but has not responded yet.",
-    "severity": "HIGH"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-16209",
-    "title": "CVE-2026-16209 (CVSS 7.3)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16209",
-    "published": "2026-07-19T04:17:03.983",
-    "summary": "A vulnerability has been found in Gerapy up to 0.9.13. The impacted element is an unknown function of the file gerapy/server/core/views.py of the component Project Upload Endpoint. Such manipulation leads to missing authentication. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The name of the patch is bd4891c60315f17611a3b7a651ffe0fba7cfe71e. Applying a patch is advised to resolve this issue.",
-    "severity": "HIGH"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-16208",
-    "title": "CVE-2026-16208 (CVSS 5.0)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16208",
-    "published": "2026-07-19T04:17:03.523",
-    "summary": "A flaw has been found in django-tastypie up to 0.15.1. The affected element is the function CacheThrottle/CacheDBThrottle of the file tastypie/throttle.py. This manipulation causes race condition. The attack may be initiated remotely. The complexity of an attack is rather high. The exploitability is described as difficult. The project was informed of the problem early through an issue report but has not responded yet.",
-    "severity": "MEDIUM"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-16207",
-    "title": "CVE-2026-16207 (CVSS 3.7)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16207",
-    "published": "2026-07-19T04:16:44.460",
-    "summary": "A vulnerability was detected in django-tastypie up to 0.15.1. Impacted is the function ApiKeyAuthentication of the file tastypie/authentication.py. The manipulation results in use of get request method with sensitive query strings. The attack can be launched remotely. This attack is characterized by high complexity. The exploitability is considered difficult. The project was informed of the problem early through an issue report but has not responded yet.",
-    "severity": "LOW"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-16206",
-    "title": "CVE-2026-16206 (CVSS 6.3)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16206",
-    "published": "2026-07-19T03:16:42.413",
-    "summary": "A security vulnerability has been detected in django-oauth django-oauth-toolkit 3.3.0. This issue affects the function _load_id_token of the file oauth2_provider/oauth2_validators.py. The manipulation leads to session expiration. The attack can be initiated remotely. The project was informed of the problem early through an issue report but has not responded yet.",
-    "severity": "MEDIUM"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-16205",
-    "title": "CVE-2026-16205 (CVSS 2.4)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16205",
-    "published": "2026-07-19T03:16:42.250",
-    "summary": "A weakness has been identified in Pluck CMS up to 4.7.21. This vulnerability affects the function htmlspecialchars_decode of the file data/modules/albums/albums.admin.php of the component Albums Module. Executing a manipulation of the argument Info can lead to cross site scripting. It is possible to launch the attack remotely. The exploit has been made available to the public and could be used for attacks. The project was informed of the problem early through an issue report but has not responde",
-    "severity": "LOW"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-16204",
-    "title": "CVE-2026-16204 (CVSS 6.3)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16204",
-    "published": "2026-07-19T03:16:42.087",
-    "summary": "A security flaw has been discovered in zevorn rt-claw up to 0.2.0. This affects the function tool_run_script_execute of the file claw/services/tools/script.c of the component Telegram-to-AI Tool Execution Flow. Performing a manipulation results in code injection. It is possible to initiate the attack remotely. The exploit has been released to the public and may be used for attacks. The project was informed of the problem early through an issue report but has not responded yet.",
-    "severity": "MEDIUM"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-16203",
-    "title": "CVE-2026-16203 (CVSS 3.5)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16203",
-    "published": "2026-07-19T02:16:44.727",
-    "summary": "A vulnerability was identified in SourceCodester Class and Exam Timetabling System 1.0. Affected by this issue is some unknown functionality of the file /forCYS.php. Such manipulation of the argument course leads to cross site scripting. The attack may be performed from remote. The exploit is publicly available and might be used.",
-    "severity": "LOW"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-16202",
-    "title": "CVE-2026-16202 (CVSS 3.5)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16202",
-    "published": "2026-07-19T02:16:43.350",
-    "summary": "A vulnerability was determined in SourceCodester Class and Exam Timetabling System 1.0. Affected by this vulnerability is an unknown functionality of the file /CYS.php. This manipulation of the argument course causes cross site scripting. The attack is possible to be carried out remotely. The exploit has been publicly disclosed and may be utilized.",
-    "severity": "LOW"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-16201",
-    "title": "CVE-2026-16201 (CVSS 5.3)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16201",
-    "published": "2026-07-19T01:17:02.087",
-    "summary": "A vulnerability was found in zevorn rt-claw up to 0.2.0. Affected is the function claw_net_get/claw_net_post of the file claw/services/tools/net.c of the component http_request. The manipulation results in information disclosure. The attack can be executed remotely. The exploit has been made public and could be used. The project was informed of the problem early through an issue report but has not responded yet.",
-    "severity": "MEDIUM"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-16200",
-    "title": "CVE-2026-16200 (CVSS 7.3)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16200",
-    "published": "2026-07-19T01:17:01.900",
-    "summary": "A vulnerability has been found in zevorn rt-claw up to 0.2.0. This impacts the function claw_tool_invoke of the file claw/services/swarm/swarm.c of the component RPC Handler. The manipulation leads to incorrect authorization. Remote exploitation of the attack is possible. The exploit has been disclosed to the public and may be used. The project was informed of the problem early through an issue report but has not responded yet.",
-    "severity": "HIGH"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-16199",
-    "title": "CVE-2026-16199 (CVSS 6.3)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16199",
-    "published": "2026-07-19T00:16:40.830",
-    "summary": "A flaw has been found in nextlevelbuilder GoClaw up to 3.13.3-beta.3. This affects the function ExecTool.Execute of the file goclaw/internal/tools/credentialed_exec.go. Executing a manipulation can lead to improper authorization. The attack may be launched remotely. The exploit has been published and may be used.",
-    "severity": "MEDIUM"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-16198",
-    "title": "CVE-2026-16198 (CVSS 5.6)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16198",
-    "published": "2026-07-19T00:16:40.650",
-    "summary": "A vulnerability was detected in Sipeed PicoClaw up to 0.2.9. The impacted element is an unknown function of the file web/backend/middleware/access_control.go of the component First Run Setup. Performing a manipulation of the argument allowed_cidrs results in authentication bypass using alternate channel. The attack may be initiated remotely. The attack's complexity is rated as high. The exploitability is regarded as difficult. The exploit is now public and may be used. The patch is named 0176013",
-    "severity": "MEDIUM"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-16197",
-    "title": "CVE-2026-16197 (CVSS 6.3)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16197",
-    "published": "2026-07-18T23:17:01.187",
-    "summary": "A security vulnerability has been detected in Sipeed PicoClaw up to 0.2.9. The affected element is the function handleMessageReceive of the file pkg/channels/feishu/feishu_64.go of the component Group Message Handler. Such manipulation leads to missing authorization. The attack can be launched remotely. The exploit has been disclosed publicly and may be used. The reported GitHub issue was closed automatically due to inactivity.",
-    "severity": "MEDIUM"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-16196",
-    "title": "CVE-2026-16196 (CVSS 6.3)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16196",
-    "published": "2026-07-18T23:17:01.010",
-    "summary": "A weakness has been identified in Sipeed PicoClaw up to 0.2.9. Impacted is the function isPrivateOrRestrictedIP of the file pkg/tools/integration/web.go of the component web_fetch. This manipulation causes server-side request forgery. The attack can be initiated remotely. The exploit has been made available to the public and could be used for attacks. Patch name: 2efbe5d560e7ed9bc5209c203dc4aa6ecdbc7405. To fix this issue, it is recommended to deploy a patch.",
-    "severity": "MEDIUM"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-16195",
-    "title": "CVE-2026-16195 (CVSS 6.3)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16195",
-    "published": "2026-07-18T23:17:00.847",
-    "summary": "A security flaw has been discovered in Sipeed PicoClaw up to 0.2.9. This issue affects the function dispatchIncoming of the file pkg/channels/wecom/wecom.go of the component Group Message Handler. The manipulation results in incorrect authorization. It is possible to launch the attack remotely. The exploit has been released to the public and may be used for attacks. The reported GitHub issue was closed automatically due to inactivity.",
-    "severity": "MEDIUM"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-10130",
-    "title": "CVE-2026-10130 (CVSS 8.2)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-10130",
-    "published": "2026-07-18T23:17:00.397",
-    "summary": "QueryWeaver contains an authentication bypass vulnerability that allows unauthenticated attackers to obtain valid session tokens for existing accounts by submitting a signup request with a known victim email address. The signup route unconditionally creates and links a new token to the matching Identity via a Cypher MERGE operation before checking whether the email belongs to an existing account, causing the server to return a valid authenticated session token for the victim's identity without r",
-    "severity": "HIGH"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-16194",
-    "title": "CVE-2026-16194 (CVSS 6.3)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16194",
-    "published": "2026-07-18T22:16:43.830",
-    "summary": "A vulnerability was determined in zhayujie CowAgent up to 2.1.1. This affects the function WebFetch.execute of the file agent/tools/web_fetch/web_fetch.py. Executing a manipulation of the argument url can lead to server-side request forgery. The attack may be performed from remote. The exploit has been publicly disclosed and may be utilized. Upgrading to version 2.1.2 is able to mitigate this issue. This patch is called ea47f3097eed4f8295c4cb3d76ecb97e0f43d632. It is recommended to upgrade the a",
-    "severity": "MEDIUM"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-16156",
-    "title": "CVE-2026-16156 (CVSS 3.5)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16156",
-    "published": "2026-07-18T22:16:43.667",
-    "summary": "A security flaw has been discovered in SourceCodester Class and Exam Timetabling System 1.0. This affects an unknown part of the file /forexam.php. The manipulation of the argument day results in cross site scripting. It is possible to launch the attack remotely. The exploit has been released to the public and may be used for attacks.",
-    "severity": "LOW"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-57857",
-    "title": "CVE-2026-57857 (CVSS 4.3)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-57857",
-    "published": "2026-07-18T21:17:03.687",
-    "summary": "The Flow Payment plugin for WordPress (flow.cl) version 3.0.8 is vulnerable to reflected cross-site scripting on the WooCommerce checkout page. When the plugin handles an order cancellation, the error_message GET parameter is passed directly to wc_add_notice() in flowpayment-fl.php (lines 57-58) without input sanitization (for example sanitize_text_field()) or output escaping (for example esc_html()) before being rendered in the checkout notice HTML. An unauthenticated attacker can craft a URL c",
-    "severity": "MEDIUM"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-16155",
-    "title": "CVE-2026-16155 (CVSS 3.5)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16155",
-    "published": "2026-07-18T21:17:03.507",
-    "summary": "A vulnerability was identified in SourceCodester Class and Exam Timetabling System 1.0. Affected by this issue is some unknown functionality of the file /schoolyr.php. The manipulation of the argument sy leads to cross site scripting. It is possible to initiate the attack remotely. The exploit is publicly available and might be used.",
-    "severity": "LOW"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-16154",
-    "title": "CVE-2026-16154 (CVSS 7.3)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16154",
-    "published": "2026-07-18T21:17:03.343",
-    "summary": "A vulnerability was determined in SourceCodester Class and Exam Timetabling System 1.0/1.php. Affected by this vulnerability is an unknown functionality of the file /edit_room1.php. Executing a manipulation of the argument ID can lead to sql injection. The attack may be performed from remote. The exploit has been publicly disclosed and may be utilized.",
-    "severity": "HIGH"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-16152",
-    "title": "CVE-2026-16152 (CVSS 7.3)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16152",
-    "published": "2026-07-18T21:17:03.180",
-    "summary": "A vulnerability was found in SourceCodester Class and Exam Timetabling System 1.0. Affected is an unknown function of the file /edit_rooma.php. Performing a manipulation of the argument ID results in sql injection. The attack is possible to be carried out remotely. The exploit has been made public and could be used.",
-    "severity": "HIGH"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-12228",
-    "title": "CVE-2026-12228 (CVSS N/A)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-12228",
-    "published": "2026-07-18T21:17:03.040",
-    "summary": "A stored cross-site scripting (XSS) vulnerability exists in the `POST /api/prompts/share` endpoint of parisneo/lollms (latest version). The endpoint stores attacker-controlled `prompt_content` into `DBDirectMessage.content` without server-side sanitization. When a victim opens the direct message (DM) thread, the message is rendered by the DM UI through `MessageContentRenderer`, which uses `v-html` to insert rendered HTML into the DOM. The frontend sanitizer, which is regex-based, fails to compre",
-    "severity": "UNKNOWN"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-57848",
-    "title": "CVE-2026-57848 (CVSS 5.5)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-57848",
-    "published": "2026-07-18T20:17:30.427",
-    "summary": "Stoat for Android exports the chat.stoat.activities.ShareTargetActivity component (reachable to any process on the device via the android.intent.action.SEND intent) and accepts the file to share as a URI supplied through the android.intent.extra.STREAM extra. The activity does not validate or filter the incoming URI before using it as the outgoing attachment, so a caller can pass a file:// URI pointing at the application's own internal storage (for example /data/data/chat.revolt/databases/revolt",
-    "severity": "MEDIUM"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-53994",
-    "title": "CVE-2026-53994 (CVSS 7.5)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-53994",
-    "published": "2026-07-18T20:17:30.283",
-    "summary": "ProFTPD mod_sftp contains a heap-based buffer overflow reachable by an authenticated SFTP user. The fxp_packet_read() function accepts the attacker-supplied 32-bit big-endian SFTP packet length without a minimum sanity check. A value of 0 causes an unsigned subtraction elsewhere in the read path to underflow to approximately 4 GB. That oversized request reaches the core memory allocator, where the rounded size is computed in size_t but passed to new_block() as a 32-bit int; the low 32 bits of 0x",
-    "severity": "HIGH"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-16151",
-    "title": "CVE-2026-16151 (CVSS 6.3)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16151",
-    "published": "2026-07-18T20:17:30.107",
-    "summary": "A vulnerability has been found in CartoDB carto-api-client 0.5.29. This impacts the function addFilter of the file src/filters.ts. Such manipulation of the argument column leads to improperly controlled modification of object prototype attributes. The attack can be executed remotely. The project was informed of the problem early through an issue report but has not responded yet.",
-    "severity": "MEDIUM"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-16150",
-    "title": "CVE-2026-16150 (CVSS 6.3)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16150",
-    "published": "2026-07-18T20:17:29.947",
-    "summary": "A vulnerability was found in RobinHerbots Inputmask up to 5.0.9. Affected by this issue is the function extendDefaults/extendDefinitions/extendAliases in the library lib/dependencyLibs/extend.js of the component Internal Deep Merge Helper. The manipulation results in improperly controlled modification of object prototype attributes. The attack may be performed from remote. The project was informed of the problem early through an issue report but has not responded yet.",
-    "severity": "MEDIUM"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-16133",
-    "title": "CVE-2026-16133 (CVSS 5.0)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16133",
-    "published": "2026-07-18T19:17:05.687",
-    "summary": "A flaw has been found in LiuMengxuan04 MiniCode 0.1.0. Affected by this vulnerability is the function child_process.spawn of the file mcp.ts. Executing a manipulation can lead to command injection. The attack can be launched remotely. The attack requires a high level of complexity. The exploitation appears to be difficult. The exploit has been published and may be used. The pull request to fix this issue awaits acceptance.",
-    "severity": "MEDIUM"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-16131",
-    "title": "CVE-2026-16131 (CVSS 6.3)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16131",
-    "published": "2026-07-18T19:17:05.527",
-    "summary": "A weakness has been identified in itsourcecode Hospital Management System 1.0. This affects an unknown function of the file /prescriptionrecord.php. This manipulation of the argument delid causes sql injection. It is possible to initiate the attack remotely. The exploit has been made available to the public and could be used for attacks.",
-    "severity": "MEDIUM"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-16130",
-    "title": "CVE-2026-16130 (CVSS 4.4)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16130",
-    "published": "2026-07-18T18:16:37.430",
-    "summary": "A vulnerability was identified in nearai ironclaw up to 0.29.1. The affected element is the function validate_path of the file src/tools/builtin/path_utils.rs of the component write_file. The manipulation leads to link following. Local access is required to approach this attack. The exploit is publicly available and might be used. The identifier of the patch is 369ff3d240cf3c0787b50e1e9f182e1a06c71255. It is recommended to apply a patch to fix this issue.",
-    "severity": "MEDIUM"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-16129",
-    "title": "CVE-2026-16129 (CVSS 5.3)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16129",
-    "published": "2026-07-18T17:16:39.030",
-    "summary": "A vulnerability has been found in princezuda SafestClaw up to 4.2.4. This vulnerability affects the function ShellAction._validate_command of the file src/safestclaw/actions/shell.py of the component Built-in Web Interface. Such manipulation leads to incomplete blacklist. An attack has to be approached locally. The exploit has been disclosed to the public and may be used. The presence of this vulnerability remains uncertain at this time. The project maintainer explains: \"On paper you're correct,",
-    "severity": "MEDIUM"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-16128",
-    "title": "CVE-2026-16128 (CVSS 7.3)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16128",
-    "published": "2026-07-18T17:16:38.273",
-    "summary": "A security flaw has been discovered in zevorn rt-claw up to 0.2.0. This impacts the function receiver_thread of the file claw/services/swarm/swarm.c of the component http_request. Performing a manipulation results in server-side request forgery. It is possible to initiate the attack remotely. The exploit has been released to the public and may be used for attacks. The project was informed of the problem early through an issue report but has not responded yet.",
-    "severity": "HIGH"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-16127",
-    "title": "CVE-2026-16127 (CVSS 7.3)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16127",
-    "published": "2026-07-18T16:17:13.217",
-    "summary": "A vulnerability was identified in zevorn rt-claw up to 0.2.0. This affects the function claw_net_get/claw_net_post of the file claw/tools/tool_net.c of the component http_request. Such manipulation of the argument url leads to server-side request forgery. The attack may be performed from remote. The exploit is publicly available and might be used. The project was informed of the problem early through an issue report but has not responded yet.",
-    "severity": "HIGH"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-16126",
-    "title": "CVE-2026-16126 (CVSS 7.3)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16126",
-    "published": "2026-07-18T16:17:13.043",
-    "summary": "A vulnerability was determined in zevorn rt-claw up to 0.2.0. The impacted element is the function handle_rpc_request of the file claw/services/swarm/swarm.c of the component Swarm RPC Receiver. This manipulation causes incorrect authorization. The attack is possible to be carried out remotely. The exploit has been publicly disclosed and may be utilized. The project was informed of the problem early through an issue report but has not responded yet.",
-    "severity": "HIGH"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-16125",
-    "title": "CVE-2026-16125 (CVSS 7.3)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16125",
-    "published": "2026-07-18T16:17:12.873",
-    "summary": "A vulnerability was found in zevorn rt-claw up to 0.2.0. The affected element is the function claw_net_get/claw_net_post of the file claw/services/tools/net.c of the component http_request. The manipulation of the argument url results in server-side request forgery. The attack can be executed remotely. The exploit has been made public and could be used. The project was informed of the problem early through an issue report but has not responded yet.",
-    "severity": "HIGH"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-16124",
-    "title": "CVE-2026-16124 (CVSS 6.3)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16124",
-    "published": "2026-07-18T16:17:12.657",
-    "summary": "A security vulnerability has been detected in nextlevelbuilder GoClaw up to 3.15.0-beta.32. This affects the function CheckSSRF/isPrivateIP of the file internal/tools/web_shared.go of the component web_fetch. Such manipulation leads to server-side request forgery. The attack can be launched remotely. The exploit has been disclosed publicly and may be used. Upgrading to version 3.15.0-beta.33 is able to mitigate this issue. The name of the patch is 12a0168271827650ddb0026d6277fbadf3dcf3ea. Upgrad",
-    "severity": "MEDIUM"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-16123",
-    "title": "CVE-2026-16123 (CVSS 6.3)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16123",
-    "published": "2026-07-18T15:17:33.900",
-    "summary": "A weakness has been identified in nextlevelbuilder GoClaw up to 3.13.2. Affected by this issue is the function ToolsInvokeHandler.ServeHTTP of the file internal/http/tools_invoke.go of the component Invoke Endpoint. This manipulation causes missing authorization. The attack can be initiated remotely. The exploit has been made available to the public and could be used for attacks.",
-    "severity": "MEDIUM"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-16122",
-    "title": "CVE-2026-16122 (CVSS 4.3)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16122",
-    "published": "2026-07-18T15:17:33.743",
-    "summary": "A security flaw has been discovered in nextlevelbuilder GoClaw up to 3.13.2. Affected by this vulnerability is the function extractBin/RequestApproval/matchesAllowlist of the file internal/tools/exec_approval.go. The manipulation results in incorrect authorization. The exploit has been released to the public and may be used for attacks.",
-    "severity": "MEDIUM"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-16121",
-    "title": "CVE-2026-16121 (CVSS 6.3)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16121",
-    "published": "2026-07-18T15:17:32.987",
-    "summary": "A vulnerability was identified in nextlevelbuilder GoClaw up to 3.13.2. Affected is the function isSafeBin of the file internal/tools/exec_approval.go. The manipulation leads to improper authorization. It is possible to initiate the attack remotely. The exploit is publicly available and might be used.",
-    "severity": "MEDIUM"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-9323",
-    "title": "CVE-2026-9323 (CVSS 8.1)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-9323",
-    "published": "2026-07-18T14:17:12.170",
-    "summary": "The urwid web display backend (urwid/display/web.py) generates web session identifiers (urwid_id) in Screen.start() by concatenating two random.randrange(10**9) calls that use Python's Mersenne Twister PRNG, which is not cryptographically secure. Each call consumes approximately 30 bits of PRNG state, and the Mersenne Twister internal state is approximately 19,937 bits, so an attacker who observes approximately 334 session IDs (for example via the X-Urwid-ID HTTP response header) can fully recon",
-    "severity": "HIGH"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-16120",
-    "title": "CVE-2026-16120 (CVSS 6.3)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16120",
-    "published": "2026-07-18T14:17:11.907",
-    "summary": "A vulnerability was determined in nextlevelbuilder GoClaw up to 3.13.3-beta.3. This impacts the function matchesAllowlist/extractBin of the file internal/tools/exec_approval.go. Executing a manipulation can lead to incorrectly-resolved name. The attack may be performed from remote. The exploit has been publicly disclosed and may be utilized.",
-    "severity": "MEDIUM"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-16119",
-    "title": "CVE-2026-16119 (CVSS 6.3)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16119",
-    "published": "2026-07-18T14:17:11.740",
-    "summary": "A vulnerability was found in nextlevelbuilder GoClaw up to 3.13.2. This affects the function RequestApproval of the file internal/tools/exec_approval.go of the component WebSocket Approval Endpoint. Performing a manipulation results in incorrect authorization. The attack is possible to be carried out remotely. The exploit has been made public and could be used.",
-    "severity": "MEDIUM"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-16117",
-    "title": "CVE-2026-16117 (CVSS 10.0)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16117",
-    "published": "2026-07-18T14:17:11.620",
-    "summary": "Impact: @fastify/http-proxy versions up to and including 11.5.0 fail to rewrite the request prefix when the prefix segment is URL-encoded. Fastify's router URL-decodes paths for route matching, but request.url retains the original encoded form, and the prefix-rewrite step uses a literal string replace against the decoded prefix. A request that encodes one or more characters of the configured prefix therefore matches the route but skips the rewrite, so the raw encoded path is forwarded to the ups",
-    "severity": "CRITICAL"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-11826",
-    "title": "CVE-2026-11826 (CVSS 8.8)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-11826",
-    "published": "2026-07-18T14:17:11.480",
-    "summary": "OpenPLC_v3 contains a heap-based buffer overflow in the getData() function in webserver/core/modbus_master.cpp. getData() reads characters between two delimiters into a caller-supplied buffer with no size parameter and no bounds check. In parseConfig() the function is invoked with the 100-byte heap-allocated MB_device.dev_name field. An authenticated attacker with access to the OpenPLC web interface can send a crafted HTTP POST to the /modbus endpoint with an oversized device_name value; the val",
-    "severity": "HIGH"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2025-71398",
-    "title": "CVE-2025-71398 (CVSS N/A)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-71398",
-    "published": "2026-07-18T14:17:11.347",
-    "summary": "SurrealDB before 2.2.2 fails to validate HTTP redirects in http functions, allowing authenticated users to bypass deny-net restrictions by redirecting to blocked IP addresses. Attackers can host a public server that redirects to denied network targets, enabling server-side request forgery to access internal endpoints and retrieve sensitive information.",
-    "severity": "UNKNOWN"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2025-71397",
-    "title": "CVE-2025-71397 (CVSS N/A)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-71397",
-    "published": "2026-07-18T14:17:11.220",
-    "summary": "SurrealDB before 2.0.5, 2.1.x before 2.1.5, and 2.2.x before 2.2.2 allows authenticated users with OWNER or EDITOR permissions (at the root, namespace, or database level) to define custom database functions via DEFINE FUNCTION using nested FOR loops. Although a single loop's iteration count is constrained, nesting multiple loops (e.g., each with 1,000,000 iterations) is not, so an attacker can execute a function that consumes all server CPU time. Configured timeouts do not stop the execution, re",
-    "severity": "UNKNOWN"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2025-71396",
-    "title": "CVE-2025-71396 (CVSS N/A)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-71396",
-    "published": "2026-07-18T14:17:11.087",
-    "summary": "SurrealDB before 2.0.5, 2.1.x before 2.1.5, and 2.2.x before 2.2.2 does not enforce a default execution-time limit on embedded JavaScript scripting functions when the scripting capability is explicitly enabled (via --allow-scripting or --allow-all). An authenticated attacker can submit long-running JavaScript functions to exhaust server resources and cause a denial of service. Scripting is disabled by default.",
-    "severity": "UNKNOWN"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2025-71395",
-    "title": "CVE-2025-71395 (CVSS N/A)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-71395",
-    "published": "2026-07-18T14:17:10.963",
-    "summary": "SurrealDB versions before 2.2.2 contain a memory exhaustion vulnerability in the string::replace function that fails to restrict resulting string length when using regex patterns. An authenticated attacker can craft a malicious query to exhaust server memory through unbounded string allocations, causing denial of service.",
-    "severity": "UNKNOWN"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2025-71394",
-    "title": "CVE-2025-71394 (CVSS N/A)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-71394",
-    "published": "2026-07-18T14:17:10.837",
-    "summary": "SurrealDB versions before 2.2.2 contain a local file read vulnerability in the DEFINE ANALYZER statement that allows authenticated users to read arbitrary files on the file system. Attackers with root, namespace, or database level privileges can point analyzers to arbitrary file paths and exfiltrate content from two-column tab-separated files.",
-    "severity": "UNKNOWN"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2025-71393",
-    "title": "CVE-2025-71393 (CVSS N/A)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-71393",
-    "published": "2026-07-18T14:17:10.703",
-    "summary": "SurrealDB before 2.2.2 with scripting enabled fails to properly enforce recursion limits when native functions contain embedded JavaScript that issues new queries. Authenticated attackers can bypass the recursion limit by chaining native and JavaScript function calls to trigger infinite recursion and exhaust server memory.",
-    "severity": "UNKNOWN"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2025-71392",
-    "title": "CVE-2025-71392 (CVSS N/A)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-71392",
-    "published": "2026-07-18T14:17:10.580",
-    "summary": "SurrealDB before 2.0.5, 2.1.x before 2.1.5, and 2.2.x before 2.2.2 fails to properly escape table and field names in the command-line export command. An authenticated System User with OWNER or EDITOR roles can create tables or fields with malicious names containing SurrealQL. When a higher-privileged user subsequently imports the exported backup, the injected SurrealQL executes, enabling privilege escalation and root-level takeover of the SurrealDB instance. Applications that let users define cu",
-    "severity": "UNKNOWN"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2025-71391",
-    "title": "CVE-2025-71391 (CVSS N/A)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-71391",
-    "published": "2026-07-18T14:17:10.457",
-    "summary": "SurrealDB versions before 2.2.2 contain an uncaught exception vulnerability in the net module that allows authenticated users to crash the database. Attackers can send crafted HTTP queries containing null bytes to the /sql endpoint, causing an unhandled exception that crashes the SurrealDB instance and any dependent applications.",
-    "severity": "UNKNOWN"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2025-71390",
-    "title": "CVE-2025-71390 (CVSS N/A)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-71390",
-    "published": "2026-07-18T14:17:10.300",
-    "summary": "SurrealDB before 2.2.6, 2.3.6, and 2.1.8 (and 3.0.0-alpha.7 and earlier) fails to validate DNS-resolved hostnames against --deny-net network access restrictions in its http::* functions. An authenticated user can invoke http::<fn>(<url>) with a hostname that resolves to a denied IP address, causing the server to issue the request anyway and return the response. This bypasses network access controls, allowing access to restricted internal endpoints and potentially retrieving or altering sensitive",
-    "severity": "UNKNOWN"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2024-58370",
-    "title": "CVE-2024-58370 (CVSS 6.5)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2024-58370",
-    "published": "2026-07-18T14:17:10.140",
-    "summary": "SurrealDB versions before 1.1.0 fail to enforce recursion depth limits when parsing nested SurrealQL statements including IF, RELATE, and attribute access idioms. Authorized attackers can submit queries with excessive nesting depth to cause stack overflow and crash the server.",
-    "severity": "MEDIUM"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2024-58369",
-    "title": "CVE-2024-58369 (CVSS 6.5)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2024-58369",
-    "published": "2026-07-18T14:17:10.003",
-    "summary": "SurrealDB versions before 1.1.1 fail to properly validate invocation of custom parameters and functions at root or namespace levels, causing server panic. Authorized clients can invoke these entities at unsupported levels to crash the SurrealDB server, resulting in denial of service.",
-    "severity": "MEDIUM"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2024-58368",
-    "title": "CVE-2024-58368 (CVSS 7.5)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2024-58368",
-    "published": "2026-07-18T14:17:09.867",
-    "summary": "SurrealDB versions before 1.1.0 fail to properly parse the ID, DB, and NS headers in HTTP REST API requests containing special characters. Unauthenticated attackers can send crafted HTTP requests with malformed header values to trigger an uncaught exception that crashes the server.",
-    "severity": "HIGH"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2024-58367",
-    "title": "CVE-2024-58367 (CVSS N/A)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2024-58367",
-    "published": "2026-07-18T14:17:09.737",
-    "summary": "SurrealDB versions before 2.0.4 fail to properly enforce field permissions during SELECT, UPDATE, and DELETE operations, allowing authorized users to access unauthorized field values through various query techniques. Attackers can exploit SELECT VALUE operations, field aliasing, function arguments, WHERE clause filtering, RETURN BEFORE clauses, and SET clause references to leak protected field contents despite lacking SELECT permissions.",
-    "severity": "UNKNOWN"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2024-58366",
-    "title": "CVE-2024-58366 (CVSS 8.5)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2024-58366",
-    "published": "2026-07-18T14:17:09.600",
-    "summary": "SurrealDB before 1.1.1 contains a format string vulnerability in the rquickjs Exception::throw_type function when scripting is enabled. Attackers with scripting privileges can supply format string sequences in error inputs to read arbitrary memory or execute code with SurrealDB process privileges.",
-    "severity": "HIGH"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2024-58365",
-    "title": "CVE-2024-58365 (CVSS 6.5)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2024-58365",
-    "published": "2026-07-18T14:17:09.460",
-    "summary": "SurrealDB versions before 1.2.0 contain an uncaught exception vulnerability in the query executor when processing calls to nonexistent built-in functions. Authorized clients can craft pre-parsed queries invoking nonexistent functions to trigger a panic that crashes the server.",
-    "severity": "MEDIUM"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2024-58364",
-    "title": "CVE-2024-58364 (CVSS 6.5)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2024-58364",
-    "published": "2026-07-18T14:17:09.320",
-    "summary": "SurrealDB versions before 1.2.1 contain an uncaught exception handling vulnerability in span rendering when parsing queries with errors on line terminator characters. Authorized clients can submit malformed queries that trigger a panic in the span rendering code, crashing the server and causing denial of service.",
-    "severity": "MEDIUM"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2024-58363",
-    "title": "CVE-2024-58363 (CVSS 6.3)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2024-58363",
-    "published": "2026-07-18T14:17:09.187",
-    "summary": "SurrealDB before 1.5.4 fails to properly validate authentication when a scope user switches databases using the USE clause or use method. Attackers with an authenticated session can impersonate an unrelated user in a different database if a user record with an identical identifier exists, allowing unauthorized actions if permissions rely solely on the $auth parameter.",
-    "severity": "MEDIUM"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2024-58362",
-    "title": "CVE-2024-58362 (CVSS 8.8)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2024-58362",
-    "published": "2026-07-18T14:17:09.047",
-    "summary": "SurrealDB before 1.5.5 (and 2.0.0-beta before 2.0.0-beta.3) accepts an arbitrary object in the signin and signup operations of the RPC API without recursively validating it for non-computed values. When a record access method defines a SIGNIN or SIGNUP query and the RPC API is exposed to untrusted users, an unauthenticated attacker can encode a binary object containing a subquery using the bincode serialization format and supply it in place of credentials. The subquery is then executed within th",
-    "severity": "HIGH"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2024-58361",
-    "title": "CVE-2024-58361 (CVSS 6.5)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2024-58361",
-    "published": "2026-07-18T14:17:08.917",
-    "summary": "SurrealDB versions before 2.0.4 contain an uncaught exception handling vulnerability in the parser error rendering code when processing empty strings. Authorized clients can execute malformed queries with empty string conversions to record, duration, or datetime types that cause a panic in error rendering, crashing the server.",
-    "severity": "MEDIUM"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2024-58359",
-    "title": "CVE-2024-58359 (CVSS 6.5)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2024-58359",
-    "published": "2026-07-18T14:17:08.780",
-    "summary": "SurrealDB versions before 2.1.0 contain a denial of service vulnerability in the sorting mechanism when using ORDER BY rand() clause. Authorized clients can execute queries with ORDER BY rand() to trigger a panic in the sorting function, crashing the server.",
-    "severity": "MEDIUM"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2024-58358",
-    "title": "CVE-2024-58358 (CVSS 4.9)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2024-58358",
-    "published": "2026-07-18T14:17:08.643",
-    "summary": "SurrealDB versions before 2.1.0 contain a denial of service vulnerability in role conversion that allows privileged owner users to define users with nonexistent roles. Attackers can trigger an uncaught panic by signing in with a user assigned an invalid role, crashing the server.",
-    "severity": "MEDIUM"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2024-58357",
-    "title": "CVE-2024-58357 (CVSS 6.5)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2024-58357",
-    "published": "2026-07-18T14:17:08.503",
-    "summary": "SurrealDB versions before 2.1.0 contain an uncaught exception vulnerability in the rand::time() function that panics when unwrap is called on a None result from timestamp_opt. Authorized clients can repeatedly invoke rand::time() to reliably trigger server panics and cause denial of service.",
-    "severity": "MEDIUM"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2024-58356",
-    "title": "CVE-2024-58356 (CVSS N/A)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2024-58356",
-    "published": "2026-07-18T14:17:08.363",
-    "summary": "SurrealDB before 2.1.4 silently fails to overwrite table definitions when the DEFINE TABLE ... OVERWRITE clause is used on tables defined with TYPE RELATION. Because table definitions include the PERMISSIONS clause, an attempt to tighten a table's permissions via OVERWRITE does not take effect, and the administrator may incorrectly believe the change was applied. As a result, a client authorized to run queries may continue to access data in that table that the updated (but unapplied) permissions",
-    "severity": "UNKNOWN"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2023-54366",
-    "title": "CVE-2023-54366 (CVSS 8.8)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-54366",
-    "published": "2026-07-18T14:17:07.603",
-    "summary": "SurrealDB before 1.0.1 sets default table permissions to FULL instead of NONE, allowing SELECT, CREATE, UPDATE, and DELETE operations on tables without explicit permissions. Attackers with database access or unauthenticated users on publicly exposed instances can perform unrestricted operations on unprotected tables within their authorization scope.",
-    "severity": "HIGH"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-9147",
-    "title": "CVE-2026-9147 (CVSS 7.8)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-9147",
-    "published": "2026-07-18T13:17:06.273",
-    "summary": "uproot dynamically generates Python class source code from ROOT TStreamerInfo records in a file and compiles it at runtime. Some file-controlled streamer metadata fields (for example, streamer element names) are interpolated into the generated Python source without safe quoting via repr() or the !r format specifier. An attacker who can supply a crafted ROOT file can place Python expression-breaking content into a streamer metadata field. When uproot generates and invokes the corresponding reader",
-    "severity": "HIGH"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-59173",
-    "title": "CVE-2026-59173 (CVSS N/A)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-59173",
-    "published": "2026-07-18T13:17:06.150",
-    "summary": "Uncontrolled Resource Consumption vulnerability in Apache Traffic Server.\n\nThis issue affects Apache Traffic Server: from 9.0.0 through 9.1.13, from 10.0.0 through 10.1.2.\n\nUsers are recommended to upgrade to version 9.1.14 or 10.1.3, which fixes the issue.",
-    "severity": "UNKNOWN"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-16158",
-    "title": "CVE-2026-16158 (CVSS 8.7)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16158",
-    "published": "2026-07-18T13:17:06.030",
-    "summary": "Impact: @fastify/reply-from versions from 8.3.1 up to but not including 12.6.4 build the internal URL cache key by concatenating the destination and source path without a delimiter. Different destination and source pairs can therefore produce the same key while resolving to different upstream URLs. When getUpstream selects an upstream from request data, a URL cached for one upstream can be reused for a request intended for another upstream, causing cross-upstream data access and modification. Th",
-    "severity": "HIGH"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-15631",
-    "title": "CVE-2026-15631 (CVSS 8.7)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-15631",
-    "published": "2026-07-18T13:17:05.323",
-    "summary": "Impact: @fastify/http-proxy versions from 9.4.0 up to and including 11.5.0 fail to validate the resolved WebSocket destination path against the configured rewrite prefix. The WebSocket routing path in WebSocketProxy.findUpstream resolves the destination via the WHATWG URL constructor, which collapses dot segments, so a crafted upgrade request with path traversal sequences can escape the rewrite prefix and reach upstream endpoints that were not meant to be exposed by the proxy. This is a variant ",
-    "severity": "HIGH"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-16097",
-    "title": "CVE-2026-16097 (CVSS 8.8)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16097",
-    "published": "2026-07-18T12:17:11.393",
-    "summary": "A vulnerability was found in Shibby Tomato 1.28. This vulnerability affects the function sub_42537C of the component Scheduler Name Handler. The manipulation of the argument a1 results in stack-based buffer overflow. It is possible to launch the attack remotely. This project is superseded by FreshTomato.",
-    "severity": "HIGH"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-16096",
-    "title": "CVE-2026-16096 (CVSS 8.8)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16096",
-    "published": "2026-07-18T12:17:11.223",
-    "summary": "A vulnerability has been found in Shibby Tomato 1.28 RT-N5x MIPSR2 Build 124. This affects the function sub_40BB50 of the file /proc/webmon_recent_domains. The manipulation leads to stack-based buffer overflow. It is possible to initiate the attack remotely. This project is superseded by FreshTomato.",
-    "severity": "HIGH"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-16095",
-    "title": "CVE-2026-16095 (CVSS 8.8)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16095",
-    "published": "2026-07-18T11:16:43.833",
-    "summary": "A flaw has been found in Shibby Tomato 1.28 RT-N5x MIPSR2 Build 124. Affected by this issue is the function setup_conntrack of the file /sbin/rc. Executing a manipulation of the argument ct_tcp_timeout can lead to out-of-bounds write. The attack may be performed from remote. This project is superseded by FreshTomato.",
-    "severity": "HIGH"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-16088",
-    "title": "CVE-2026-16088 (CVSS 4.7)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16088",
-    "published": "2026-07-18T10:17:25.950",
-    "summary": "A vulnerability was detected in halo-dev halo up to 2.24.2. Affected by this vulnerability is the function Download of the file MigrationEndpoint.java of the component Files Backup Endpoint. Performing a manipulation results in path traversal. The attack is possible to be carried out remotely. The exploit is now public and may be used.",
-    "severity": "MEDIUM"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-16085",
-    "title": "CVE-2026-16085 (CVSS 5.3)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16085",
-    "published": "2026-07-18T10:17:25.627",
-    "summary": "A security vulnerability has been detected in Sipeed PicoClaw up to 0.2.9. Affected is the function NewContextBuilder of the file pkg/agent/context.go. Such manipulation leads to inclusion of functionality from untrusted control sphere. The attack needs to be performed locally. The exploit has been disclosed publicly and may be used. The reported GitHub issue was closed automatically with the label \"not planned\" by a bot.",
-    "severity": "MEDIUM"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-47871",
-    "title": "CVE-2026-47871 (CVSS 8.8)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-47871",
-    "published": "2026-07-18T09:17:08.960",
-    "summary": "VMware Avi Load Balancer contains a directory traversal vulnerability. Flaws in file path validation allow malicious, authenticated network users to perform directory traversal attacks.\n\nAffected versions:\n32.1.1 (fixed in 32.1.2)\n31.1.1 through 31.2.2 (fixed in 31.2.2-2p3)\n30.1.1 through 30.2.6 (fixed in 30.2.7)\n22.1.1 through 22.1.7 (fixed in 30.2.7)",
-    "severity": "HIGH"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-47870",
-    "title": "CVE-2026-47870 (CVSS 7.1)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-47870",
-    "published": "2026-07-18T09:17:08.847",
-    "summary": "VMware Avi Load Balancer contains a privilege escalation vulnerability. A malicious authenticated user with network access may be able to execute remote code.\n\nAffected versions:\n32.1.1 (fixed in 32.1.2)\n31.1.1 through 31.2.2 (fixed in 31.2.2-2p3)\n30.1.1 through 30.2.6 (fixed in 30.2.7)\n22.1.1 through 22.1.7 (fixed in 30.2.7)",
-    "severity": "HIGH"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-47869",
-    "title": "CVE-2026-47869 (CVSS 8.7)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-47869",
-    "published": "2026-07-18T09:17:08.740",
-    "summary": "VMware Avi Load Balancer contains a remote code execution vulnerability. A malicious authenticated user with network access may be able to inject and execute code.\n\nAffected versions:\n32.1.1 (fixed in 32.1.2)\n31.1.1 through 31.2.2 (fixed in 31.2.2-2p3)\n30.1.1 through 30.2.6 (fixed in 30.2.7)\n22.1.1 through 22.1.7 (fixed in 30.2.7)",
-    "severity": "HIGH"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-47868",
-    "title": "CVE-2026-47868 (CVSS 7.8)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-47868",
-    "published": "2026-07-18T09:17:08.627",
-    "summary": "VMware Avi Load Balancer contains a local privilege escalation vulnerability. A malicious user with local access may be able to escalate their privileges to run code as root.\n\nAffected versions:\n32.1.1 (fixed in 32.1.2)\n31.1.1 through 31.2.2 (fixed in 31.2.2-2p3)\n30.1.1 through 30.2.6 (fixed in 30.2.7)\n22.1.1 through 22.1.7 (fixed in 30.2.7)",
-    "severity": "HIGH"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-47867",
-    "title": "CVE-2026-47867 (CVSS 8.7)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-47867",
-    "published": "2026-07-18T09:17:08.527",
-    "summary": "VMware Avi Load Balancer contains a remote code execution vulnerability. A malicious user with network access may be able to access the Avi Control plane and execute code remotely.\n\nAffected versions:\n32.1.1 (fixed in 32.1.2)\n31.1.1 through 31.2.2 (fixed in 31.2.2-2p3)\n30.1.1 through 30.2.6 (fixed in 30.2.7)\n22.1.1 through 22.1.7 (fixed in 30.2.7)",
-    "severity": "HIGH"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-47866",
-    "title": "CVE-2026-47866 (CVSS 8.3)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-47866",
-    "published": "2026-07-18T09:17:08.413",
-    "summary": "VMware Avi Load Balancer contains an authorization bypass vulnerability. A malicious actor on the network can access a limited subset of the Avi Control Plane without proper authorization.\n\nAffected versions:\n32.1.1 (fixed in 32.1.2)\n31.1.1 through 31.2.2 (fixed in 31.2.2-2p3)\n30.1.1 through 30.2.6 (fixed in 30.2.7)\n22.1.1 through 22.1.7 (fixed in 30.2.7)",
-    "severity": "HIGH"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-47865",
-    "title": "CVE-2026-47865 (CVSS 9.8)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-47865",
-    "published": "2026-07-18T09:17:08.287",
-    "summary": "VMware Avi Load Balancer contains an authentication bypass vulnerability. A malicious user with network access may be able to access the Avi Control plane by bypassing the authentication mechanism.\n\nAffected versions:\n31.1.1 through 31.2.2 (fixed in 31.2.2-2p3)\n30.1.1 through 30.2.6 (fixed in 30.2.7)\n22.1.1 through 22.1.7 (fixed in 30.2.7)",
-    "severity": "CRITICAL"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-16084",
-    "title": "CVE-2026-16084 (CVSS 7.3)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16084",
-    "published": "2026-07-18T09:17:08.113",
-    "summary": "A weakness has been identified in Sipeed PicoClaw up to 0.2.9. This impacts the function web_fetch of the file pkg/tools/integration/web.go. This manipulation causes server-side request forgery. Remote exploitation of the attack is possible. The exploit has been made available to the public and could be used for attacks. Patch name: c15aac21fe05ee103a470e1104bc891754e83392. To fix this issue, it is recommended to deploy a patch.",
-    "severity": "HIGH"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-16083",
-    "title": "CVE-2026-16083 (CVSS 5.3)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16083",
-    "published": "2026-07-18T09:17:07.953",
-    "summary": "A security flaw has been discovered in Sipeed PicoClaw up to 0.2.9. This affects the function webhook.ParseRequest of the file pkg/channels/line/line.go of the component LINE Webhook. The manipulation results in authentication bypass by capture-replay. The attack may be launched remotely. The exploit has been released to the public and may be used for attacks. The reported GitHub issue was closed automatically with the label \"not planned\" by a bot.",
-    "severity": "MEDIUM"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-16082",
-    "title": "CVE-2026-16082 (CVSS 5.3)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16082",
-    "published": "2026-07-18T09:17:07.783",
-    "summary": "A vulnerability was identified in Sipeed PicoClaw up to 0.2.9. The impacted element is the function ExecTool.executeRun of the file pkg/agent/pipeline_execute.go. The manipulation of the argument cwe leads to time-of-check time-of-use. The attack must be carried out locally. The exploit is publicly available and might be used. The reported GitHub issue was closed automatically with the label \"not planned\" by a bot.",
-    "severity": "MEDIUM"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-16081",
-    "title": "CVE-2026-16081 (CVSS 4.3)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16081",
-    "published": "2026-07-18T08:16:35.130",
-    "summary": "A vulnerability was determined in Sipeed PicoClaw up to 0.2.9. The affected element is an unknown function of the file web/backend/api/auth.go. Executing a manipulation can lead to cross-site request forgery. The attack can be launched remotely. The exploit has been publicly disclosed and may be utilized. This patch is called 4b0229351678f479429b8d8b19207757266f246b. Applying a patch is advised to resolve this issue.",
-    "severity": "MEDIUM"
-  },
-  {
-    "source": "msrc",
-    "category": "advisory",
-    "id": "CVE-2026-50012",
-    "title": "CVE-2026-50012 Squid: Memory corruption in cache_digest reply handling",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50012",
-    "published": "2026-07-18T08:01:40+00:00",
-    "summary": "Information published.",
-    "severity": "UNKNOWN"
-  },
-  {
-    "source": "msrc",
-    "category": "advisory",
-    "id": "CVE-2026-47729",
-    "title": "CVE-2026-47729 Squid: Memory disclosure in FTP gateway",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47729",
-    "published": "2026-07-18T08:01:34+00:00",
-    "summary": "Information published.",
-    "severity": "UNKNOWN"
-  },
-  {
-    "source": "msrc",
-    "category": "advisory",
-    "id": "CVE-2026-62299",
-    "title": "CVE-2026-62299 CoreDNS: rewrite-plugin EDNS0 response-revert nil-pointer panic (remote DoS) when a downstream plugin returns a response with no OPT record",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62299",
-    "published": "2026-07-18T08:01:26+00:00",
-    "summary": "Information published.",
-    "severity": "UNKNOWN"
-  },
-  {
-    "source": "msrc",
-    "category": "advisory",
-    "id": "CVE-2026-62309",
-    "title": "CVE-2026-62309 CoreDNS: proxyproto plugin panics on PPv2 datagram with non-UDP transport — single 28-byte packet remote DoS",
-    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62309",
-    "published": "2026-07-18T08:01:20+00:00",
-    "summary": "Information published.",
-    "severity": "UNKNOWN"
-  },
-  {
-    "source": "nvd",
-    "category": "advisory",
-    "id": "CVE-2026-16077",
-    "title": "CVE-2026-16077 (CVSS 5.3)",
-    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-16077",
-    "published": "2026-07-18T07:16:39.290",
-    "summary": "A vulnerability was found in AstrBotDevs AstrBot up to 4.25.5. Impacted is the function _normalize_rw_path of the file astrbot/core/tools/computer_tools/fs.py of the component Filesystem Computer-Use Tool. Performing a manipulation results in link following. The attack is only possible with local access. The exploit has been made public and could be used. The vendor was contacted early about this disclosure but did not respond in any way.",
     "severity": "MEDIUM"
   }
 ]
